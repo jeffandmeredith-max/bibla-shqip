@@ -61,9 +61,11 @@ function fetchPlaylist(ytdlp) {
     ['--print', '%(id)s|||%(title)s|||%(chapters)s', '--no-download', '--ignore-errors', PLAYLIST_URL],
     { encoding: 'utf8', maxBuffer: 10 * 1024 * 1024 }
   )
-  if (!result.stdout) {
-    console.error('yt-dlp produced no output. stderr:', result.stderr?.slice(0, 500))
-    process.exit(1)
+  if (!result.stdout || result.stdout.trim() === '') {
+    console.warn('⚠ yt-dlp produced no output (YouTube may be blocking this IP).')
+    console.warn('  stderr:', result.stderr?.slice(0, 300))
+    console.warn('  Falling back to existing committed data files — skipping fetch.')
+    return null
   }
   return result.stdout
 }
@@ -150,6 +152,12 @@ function generateIndexFile(months) {
 
 const ytdlp = getYtDlpPath()
 const raw = fetchPlaylist(ytdlp)
+
+// If yt-dlp was blocked/failed, use the existing committed data files as-is
+if (raw === null) {
+  console.log('✅ Using existing data files. Vite build will proceed normally.')
+  process.exit(0)
+}
 
 // Group by month
 const byMonth = {}
