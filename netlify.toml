@@ -1,0 +1,6 @@
+[build]
+  command = "pip install yt-dlp && npm run build"
+  publish = "dist"
+
+[build.environment]
+  NODE_VERSION = "20"
