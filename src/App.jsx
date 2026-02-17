@@ -11,11 +11,9 @@ function getLatestDay() {
     may: 4, june: 5, july: 6, august: 7,
     september: 8, october: 9, november: 10, december: 11,
   }
-  // Walk months in reverse to find the latest available day
   for (let i = MONTHS.length - 1; i >= 0; i--) {
     const m = MONTHS[i]
     const mIndex = monthNames[m.key]
-    // Filter days up to today
     const available = m.days.filter((d) => {
       const date = new Date(today.getFullYear(), mIndex, d.day)
       return date <= today
@@ -24,7 +22,6 @@ function getLatestDay() {
       return { monthKey: m.key, day: available[available.length - 1] }
     }
   }
-  // Fallback to very first day
   return { monthKey: MONTHS[0].key, day: MONTHS[0].days[0] }
 }
 
@@ -33,6 +30,7 @@ const latest = getLatestDay()
 export default function App() {
   const [activeMonth, setActiveMonth] = useState(latest.monthKey)
   const [selectedDay, setSelectedDay] = useState(null)
+  const [mode, setMode] = useState('video')
 
   const currentMonth = MONTHS.find((m) => m.key === activeMonth)
 
@@ -56,18 +54,35 @@ export default function App() {
       </header>
 
       <main className="app-main">
-        <div className="month-tabs">
-          {MONTHS.map((m) => (
+        <div className="controls-row">
+          <div className="month-tabs">
+            {MONTHS.map((m) => (
+              <button
+                key={m.key}
+                className={`month-tab ${activeMonth === m.key ? 'month-tab--active' : ''}`}
+                onClick={() => handleMonthChange(m.key)}
+              >
+                {m.label}
+                <span className="month-tab__count">{m.days.length}</span>
+              </button>
+            ))}
+          </div>
+
+          <div className="mode-toggle">
             <button
-              key={m.key}
-              className={`month-tab ${activeMonth === m.key ? 'month-tab--active' : ''}`}
-              onClick={() => handleMonthChange(m.key)}
-            >
-              {m.label}
-              <span className="month-tab__count">{m.days.length}</span>
-            </button>
-          ))}
+              className={`mode-btn ${mode === 'video' ? 'mode-btn--active' : ''}`}
+              onClick={() => setMode('video')}
+            >🎬 Video</button>
+            <button
+              className={`mode-btn ${mode === 'audio' ? 'mode-btn--active' : ''}`}
+              onClick={() => setMode('audio')}
+            >🎧 Audio</button>
+          </div>
         </div>
+
+        {mode === 'audio' && (
+          <p className="audio-mode-notice">Modaliteti audio — ekrani mund të fiket gjatë dëgjimit.</p>
+        )}
 
         <DayList
           days={currentMonth.days}
@@ -77,7 +92,7 @@ export default function App() {
         />
       </main>
 
-      <DayPlayer day={selectedDay} onClose={() => setSelectedDay(null)} />
+      <DayPlayer day={selectedDay} onClose={() => setSelectedDay(null)} mode={mode} />
     </div>
   )
 }

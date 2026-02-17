@@ -110,11 +110,36 @@ body::before {
   font-weight: 300;
 }
 
+/* ── Controls row (month tabs + mode toggle) ──────────────── */
+.controls-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-bottom: 1.5rem;
+}
+
+.audio-mode-notice {
+  font-size: 0.8rem;
+  color: var(--accent);
+  text-align: center;
+  margin: -1rem 0 1rem;
+  opacity: 0.85;
+}
+
+.player-audio-unavailable {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+  text-align: center;
+  padding: 1.5rem 0;
+}
+
 /* ── Month tabs ───────────────────────────────────────────── */
 .month-tabs {
   display: flex;
   gap: 0.5rem;
-  margin-bottom: 1.5rem;
+  margin-bottom: 0;
 }
 
 .month-tab {

@@ -1,13 +1,12 @@
 import { useEffect, useRef, useState } from 'react'
 
-export default function DayPlayer({ day, onClose }) {
+export default function DayPlayer({ day, onClose, mode }) {
   const iframeRef = useRef(null)
   const playerRef = useRef(null)
   const audioRef = useRef(null)
   const wakeLockRef = useRef(null)
   const [activeReading, setActiveReading] = useState(0)
   const [apiReady, setApiReady] = useState(false)
-  const [mode, setMode] = useState('video') // 'video' or 'audio'
 
   // Acquire wake lock when player opens, release when it closes
   useEffect(() => {
@@ -37,7 +36,7 @@ export default function DayPlayer({ day, onClose }) {
     window.onYouTubeIframeAPIReady = () => setApiReady(true)
   }, [])
 
-  // Create/recreate YouTube player when day changes, API ready, or switching to video mode
+  // Create/recreate YouTube player when in video mode
   useEffect(() => {
     if (!day || !apiReady || mode !== 'video') return
 
@@ -65,7 +64,7 @@ export default function DayPlayer({ day, onClose }) {
     }
   }, [day, apiReady, mode])
 
-  // When switching to audio mode, pause the YouTube player
+  // Pause whichever player is not active when mode changes
   useEffect(() => {
     if (mode === 'audio' && playerRef.current?.pauseVideo) {
       playerRef.current.pauseVideo()
@@ -82,15 +81,15 @@ export default function DayPlayer({ day, onClose }) {
   function seekTo(index) {
     setActiveReading(index)
     const start = day.readings[index].start
-    if (mode === 'video') {
-      if (playerRef.current && typeof playerRef.current.seekTo === 'function') {
-        playerRef.current.seekTo(start, true)
-        playerRef.current.playVideo()
-      }
-    } else {
+    if (mode === 'audio') {
       if (audioRef.current) {
         audioRef.current.currentTime = start
         audioRef.current.play()
+      }
+    } else {
+      if (playerRef.current && typeof playerRef.current.seekTo === 'function') {
+        playerRef.current.seekTo(start, true)
+        playerRef.current.playVideo()
       }
     }
   }
@@ -100,21 +99,7 @@ export default function DayPlayer({ day, onClose }) {
       <div className="player-panel">
         <div className="player-header">
           <h2 className="player-date">{day.date}</h2>
-          <div className="player-header-right">
-            {audioFile && (
-              <div className="mode-toggle">
-                <button
-                  className={`mode-btn ${mode === 'video' ? 'mode-btn--active' : ''}`}
-                  onClick={() => setMode('video')}
-                >Video</button>
-                <button
-                  className={`mode-btn ${mode === 'audio' ? 'mode-btn--active' : ''}`}
-                  onClick={() => setMode('audio')}
-                >Audio</button>
-              </div>
-            )}
-            <button className="player-close" onClick={onClose} aria-label="Mbyll">✕</button>
-          </div>
+          <button className="player-close" onClick={onClose} aria-label="Mbyll">✕</button>
         </div>
 
         <div className="player-readings">
@@ -129,20 +114,17 @@ export default function DayPlayer({ day, onClose }) {
           ))}
         </div>
 
-        {mode === 'video' ? (
-          <div className="player-embed">
-            <div id="yt-player" ref={iframeRef} />
+        {mode === 'audio' ? (
+          <div className="player-audio">
+            {audioFile ? (
+              <audio ref={audioRef} src={audioFile} controls autoPlay style={{ width: '100%' }} />
+            ) : (
+              <p className="player-audio-unavailable">Audio nuk është i disponueshëm për këtë ditë.</p>
+            )}
           </div>
         ) : (
-          <div className="player-audio">
-            <p className="player-audio-hint">Ekrani mund të fiket — audio vazhdon.</p>
-            <audio
-              ref={audioRef}
-              src={audioFile}
-              controls
-              autoPlay
-              style={{ width: '100%' }}
-            />
+          <div className="player-embed">
+            <div id="yt-player" ref={iframeRef} />
           </div>
         )}
       </div>
