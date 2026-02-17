@@ -1,3 +1,46 @@
+/* ── Install banner ───────────────────────────────────────── */
+.install-banner {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: var(--accent);
+  color: #0e0e12;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0.75rem 1.25rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.install-banner-actions {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.install-btn {
+  background: #0e0e12;
+  color: var(--accent);
+  border: none;
+  border-radius: 6px;
+  padding: 5px 14px;
+  font-size: 0.8rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.install-dismiss {
+  background: none;
+  border: none;
+  color: #0e0e12;
+  font-size: 1rem;
+  cursor: pointer;
+  opacity: 0.7;
+  padding: 2px 6px;
+}
+
 /* ── Google Fonts ─────────────────────────────────────────── */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@600;700&display=swap');
 
@@ -241,6 +284,14 @@ body::before {
   box-shadow: 0 0 0 1px var(--accent), 0 8px 30px rgba(200,169,110,0.12);
 }
 
+.day-card__top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 20px;
+  margin-bottom: 4px;
+}
+
 .day-card__badge {
   display: inline-block;
   background: var(--accent);
@@ -251,7 +302,21 @@ body::before {
   text-transform: uppercase;
   padding: 2px 8px;
   border-radius: 20px;
-  margin-bottom: 6px;
+}
+
+.day-card__check {
+  font-size: 0.8rem;
+  color: #4caf50;
+  font-weight: 700;
+  margin-left: auto;
+}
+
+.day-card--done {
+  opacity: 0.6;
+}
+
+.day-card--done:hover {
+  opacity: 1;
 }
 
 .day-card__date {
