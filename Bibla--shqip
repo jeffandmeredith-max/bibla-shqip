@@ -1,0 +1,2 @@
+git remote add origin https://github.com/jeffandmeredith-max/bibla-shqip.git
+git push -u origin master
