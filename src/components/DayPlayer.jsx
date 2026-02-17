@@ -3,8 +3,25 @@ import { useEffect, useRef, useState } from 'react'
 export default function DayPlayer({ day, onClose }) {
   const iframeRef = useRef(null)
   const playerRef = useRef(null)
+  const wakeLockRef = useRef(null)
   const [activeReading, setActiveReading] = useState(0)
   const [apiReady, setApiReady] = useState(false)
+
+  // Acquire wake lock when player opens, release when it closes
+  useEffect(() => {
+    if (!day) return
+    if ('wakeLock' in navigator) {
+      navigator.wakeLock.request('screen').then((lock) => {
+        wakeLockRef.current = lock
+      }).catch(() => {})
+    }
+    return () => {
+      if (wakeLockRef.current) {
+        wakeLockRef.current.release()
+        wakeLockRef.current = null
+      }
+    }
+  }, [day])
 
   // Load YouTube IFrame API once
   useEffect(() => {
