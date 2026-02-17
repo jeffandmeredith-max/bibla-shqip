@@ -4,6 +4,7 @@ export const january = [
     "day": 1,
     "date": "1 Janar",
     "videoId": "84Npsc6uO1w",
+    "audioFile": "january-1.webm",
     "readings": [
       {
         "title": "Zanafilla 1",

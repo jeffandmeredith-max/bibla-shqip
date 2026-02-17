@@ -3,9 +3,11 @@ import { useEffect, useRef, useState } from 'react'
 export default function DayPlayer({ day, onClose }) {
   const iframeRef = useRef(null)
   const playerRef = useRef(null)
+  const audioRef = useRef(null)
   const wakeLockRef = useRef(null)
   const [activeReading, setActiveReading] = useState(0)
   const [apiReady, setApiReady] = useState(false)
+  const [mode, setMode] = useState('video') // 'video' or 'audio'
 
   // Acquire wake lock when player opens, release when it closes
   useEffect(() => {
@@ -35,13 +37,12 @@ export default function DayPlayer({ day, onClose }) {
     window.onYouTubeIframeAPIReady = () => setApiReady(true)
   }, [])
 
-  // Create/recreate player when day changes or API becomes ready
+  // Create/recreate YouTube player when day changes, API ready, or switching to video mode
   useEffect(() => {
-    if (!day || !apiReady) return
+    if (!day || !apiReady || mode !== 'video') return
 
     setActiveReading(0)
 
-    // Destroy previous player instance if it exists
     if (playerRef.current) {
       playerRef.current.destroy()
       playerRef.current = null
@@ -62,16 +63,35 @@ export default function DayPlayer({ day, onClose }) {
         playerRef.current = null
       }
     }
-  }, [day, apiReady])
+  }, [day, apiReady, mode])
+
+  // When switching to audio mode, pause the YouTube player
+  useEffect(() => {
+    if (mode === 'audio' && playerRef.current?.pauseVideo) {
+      playerRef.current.pauseVideo()
+    }
+    if (mode === 'video' && audioRef.current) {
+      audioRef.current.pause()
+    }
+  }, [mode])
 
   if (!day) return null
+
+  const audioFile = day.audioFile ? `/audio/${day.audioFile}` : null
 
   function seekTo(index) {
     setActiveReading(index)
     const start = day.readings[index].start
-    if (playerRef.current && typeof playerRef.current.seekTo === 'function') {
-      playerRef.current.seekTo(start, true)
-      playerRef.current.playVideo()
+    if (mode === 'video') {
+      if (playerRef.current && typeof playerRef.current.seekTo === 'function') {
+        playerRef.current.seekTo(start, true)
+        playerRef.current.playVideo()
+      }
+    } else {
+      if (audioRef.current) {
+        audioRef.current.currentTime = start
+        audioRef.current.play()
+      }
     }
   }
 
@@ -80,7 +100,21 @@ export default function DayPlayer({ day, onClose }) {
       <div className="player-panel">
         <div className="player-header">
           <h2 className="player-date">{day.date}</h2>
-          <button className="player-close" onClick={onClose} aria-label="Mbyll">✕</button>
+          <div className="player-header-right">
+            {audioFile && (
+              <div className="mode-toggle">
+                <button
+                  className={`mode-btn ${mode === 'video' ? 'mode-btn--active' : ''}`}
+                  onClick={() => setMode('video')}
+                >Video</button>
+                <button
+                  className={`mode-btn ${mode === 'audio' ? 'mode-btn--active' : ''}`}
+                  onClick={() => setMode('audio')}
+                >Audio</button>
+              </div>
+            )}
+            <button className="player-close" onClick={onClose} aria-label="Mbyll">✕</button>
+          </div>
         </div>
 
         <div className="player-readings">
@@ -95,9 +129,22 @@ export default function DayPlayer({ day, onClose }) {
           ))}
         </div>
 
-        <div className="player-embed">
-          <div id="yt-player" ref={iframeRef} />
-        </div>
+        {mode === 'video' ? (
+          <div className="player-embed">
+            <div id="yt-player" ref={iframeRef} />
+          </div>
+        ) : (
+          <div className="player-audio">
+            <p className="player-audio-hint">Ekrani mund të fiket — audio vazhdon.</p>
+            <audio
+              ref={audioRef}
+              src={audioFile}
+              controls
+              autoPlay
+              style={{ width: '100%' }}
+            />
+          </div>
+        )}
       </div>
     </div>
   )
