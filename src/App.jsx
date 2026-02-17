@@ -3,8 +3,35 @@ import DayList from './components/DayList'
 import DayPlayer from './components/DayPlayer'
 import { MONTHS } from './data/months'
 
+// Find the most recent day that has a video (based on today's date)
+function getLatestDay() {
+  const today = new Date()
+  const monthNames = {
+    january: 0, february: 1, march: 2, april: 3,
+    may: 4, june: 5, july: 6, august: 7,
+    september: 8, october: 9, november: 10, december: 11,
+  }
+  // Walk months in reverse to find the latest available day
+  for (let i = MONTHS.length - 1; i >= 0; i--) {
+    const m = MONTHS[i]
+    const mIndex = monthNames[m.key]
+    // Filter days up to today
+    const available = m.days.filter((d) => {
+      const date = new Date(today.getFullYear(), mIndex, d.day)
+      return date <= today
+    })
+    if (available.length > 0) {
+      return { monthKey: m.key, day: available[available.length - 1] }
+    }
+  }
+  // Fallback to very first day
+  return { monthKey: MONTHS[0].key, day: MONTHS[0].days[0] }
+}
+
+const latest = getLatestDay()
+
 export default function App() {
-  const [activeMonth, setActiveMonth] = useState(MONTHS[0].key)
+  const [activeMonth, setActiveMonth] = useState(latest.monthKey)
   const [selectedDay, setSelectedDay] = useState(null)
 
   const currentMonth = MONTHS.find((m) => m.key === activeMonth)
@@ -45,6 +72,7 @@ export default function App() {
           days={currentMonth.days}
           selectedDay={selectedDay}
           onSelectDay={setSelectedDay}
+          latestDay={activeMonth === latest.monthKey ? latest.day : null}
         />
       </main>
 
