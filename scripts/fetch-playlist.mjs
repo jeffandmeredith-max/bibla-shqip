@@ -10,7 +10,7 @@
  */
 
 import { execSync, spawnSync } from 'child_process'
-import { writeFileSync, mkdirSync } from 'fs'
+import { writeFileSync, mkdirSync, readdirSync, existsSync } from 'fs'
 import { join, dirname } from 'path'
 import { fileURLToPath } from 'url'
 
@@ -148,6 +148,18 @@ function generateIndexFile(months) {
   ].join('\n')
 }
 
+// Build a lookup of existing audio files: e.g. { 'january-1': 'january-1.webm' }
+function getAudioMap() {
+  const audioDir = join(ROOT, 'public', 'audio')
+  if (!existsSync(audioDir)) return {}
+  const map = {}
+  for (const file of readdirSync(audioDir)) {
+    const base = file.replace(/\.[^.]+$/, '') // strip extension
+    map[base] = file
+  }
+  return map
+}
+
 // ── Main ──────────────────────────────────────────────────────────────────────
 
 const ytdlp = getYtDlpPath()
@@ -161,6 +173,7 @@ if (raw === null) {
 
 // Group by month
 const byMonth = {}
+const audioMap = getAudioMap()
 
 for (const line of raw.split('\n')) {
   if (!line.includes('|||')) continue
@@ -178,13 +191,20 @@ for (const line of raw.split('\n')) {
   // Skip the intro-only "HYRJE" chapter if it's the only item
   const filteredReadings = readings.filter((r) => r.title.toLowerCase() !== 'hyrje' || readings.length === 1)
 
-  if (!byMonth[monthName]) byMonth[monthName] = []
-  byMonth[monthName].push({
+  // Check if an audio file exists for this day e.g. "january-1.webm"
+  const audioKey = `${monthInfo.key}-${day}`
+  const audioFile = audioMap[audioKey] || null
+
+  const entry = {
     day,
     date: `${day} ${monthName}`,
     videoId: id.trim(),
     readings: filteredReadings,
-  })
+  }
+  if (audioFile) entry.audioFile = audioFile
+
+  if (!byMonth[monthName]) byMonth[monthName] = []
+  byMonth[monthName].push(entry)
 }
 
 // Sort each month's entries by day number
