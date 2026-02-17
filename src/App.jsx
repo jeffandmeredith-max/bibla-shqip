@@ -44,6 +44,7 @@ export default function App() {
   return (
     <div className="app">
       <header className="app-header">
+        <img src="/logo.png" alt="Kisha Dishepujt" className="app-logo" />
         <h1>Bibla <span>në Shqip</span></h1>
         <p className="app-subtitle">Plani i Leximit · M'Cheyne</p>
         <p className="app-description">

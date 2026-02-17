@@ -54,8 +54,17 @@ body::before {
 /* ── Header ───────────────────────────────────────────────── */
 .app-header {
   text-align: center;
-  padding: 5rem 1rem 4rem;
+  padding: 4rem 1rem 4rem;
   position: relative;
+}
+
+.app-logo {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.4);
 }
 
 .app-header::after {
