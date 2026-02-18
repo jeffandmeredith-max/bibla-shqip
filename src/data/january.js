@@ -28,6 +28,7 @@ export const january = [
     "day": 2,
     "date": "2 Janar",
     "videoId": "BpEZOcdSwbI",
+    "audioFile": "january-2.webm",
     "readings": [
       {
         "title": "Zanafilla 2",
@@ -51,6 +52,7 @@ export const january = [
     "day": 3,
     "date": "3 Janar",
     "videoId": "Hf1DeGtoM-M",
+    "audioFile": "january-3.webm",
     "readings": [
       {
         "title": "Zanafilla 3",
@@ -74,6 +76,7 @@ export const january = [
     "day": 4,
     "date": "4 Janar",
     "videoId": "NoopdvaUGyM",
+    "audioFile": "january-4.webm",
     "readings": [
       {
         "title": "Zanafilla 4",
@@ -97,6 +100,7 @@ export const january = [
     "day": 5,
     "date": "5 Janar",
     "videoId": "kipJg-KJVa4",
+    "audioFile": "january-5.webm",
     "readings": [
       {
         "title": "Zanafilla 5",
@@ -120,6 +124,7 @@ export const january = [
     "day": 6,
     "date": "6 Janar",
     "videoId": "SvcrzXur-LA",
+    "audioFile": "january-6.webm",
     "readings": [
       {
         "title": "Zanafilla 6",
@@ -143,6 +148,7 @@ export const january = [
     "day": 7,
     "date": "7 Janar",
     "videoId": "eWa-1uRT9K0",
+    "audioFile": "january-7.webm",
     "readings": [
       {
         "title": "Zanafilla 7",
@@ -166,6 +172,7 @@ export const january = [
     "day": 8,
     "date": "8 Janar",
     "videoId": "JGziVcxo-LQ",
+    "audioFile": "january-8.webm",
     "readings": [
       {
         "title": "Zanafilla 8",
@@ -189,6 +196,7 @@ export const january = [
     "day": 9,
     "date": "9 Janar",
     "videoId": "4mtap5XhhqI",
+    "audioFile": "january-9.webm",
     "readings": [
       {
         "title": "Zanafilla 9",
@@ -216,6 +224,7 @@ export const january = [
     "day": 10,
     "date": "10 Janar",
     "videoId": "-OKUxx6Kdr4",
+    "audioFile": "january-10.webm",
     "readings": [
       {
         "title": "Zanafilla 11",
@@ -239,6 +248,7 @@ export const january = [
     "day": 11,
     "date": "11 Janar",
     "videoId": "UHZ5pRhqw4U",
+    "audioFile": "january-11.webm",
     "readings": [
       {
         "title": "Zanafilla 12",
@@ -262,6 +272,7 @@ export const january = [
     "day": 12,
     "date": "12 Janar",
     "videoId": "C9kbXwykcBs",
+    "audioFile": "january-12.webm",
     "readings": [
       {
         "title": "Zanafilla 13",
@@ -285,6 +296,7 @@ export const january = [
     "day": 13,
     "date": "13 Janar",
     "videoId": "3m6lWqCnp0A",
+    "audioFile": "january-13.webm",
     "readings": [
       {
         "title": "Zanafilla 14",
@@ -308,6 +320,7 @@ export const january = [
     "day": 14,
     "date": "14 Janar",
     "videoId": "wdrDR8vfp7g",
+    "audioFile": "january-14.webm",
     "readings": [
       {
         "title": "Zanafilla 15",
@@ -331,6 +344,7 @@ export const january = [
     "day": 15,
     "date": "15 Janar",
     "videoId": "3USMwoDuhJc",
+    "audioFile": "january-15.webm",
     "readings": [
       {
         "title": "Zanafilla 16",
@@ -354,6 +368,7 @@ export const january = [
     "day": 16,
     "date": "16 Janar",
     "videoId": "2t8sej7XWqA",
+    "audioFile": "january-16.webm",
     "readings": [
       {
         "title": "Zanafilla 17",
@@ -377,6 +392,7 @@ export const january = [
     "day": 17,
     "date": "17 Janar",
     "videoId": "LBPVcGScLwQ",
+    "audioFile": "january-17.webm",
     "readings": [
       {
         "title": "Zanafilla 18",
@@ -400,6 +416,7 @@ export const january = [
     "day": 18,
     "date": "18 Janar",
     "videoId": "plC-QjkH0nQ",
+    "audioFile": "january-18.webm",
     "readings": [
       {
         "title": "Zanafilla 19",
@@ -423,6 +440,7 @@ export const january = [
     "day": 19,
     "date": "19 Janar",
     "videoId": "u8wlgExBuLc",
+    "audioFile": "january-19.webm",
     "readings": [
       {
         "title": "Zanafilla 20",
@@ -446,6 +464,7 @@ export const january = [
     "day": 20,
     "date": "20 Janar",
     "videoId": "ODnytgT1V74",
+    "audioFile": "january-20.webm",
     "readings": [
       {
         "title": "Zanafilla 21",
@@ -469,6 +488,7 @@ export const january = [
     "day": 21,
     "date": "21 Janar",
     "videoId": "5neDrlJJHwI",
+    "audioFile": "january-21.webm",
     "readings": [
       {
         "title": "Zanafilla 22",
@@ -492,6 +512,7 @@ export const january = [
     "day": 22,
     "date": "22 Janar",
     "videoId": "V008FS6pTqc",
+    "audioFile": "january-22.webm",
     "readings": [
       {
         "title": "Zanafilla 23",
@@ -515,6 +536,7 @@ export const january = [
     "day": 23,
     "date": "23 Janar",
     "videoId": "AiWSGtXgZXA",
+    "audioFile": "january-23.webm",
     "readings": [
       {
         "title": "Zanafilla 24",
@@ -538,6 +560,7 @@ export const january = [
     "day": 24,
     "date": "24 Janar",
     "videoId": "PYmpVTwsZ0Y",
+    "audioFile": "january-24.webm",
     "readings": [
       {
         "title": "Zanafilla 25",
@@ -561,6 +584,7 @@ export const january = [
     "day": 25,
     "date": "25 Janar",
     "videoId": "N8VAvF3L8JU",
+    "audioFile": "january-25.webm",
     "readings": [
       {
         "title": "Zanafilla 26",
@@ -584,6 +608,7 @@ export const january = [
     "day": 26,
     "date": "26 Janar",
     "videoId": "MA-3lmzFkQ0",
+    "audioFile": "january-26.webm",
     "readings": [
       {
         "title": "Zanafilla 27",
@@ -607,6 +632,7 @@ export const january = [
     "day": 27,
     "date": "27 Janar",
     "videoId": "5WF-LNSv_AU",
+    "audioFile": "january-27.webm",
     "readings": [
       {
         "title": "Zanafilla 28",
@@ -630,6 +656,7 @@ export const january = [
     "day": 28,
     "date": "28 Janar",
     "videoId": "SwyJ7Qx70hU",
+    "audioFile": "january-28.webm",
     "readings": [
       {
         "title": "Zanafilla 29",
@@ -653,6 +680,7 @@ export const january = [
     "day": 29,
     "date": "29 Janar",
     "videoId": "iripUScmaO0",
+    "audioFile": "january-29.webm",
     "readings": [
       {
         "title": "Zanafilla 30",
@@ -676,6 +704,7 @@ export const january = [
     "day": 30,
     "date": "30 Janar",
     "videoId": "8mn6VNhzMwo",
+    "audioFile": "january-30.webm",
     "readings": [
       {
         "title": "Zanafilla 31",
@@ -699,6 +728,7 @@ export const january = [
     "day": 31,
     "date": "31 Janar",
     "videoId": "FwpRg0z8uTQ",
+    "audioFile": "january-31.webm",
     "readings": [
       {
         "title": "Zanafilla 32",

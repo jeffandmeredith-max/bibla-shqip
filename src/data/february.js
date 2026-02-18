@@ -4,6 +4,7 @@ export const february = [
     "day": 1,
     "date": "1 Shkurt",
     "videoId": "IR2zO-3Kw3k",
+    "audioFile": "february-1.webm",
     "readings": [
       {
         "title": "Zanafilla 33",
@@ -31,6 +32,7 @@ export const february = [
     "day": 2,
     "date": "2 Shkurt",
     "videoId": "MO3Nies8DqM",
+    "audioFile": "february-2.webm",
     "readings": [
       {
         "title": "Zanafilla 34",
@@ -54,6 +56,7 @@ export const february = [
     "day": 3,
     "date": "3 Shkurt",
     "videoId": "MjPsAkYhC7E",
+    "audioFile": "february-3.webm",
     "readings": [
       {
         "title": "Zanafilla 35",
@@ -81,6 +84,7 @@ export const february = [
     "day": 4,
     "date": "4 Shkurt",
     "videoId": "UYLfGayndP4",
+    "audioFile": "february-4.webm",
     "readings": [
       {
         "title": "Zanafilla 37",
@@ -104,6 +108,7 @@ export const february = [
     "day": 5,
     "date": "5 Shkurt",
     "videoId": "ViFA0uE2yTk",
+    "audioFile": "february-5.webm",
     "readings": [
       {
         "title": "Zanafilla 38",
@@ -127,6 +132,7 @@ export const february = [
     "day": 6,
     "date": "6 Shkurt",
     "videoId": "WNNcwV33YIw",
+    "audioFile": "february-6.webm",
     "readings": [
       {
         "title": "Zanafilla 39",
@@ -150,6 +156,7 @@ export const february = [
     "day": 7,
     "date": "7 Shkurt",
     "videoId": "QNZnrXLXyfU",
+    "audioFile": "february-7.webm",
     "readings": [
       {
         "title": "Zanafilla 40",
@@ -173,6 +180,7 @@ export const february = [
     "day": 8,
     "date": "8 Shkurt",
     "videoId": "qzavv9riRK8",
+    "audioFile": "february-8.webm",
     "readings": [
       {
         "title": "Zanafilla 41",
@@ -196,6 +204,7 @@ export const february = [
     "day": 9,
     "date": "9 Shkurt",
     "videoId": "IL2zt5c7xLo",
+    "audioFile": "february-9.webm",
     "readings": [
       {
         "title": "Zanafilla 42",
@@ -219,6 +228,7 @@ export const february = [
     "day": 10,
     "date": "10 Shkurt",
     "videoId": "Q29CAEjdbNs",
+    "audioFile": "february-10.webm",
     "readings": [
       {
         "title": "Zanafilla 43",
@@ -242,6 +252,7 @@ export const february = [
     "day": 11,
     "date": "11 Shkurt",
     "videoId": "s68KQmy9udQ",
+    "audioFile": "february-11.webm",
     "readings": [
       {
         "title": "Zanafilla 44",
@@ -265,6 +276,7 @@ export const february = [
     "day": 12,
     "date": "12 Shkurt",
     "videoId": "8uwcHsfRTPg",
+    "audioFile": "february-12.webm",
     "readings": [
       {
         "title": "Zanafilla 45",
@@ -288,6 +300,7 @@ export const february = [
     "day": 13,
     "date": "13 Shkurt",
     "videoId": "ZTxEgspm20o",
+    "audioFile": "february-13.webm",
     "readings": [
       {
         "title": "Zanafilla 46",
@@ -311,6 +324,7 @@ export const february = [
     "day": 14,
     "date": "14 Shkurt",
     "videoId": "jtidNHQmTu8",
+    "audioFile": "february-14.webm",
     "readings": [
       {
         "title": "Zanafilla 47",
@@ -334,6 +348,7 @@ export const february = [
     "day": 15,
     "date": "15 Shkurt",
     "videoId": "Nht7GEEUItU",
+    "audioFile": "february-15.webm",
     "readings": [
       {
         "title": "Zanafilla 48",
@@ -357,6 +372,7 @@ export const february = [
     "day": 16,
     "date": "16 Shkurt",
     "videoId": "yt4UL1SMI_Y",
+    "audioFile": "february-16.webm",
     "readings": [
       {
         "title": "Zanafilla 49",
@@ -380,6 +396,7 @@ export const february = [
     "day": 17,
     "date": "17 Shkurt",
     "videoId": "KN0SQW4cJS8",
+    "audioFile": "february-17.webm",
     "readings": [
       {
         "title": "Zanafilla 50",

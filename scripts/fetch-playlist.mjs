@@ -148,32 +148,19 @@ function generateIndexFile(months) {
   ].join('\n')
 }
 
-// Build a lookup of existing audio files: e.g. { 'january-1': 'january-1.webm' }
-// Falls back to scanning the committed data files for known audioFile fields.
-function getAudioMap() {
-  const audioDir = join(ROOT, 'public', 'audio')
+// Build a lookup of { videoId -> audioFile } from existing committed data files
+// This ensures audioFile fields are never lost when the fetch script regenerates data.
+function getAudioMapByVideoId() {
   const map = {}
-
-  // Scan local audio directory if present
-  if (existsSync(audioDir)) {
-    for (const file of readdirSync(audioDir)) {
-      const base = file.replace(/\.[^.]+$/, '')
-      map[base] = file
-    }
-    return map
-  }
-
-  // On CI (no local audio dir), parse existing data files to preserve audioFile fields
   const dataDir = join(ROOT, 'src', 'data')
-  if (existsSync(dataDir)) {
-    for (const file of readdirSync(dataDir)) {
-      if (!file.endsWith('.js') || file === 'months.js') continue
-      const content = readFileSync(join(dataDir, file), 'utf8')
-      for (const match of content.matchAll(/"audioFile":\s*"([^"]+)"/g)) {
-        const audioFile = match[1]
-        const base = audioFile.replace(/\.[^.]+$/, '')
-        map[base] = audioFile
-      }
+  if (!existsSync(dataDir)) return map
+  for (const file of readdirSync(dataDir)) {
+    if (!file.endsWith('.js') || file === 'months.js') continue
+    const content = readFileSync(join(dataDir, file), 'utf8')
+    // Match pairs of videoId + audioFile in the same entry
+    const entries = content.matchAll(/"videoId":\s*"([^"]+)"[^}]*?"audioFile":\s*"([^"]+)"/gs)
+    for (const m of entries) {
+      map[m[1]] = m[2]
     }
   }
   return map
@@ -192,7 +179,7 @@ if (raw === null) {
 
 // Group by month
 const byMonth = {}
-const audioMap = getAudioMap()
+const audioByVideoId = getAudioMapByVideoId()
 
 for (const line of raw.split('\n')) {
   if (!line.includes('|||')) continue
@@ -210,14 +197,14 @@ for (const line of raw.split('\n')) {
   // Skip the intro-only "HYRJE" chapter if it's the only item
   const filteredReadings = readings.filter((r) => r.title.toLowerCase() !== 'hyrje' || readings.length === 1)
 
-  // Check if an audio file exists for this day e.g. "january-1.webm"
-  const audioKey = `${monthInfo.key}-${day}`
-  const audioFile = audioMap[audioKey] || null
+  // Preserve audioFile from existing data (keyed by videoId — never lost on rebuild)
+  const videoId = id.trim()
+  const audioFile = audioByVideoId[videoId] || null
 
   const entry = {
     day,
     date: `${day} ${monthName}`,
-    videoId: id.trim(),
+    videoId,
     readings: filteredReadings,
   }
   if (audioFile) entry.audioFile = audioFile
