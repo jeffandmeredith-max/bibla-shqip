@@ -76,7 +76,8 @@ export default function DayPlayer({ day, onClose, mode }) {
 
   if (!day) return null
 
-  const audioFile = day.audioFile ? `/audio/${day.audioFile}` : null
+  const AUDIO_BASE = 'https://raw.githubusercontent.com/jeffandmeredith-max/bibla-shqip/master/public/audio'
+  const audioFile = day.audioFile ? `${AUDIO_BASE}/${day.audioFile}` : null
 
   function seekTo(index) {
     setActiveReading(index)
