@@ -10,7 +10,7 @@
  */
 
 import { execSync, spawnSync } from 'child_process'
-import { writeFileSync, mkdirSync, readdirSync, existsSync } from 'fs'
+import { writeFileSync, readFileSync, mkdirSync, readdirSync, existsSync } from 'fs'
 import { join, dirname } from 'path'
 import { fileURLToPath } from 'url'
 
@@ -149,13 +149,32 @@ function generateIndexFile(months) {
 }
 
 // Build a lookup of existing audio files: e.g. { 'january-1': 'january-1.webm' }
+// Falls back to scanning the committed data files for known audioFile fields.
 function getAudioMap() {
   const audioDir = join(ROOT, 'public', 'audio')
-  if (!existsSync(audioDir)) return {}
   const map = {}
-  for (const file of readdirSync(audioDir)) {
-    const base = file.replace(/\.[^.]+$/, '') // strip extension
-    map[base] = file
+
+  // Scan local audio directory if present
+  if (existsSync(audioDir)) {
+    for (const file of readdirSync(audioDir)) {
+      const base = file.replace(/\.[^.]+$/, '')
+      map[base] = file
+    }
+    return map
+  }
+
+  // On CI (no local audio dir), parse existing data files to preserve audioFile fields
+  const dataDir = join(ROOT, 'src', 'data')
+  if (existsSync(dataDir)) {
+    for (const file of readdirSync(dataDir)) {
+      if (!file.endsWith('.js') || file === 'months.js') continue
+      const content = readFileSync(join(dataDir, file), 'utf8')
+      for (const match of content.matchAll(/"audioFile":\s*"([^"]+)"/g)) {
+        const audioFile = match[1]
+        const base = audioFile.replace(/\.[^.]+$/, '')
+        map[base] = audioFile
+      }
+    }
   }
   return map
 }
