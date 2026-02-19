@@ -1,10 +1,9 @@
 name: Daily Rebuild
 
 on:
-  # Disabled — Cloudflare Pages rebuilds automatically on every push.
-  # Uncomment the lines below if you ever need to force a daily rebuild.
-  # schedule:
-  #   - cron: '0 8 * * *'
+  schedule:
+    # Runs every day at 08:00 UTC (10am Albania time)
+    - cron: '0 8 * * *'
   workflow_dispatch: # manual trigger still available from GitHub UI
 
 jobs:
