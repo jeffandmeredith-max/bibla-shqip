@@ -101,12 +101,19 @@ body::before {
   position: relative;
 }
 
+.app-logos {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
 .app-logo {
   width: 100px;
   height: 100px;
   border-radius: 50%;
   object-fit: cover;
-  margin-bottom: 1.5rem;
   box-shadow: 0 4px 24px rgba(0,0,0,0.4);
 }
 

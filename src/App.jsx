@@ -90,7 +90,10 @@ export default function App() {
       )}
 
       <header className="app-header">
-        <img src="/logo.png" alt="Kisha Dishepujt" className="app-logo" />
+        <div className="app-logos">
+          <img src="/logo.png" alt="Kisha Dishepujt" className="app-logo" />
+          <img src="/logo-qendra.png" alt="Qendra Sebashku" className="app-logo" />
+        </div>
         <h1>Bibla <span>në Shqip</span></h1>
         <p className="app-subtitle">Plani i Leximit · M'Cheyne</p>
         <p className="app-description">
