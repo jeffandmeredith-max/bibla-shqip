@@ -439,6 +439,37 @@ body::before {
   font-weight: 700;
 }
 
+.speed-control {
+  display: flex;
+  gap: 0.4rem;
+  justify-content: center;
+  padding: 0.5rem 0 0.25rem;
+}
+
+.speed-btn {
+  background: var(--surface-2);
+  border: 1px solid var(--border);
+  color: var(--text-muted);
+  border-radius: 6px;
+  padding: 0.25rem 0.6rem;
+  font-size: 0.8rem;
+  cursor: pointer;
+  transition: background 0.15s, color 0.15s, border-color 0.15s;
+}
+
+.speed-btn:hover {
+  background: var(--accent-dim);
+  border-color: rgba(200,169,110,0.4);
+  color: var(--text);
+}
+
+.speed-btn--active {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: #000;
+  font-weight: 600;
+}
+
 .player-audio {
   padding: 1rem 0 0.5rem;
   text-align: center;

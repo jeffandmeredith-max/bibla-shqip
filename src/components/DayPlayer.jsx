@@ -7,6 +7,9 @@ export default function DayPlayer({ day, onClose, mode }) {
   const wakeLockRef = useRef(null)
   const [activeReading, setActiveReading] = useState(0)
   const [apiReady, setApiReady] = useState(false)
+  const [speed, setSpeed] = useState(1)
+
+  const SPEEDS = [0.75, 1, 1.25, 1.5, 2]
 
   // Acquire wake lock when player opens, release when it closes
   useEffect(() => {
@@ -74,6 +77,16 @@ export default function DayPlayer({ day, onClose, mode }) {
     }
   }, [mode])
 
+  // Apply speed to whichever player is active
+  useEffect(() => {
+    if (mode === 'audio' && audioRef.current) {
+      audioRef.current.playbackRate = speed
+    }
+    if (mode === 'video' && playerRef.current?.setPlaybackRate) {
+      playerRef.current.setPlaybackRate(speed)
+    }
+  }, [speed, mode])
+
   if (!day) return null
 
   const AUDIO_BASE = 'https://cdn.jsdelivr.net/gh/jeffandmeredith-max/bibla-shqip@master/public/audio'
@@ -111,6 +124,18 @@ export default function DayPlayer({ day, onClose, mode }) {
               onClick={() => seekTo(i)}
             >
               {r.title}
+            </button>
+          ))}
+        </div>
+
+        <div className="speed-control">
+          {SPEEDS.map((s) => (
+            <button
+              key={s}
+              className={`speed-btn ${speed === s ? 'speed-btn--active' : ''}`}
+              onClick={() => setSpeed(s)}
+            >
+              {s}×
             </button>
           ))}
         </div>

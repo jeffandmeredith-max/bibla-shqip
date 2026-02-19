@@ -1,23 +1,24 @@
 name: Daily Rebuild
 
 on:
-  schedule:
-    # Runs every day at 08:00 UTC (10am Albania time)
-    - cron: '0 8 * * *'
-  workflow_dispatch: # also allows manual trigger from GitHub UI
+  # Disabled — Cloudflare Pages rebuilds automatically on every push.
+  # Uncomment the lines below if you ever need to force a daily rebuild.
+  # schedule:
+  #   - cron: '0 8 * * *'
+  workflow_dispatch: # manual trigger still available from GitHub UI
 
 jobs:
-  trigger-netlify-build:
+  trigger-rebuild:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Push empty commit to trigger Netlify rebuild
+      - name: Push empty commit to trigger rebuild
         run: |
           git config user.email "daily-rebuild@github-actions"
           git config user.name "Daily Rebuild"
           git commit --allow-empty -m "chore: daily rebuild $(date +'%Y-%m-%d')"
           git push
-          echo "✅ Netlify rebuild triggered via git push"
+          echo "✅ Rebuild triggered via git push"
