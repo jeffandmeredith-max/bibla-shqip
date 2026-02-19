@@ -419,5 +419,53 @@ export const february = [
         "start": 705
       }
     ]
+  },
+  {
+    "day": 18,
+    "date": "18 Shkurt",
+    "videoId": "Xlm_S1NLvoE",
+    "audioFile": "february-18.webm",
+    "readings": [
+      {
+        "title": "Eksodi 1",
+        "start": 0
+      },
+      {
+        "title": "Luka 4",
+        "start": 169
+      },
+      {
+        "title": "Jobi 18",
+        "start": 470
+      },
+      {
+        "title": "1 e Korintasve 5",
+        "start": 573
+      }
+    ]
+  },
+  {
+    "day": 19,
+    "date": "19 Shkurt",
+    "videoId": "erVqzj-S1jQ",
+    "audioFile": "february-19.webm",
+    "readings": [
+      {
+        "title": "Eksodi 2",
+        "start": 0
+      },
+      {
+        "title": "Luka 5",
+        "start": 202
+      },
+      {
+        "title": "Jobi 19",
+        "start": 501
+      },
+      {
+        "title": "1 e Korintasve 6",
+        "start": 650
+      }
+    ]
   }
 ]
