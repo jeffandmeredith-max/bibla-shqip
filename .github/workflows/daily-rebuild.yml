@@ -10,7 +10,14 @@ jobs:
   trigger-netlify-build:
     runs-on: ubuntu-latest
     steps:
-      - name: Trigger Netlify build hook
+      - uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Push empty commit to trigger Netlify rebuild
         run: |
-          curl -s -X POST "${{ secrets.NETLIFY_BUILD_HOOK }}"
-          echo "✅ Netlify build triggered"
+          git config user.email "daily-rebuild@github-actions"
+          git config user.name "Daily Rebuild"
+          git commit --allow-empty -m "chore: daily rebuild $(date +'%Y-%m-%d')"
+          git push
+          echo "✅ Netlify rebuild triggered via git push"
