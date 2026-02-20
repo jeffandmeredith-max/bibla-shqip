@@ -10,7 +10,7 @@ export default defineConfig({
       includeAssets: ['icons/icon-192.png', 'icons/icon-512.png', 'icons/apple-touch-icon.png'],
       manifest: {
         name: 'Bibla Shqipe - Audio dhe Video',
-        short_name: 'Bibla Shqipe',
+        short_name: 'Bibla në Shqip',
         description: 'Plani i Leximit të Biblës — M\'Cheyne · Janar',
         theme_color: '#0e0e12',
         background_color: '#0e0e12',
