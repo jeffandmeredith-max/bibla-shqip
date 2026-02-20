@@ -467,5 +467,29 @@ export const february = [
         "start": 650
       }
     ]
+  },
+  {
+    "day": 20,
+    "date": "20 Shkurt",
+    "videoId": "PrMHI6kx6tE",
+    "audioFile": "february-20.webm",
+    "readings": [
+      {
+        "title": "Eksodi 3",
+        "start": 0
+      },
+      {
+        "title": "Luka 6",
+        "start": 240
+      },
+      {
+        "title": "Jobi 20",
+        "start": 594
+      },
+      {
+        "title": "1 e Korintasve 7",
+        "start": 753
+      }
+    ]
   }
 ]
