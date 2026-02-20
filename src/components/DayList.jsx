@@ -22,7 +22,7 @@ export default function DayList({ days, selectedDay, onSelectDay, latestDay, lis
             onClick={() => onSelectDay(entry)}
           >
             <div className="day-card__top">
-              {isLatest && <span className="day-card__badge">Sot</span>}
+              {isLatest && <span className="day-card__badge">Më e fundit</span>}
               {isDone && <span className="day-card__check">✓</span>}
             </div>
             <span className="day-card__date">{entry.date}</span>
