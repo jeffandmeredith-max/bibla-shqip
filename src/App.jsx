@@ -66,6 +66,19 @@ export default function App() {
     }
   }
 
+  function handleShare() {
+    const data = {
+      title: 'Bibla në Shqip',
+      text: "Dëgjo Biblën në shqip çdo ditë — Plani i Leximit M'Cheyne",
+      url: 'https://bibla-shqip.pages.dev',
+    }
+    if (navigator.share) {
+      navigator.share(data).catch(() => {})
+    } else {
+      navigator.clipboard.writeText(data.url).then(() => alert('Lidhja u kopjua!'))
+    }
+  }
+
   function handleInstall() {
     if (!installPrompt) return
     installPrompt.prompt()
@@ -102,6 +115,7 @@ export default function App() {
           të formësojë zemrat tona. Le të ecim bashkë në këtë udhëtim të përditshëm
           leximi, lutjeje dhe reflektimi shpirtëror.
         </p>
+        <button className="share-btn" onClick={handleShare}>Ndaj me të tjerët ↗</button>
       </header>
 
       <main className="app-main">

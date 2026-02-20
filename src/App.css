@@ -160,6 +160,23 @@ body::before {
   font-weight: 300;
 }
 
+.share-btn {
+  margin-top: 1.25rem;
+  background: transparent;
+  border: 1px solid rgba(200,169,110,0.4);
+  color: var(--accent);
+  border-radius: 20px;
+  padding: 0.45rem 1.2rem;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: background 0.15s, border-color 0.15s;
+}
+
+.share-btn:hover {
+  background: var(--accent-dim);
+  border-color: var(--accent);
+}
+
 /* ── Controls row (month tabs + mode toggle) ──────────────── */
 .controls-row {
   display: flex;
