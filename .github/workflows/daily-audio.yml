@@ -1,0 +1,35 @@
+name: Daily Audio Download
+
+on:
+  schedule:
+    # Runs every day at 09:00 UTC (11am Albania time) — after the video is uploaded
+    - cron: '0 9 * * *'
+  workflow_dispatch: # manual trigger available from GitHub UI
+
+jobs:
+  download-audio:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Install yt-dlp
+        run: pip3 install yt-dlp
+
+      - name: Download any new audio files
+        run: node scripts/download-audio.mjs
+
+      - name: Commit and push new audio files
+        run: |
+          git config user.email "daily-audio@github-actions"
+          git config user.name "Daily Audio"
+          git add public/audio/ src/data/
+          # Only commit if there are actual changes
+          if git diff --cached --quiet; then
+            echo "No new audio files — nothing to commit."
+          else
+            git commit -m "chore: add audio for $(date +'%d %B %Y')"
+            git push
+            echo "✅ New audio pushed — Cloudflare will rebuild."
+          fi
