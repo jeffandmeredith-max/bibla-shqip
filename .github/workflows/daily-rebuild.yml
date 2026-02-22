@@ -1,23 +1,43 @@
-name: Daily Rebuild
+name: Daily Update
 
 on:
   schedule:
-    # Runs every day at 08:00 UTC (10am Albania time)
-    - cron: '0 8 * * *'
-  workflow_dispatch: # manual trigger still available from GitHub UI
+    # Runs every day at 09:00 UTC (11am Albania time)
+    - cron: '0 9 * * *'
+  workflow_dispatch: # manual trigger from GitHub UI
 
 jobs:
-  trigger-rebuild:
+  update:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     steps:
       - uses: actions/checkout@v4
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Push empty commit to trigger rebuild
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install yt-dlp
+        run: pip3 install yt-dlp
+
+      - name: Fetch playlist metadata and update data files
+        run: node scripts/fetch-playlist.mjs
+
+      - name: Download audio for any new days
+        run: node scripts/download-audio.mjs
+
+      - name: Commit and push any changes
         run: |
-          git config user.email "daily-rebuild@github-actions"
-          git config user.name "Daily Rebuild"
-          git commit --allow-empty -m "chore: daily rebuild $(date +'%Y-%m-%d')"
-          git push
-          echo "✅ Rebuild triggered via git push"
+          git config user.email "daily-update@github-actions"
+          git config user.name "Daily Update"
+          git add src/data/ public/audio/
+          if git diff --cached --quiet; then
+            echo "No changes — everything is up to date."
+          else
+            git commit -m "chore: daily update $(date +'%Y-%m-%d')"
+            git push
+            echo "✅ Changes pushed — Cloudflare will rebuild automatically."
+          fi
