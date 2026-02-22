@@ -491,5 +491,53 @@ export const february = [
         "start": 753
       }
     ]
+  },
+  {
+    "day": 21,
+    "date": "21 Shkurt",
+    "videoId": "o5EVdTUo0zw",
+    "audioFile": "february-21.webm",
+    "readings": [
+      {
+        "title": "Eksodi 4",
+        "start": 0
+      },
+      {
+        "title": "Luka 7",
+        "start": 255
+      },
+      {
+        "title": "Jobi 21",
+        "start": 624
+      },
+      {
+        "title": "1 e Korintasve 8",
+        "start": 794
+      }
+    ]
+  },
+  {
+    "day": 22,
+    "date": "22 Shkurt",
+    "videoId": "iKKRgkU2nvY",
+    "audioFile": "february-22.webm",
+    "readings": [
+      {
+        "title": "Eksodi 5",
+        "start": 0
+      },
+      {
+        "title": "Luka 8",
+        "start": 186
+      },
+      {
+        "title": "Jobi 22",
+        "start": 607
+      },
+      {
+        "title": "1 e Korintasve 9",
+        "start": 767
+      }
+    ]
   }
 ]
