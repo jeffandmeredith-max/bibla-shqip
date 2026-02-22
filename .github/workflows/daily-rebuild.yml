@@ -2,8 +2,11 @@ name: Daily Update
 
 on:
   schedule:
-    # Runs every day at 08:00 UTC (9am Albania time, UTC+1 winter / UTC+2 summer)
-    - cron: '0 8 * * *'
+    # 9am Albania time year-round:
+    # Winter (Nov-Mar, UTC+1): 08:00 UTC = 9am Albania
+    - cron: '0 8 * 1,2,3,11,12 *'
+    # Summer (Apr-Oct, UTC+2): 07:00 UTC = 9am Albania
+    - cron: '0 7 * 4,5,6,7,8,9,10 *'
   workflow_dispatch: # manual trigger from GitHub UI
 
 jobs:
