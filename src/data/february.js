@@ -539,5 +539,29 @@ export const february = [
         "start": 767
       }
     ]
+  },
+  {
+    "day": 23,
+    "date": "23 Shkurt",
+    "videoId": "zvqlF_ujbTU",
+    "audioFile": "february-23.webm",
+    "readings": [
+      {
+        "title": "Eksodi 6",
+        "start": 0
+      },
+      {
+        "title": "Luka 9",
+        "start": 233
+      },
+      {
+        "title": "Jobi 23",
+        "start": 682
+      },
+      {
+        "title": "1 e Korintasve 10",
+        "start": 779
+      }
+    ]
   }
 ]
