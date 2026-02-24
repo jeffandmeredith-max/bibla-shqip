@@ -244,8 +244,9 @@ for (const video of newVideos) {
 
   console.log(`  📥 Fetching chapters for ${day} ${monthName} (${video.id})…`)
   const chaptersStr = fetchChapters(ytdlp, video.id)
-  const readings = parseChapters(chaptersStr).filter(
-    (r) => r.title.toLowerCase() !== 'hyrje' || readings?.length === 1
+  const allReadings = parseChapters(chaptersStr)
+  const readings = allReadings.filter(
+    (r) => r.title.toLowerCase() !== 'hyrje' || allReadings.length === 1
   )
 
   const entry = {
