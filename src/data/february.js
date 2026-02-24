@@ -568,6 +568,24 @@ export const february = [
     "day": 24,
     "date": "24 Shkurt",
     "videoId": "ALUileaLW_I",
-    "readings": []
+    "audioFile": "february-24.webm",
+    "readings": [
+      {
+        "title": "Eksodi 7",
+        "start": 0
+      },
+      {
+        "title": "Luka 10",
+        "start": 227
+      },
+      {
+        "title": "Jobi 24",
+        "start": 533
+      },
+      {
+        "title": "1 e Korintasve 11",
+        "start": 692
+      }
+    ]
   }
 ]
