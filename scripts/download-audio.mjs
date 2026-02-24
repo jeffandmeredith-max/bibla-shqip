@@ -94,16 +94,11 @@ for (let i = 0; i < MONTH_KEYS.length; i++) {
       console.log(`  ℹ ${audioFilename} already on disk — adding to data file`)
     } else {
       console.log(`⬇ Downloading audio for ${day} ${monthName} (${videoId})…`)
-      const result = spawnSync(
-        ytdlp,
-        [
-          '-x',
-          '--audio-format', 'opus',
-          '-o', audioPath.replace('.webm', '.%(ext)s'),
-          `https://www.youtube.com/watch?v=${videoId}`,
-        ],
-        { encoding: 'utf8', stdio: 'inherit' }
-      )
+      const cookiesFile = process.env.COOKIES_FILE
+      const dlArgs = ['-x', '--audio-format', 'opus']
+      if (cookiesFile) dlArgs.push('--cookies', cookiesFile)
+      dlArgs.push('-o', audioPath.replace('.webm', '.%(ext)s'), `https://www.youtube.com/watch?v=${videoId}`)
+      const result = spawnSync(ytdlp, dlArgs, { encoding: 'utf8', stdio: 'inherit' })
 
       // yt-dlp saves as .opus then we rename to .webm
       const opusPath = audioPath.replace('.webm', '.opus')

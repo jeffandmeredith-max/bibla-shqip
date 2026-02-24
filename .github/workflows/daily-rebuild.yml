@@ -27,11 +27,18 @@ jobs:
       - name: Install yt-dlp
         run: pip3 install yt-dlp
 
+      - name: Write YouTube cookies
+        run: echo "${{ secrets.YOUTUBE_COOKIES }}" > /tmp/cookies.txt
+
       - name: Fetch playlist metadata and update data files
         run: node scripts/fetch-playlist.mjs
+        env:
+          COOKIES_FILE: /tmp/cookies.txt
 
       - name: Download audio for any new days
         run: node scripts/download-audio.mjs
+        env:
+          COOKIES_FILE: /tmp/cookies.txt
 
       - name: Commit and push any changes
         run: |

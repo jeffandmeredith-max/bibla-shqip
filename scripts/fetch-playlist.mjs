@@ -76,12 +76,11 @@ async function fetchRssFeed() {
 
 // Get chapters for a single video via yt-dlp
 function fetchChapters(ytdlp, videoId) {
-  const result = spawnSync(
-    ytdlp,
-    ['--print', '%(chapters)s', '--no-download', '--ignore-errors',
-     `https://www.youtube.com/watch?v=${videoId}`],
-    { encoding: 'utf8', maxBuffer: 1024 * 1024 }
-  )
+  const cookiesFile = process.env.COOKIES_FILE
+  const args = ['--print', '%(chapters)s', '--no-download', '--ignore-errors']
+  if (cookiesFile) args.push('--cookies', cookiesFile)
+  args.push(`https://www.youtube.com/watch?v=${videoId}`)
+  const result = spawnSync(ytdlp, args, { encoding: 'utf8', maxBuffer: 1024 * 1024 })
   return result.stdout?.trim() || ''
 }
 
