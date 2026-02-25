@@ -28,7 +28,16 @@ jobs:
         run: pip3 install yt-dlp
 
       - name: Write YouTube cookies
-        run: echo "${{ secrets.YOUTUBE_COOKIES_B64 }}" | base64 -d > /tmp/cookies.txt
+        run: printf '%s' "$COOKIES_B64" | base64 -d > /tmp/cookies.txt
+        env:
+          COOKIES_B64: ${{ secrets.YOUTUBE_COOKIES_B64 }}
+
+      - name: Verify cookies file
+        run: |
+          echo "First line:"
+          head -1 /tmp/cookies.txt
+          echo "Line count: $(wc -l < /tmp/cookies.txt)"
+          echo "File size: $(wc -c < /tmp/cookies.txt)"
 
       - name: Fetch playlist metadata and update data files
         run: node scripts/fetch-playlist.mjs
