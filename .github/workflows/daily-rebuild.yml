@@ -30,7 +30,7 @@ jobs:
       - name: Write YouTube cookies
         run: printf '%s' "$COOKIES_B64" | base64 -d > /tmp/cookies.txt
         env:
-          COOKIES_B64: ${{ secrets.YOUTUBE_COOKIES_B64 }}
+          COOKIES_B64: ${{ secrets.COOKIES }}
 
       - name: Verify cookies file
         run: |
