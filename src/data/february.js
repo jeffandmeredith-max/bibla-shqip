@@ -592,28 +592,6 @@ export const february = [
     "day": 25,
     "date": "25 Shkurt",
     "videoId": "zZfxfrpO_r4",
-    "audioFile": "february-25.webm",
-    "readings": [
-      {
-        "title": "Eksodi 8",
-        "start": 0
-      },
-      {
-        "title": "Luka 11",
-        "start": 307
-      },
-      {
-        "title": "Jobi 25",
-        "start": 714
-      },
-      {
-        "title": "Jobi 26",
-        "start": 749
-      },
-      {
-        "title": "1 e Korintasve 12",
-        "start": 818
-      }
-    ]
+    "readings": []
   }
 ]
