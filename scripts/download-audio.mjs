@@ -95,7 +95,7 @@ for (let i = 0; i < MONTH_KEYS.length; i++) {
     } else {
       console.log(`⬇ Downloading audio for ${day} ${monthName} (${videoId})…`)
       const cookiesFile = process.env.COOKIES_FILE
-      const dlArgs = ['-x', '--audio-format', 'opus']
+      const dlArgs = ['-x', '--audio-format', 'opus', '--remote-components', 'ejs:github']
       if (cookiesFile) dlArgs.push('--cookies', cookiesFile)
       dlArgs.push('-o', audioPath.replace('.webm', '.%(ext)s'), `https://www.youtube.com/watch?v=${videoId}`)
       const result = spawnSync(ytdlp, dlArgs, { encoding: 'utf8', stdio: 'inherit' })
