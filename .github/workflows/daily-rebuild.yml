@@ -24,8 +24,11 @@ jobs:
         with:
           node-version: '20'
 
-      - name: Install yt-dlp
-        run: pip3 install yt-dlp
+      - name: Install yt-dlp and Deno (JS runtime for YouTube challenges)
+        run: |
+          pip3 install yt-dlp
+          curl -fsSL https://deno.land/install.sh | sh
+          echo "$HOME/.deno/bin" >> $GITHUB_PATH
 
       - name: Write YouTube cookies
         run: printenv COOKIES_RAW > /tmp/cookies.txt
