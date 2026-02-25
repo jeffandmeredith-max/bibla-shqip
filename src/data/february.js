@@ -587,5 +587,11 @@ export const february = [
         "start": 692
       }
     ]
+  },
+  {
+    "day": 25,
+    "date": "25 Shkurt",
+    "videoId": "zZfxfrpO_r4",
+    "readings": []
   }
 ]
