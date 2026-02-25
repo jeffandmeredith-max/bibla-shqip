@@ -28,9 +28,9 @@ jobs:
         run: pip3 install yt-dlp
 
       - name: Write YouTube cookies
-        run: printf '%s' "$COOKIES_B64" | base64 -d > /tmp/cookies.txt
+        run: printenv COOKIES_RAW > /tmp/cookies.txt
         env:
-          COOKIES_B64: ${{ secrets.COOKIES }}
+          COOKIES_RAW: ${{ secrets.COOKIES }}
 
       - name: Verify cookies file
         run: |
