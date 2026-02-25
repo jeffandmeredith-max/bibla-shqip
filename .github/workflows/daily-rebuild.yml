@@ -24,9 +24,10 @@ jobs:
         with:
           node-version: '20'
 
-      - name: Install yt-dlp and Deno (JS runtime for YouTube challenges)
+      - name: Install yt-dlp, ffmpeg, and Deno
         run: |
           pip3 install yt-dlp
+          sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg
           curl -fsSL https://deno.land/install.sh | sh
           echo "$HOME/.deno/bin" >> $GITHUB_PATH
 

@@ -221,7 +221,27 @@ const byMonth = getExistingByMonth()
 const newVideos = rssVideos.filter((v) => !existingIds.has(v.id))
 console.log(`  ${existingIds.size} existing, ${newVideos.length} new video(s) to add`)
 
-if (newVideos.length === 0) {
+// Also check for existing entries with empty readings that need chapter fetching
+let needsChapterFetch = false
+for (const [monthName, entries] of Object.entries(byMonth)) {
+  for (const entry of entries) {
+    if (entry.readings && entry.readings.length === 0 && entry.videoId) {
+      console.log(`  📥 Re-fetching chapters for ${entry.date} (${entry.videoId})…`)
+      const chaptersStr = fetchChapters(ytdlp, entry.videoId)
+      const allReadings = parseChapters(chaptersStr)
+      const readings = allReadings.filter(
+        (r) => r.title.toLowerCase() !== 'hyrje' || allReadings.length === 1
+      )
+      if (readings.length > 0) {
+        entry.readings = readings
+        needsChapterFetch = true
+        console.log(`  ✓ Updated ${entry.date} with ${readings.length} readings`)
+      }
+    }
+  }
+}
+
+if (newVideos.length === 0 && !needsChapterFetch) {
   console.log('✅ All videos already in data files — nothing to update.')
   process.exit(0)
 }
