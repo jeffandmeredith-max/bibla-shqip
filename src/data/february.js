@@ -615,5 +615,29 @@ export const february = [
         "start": 818
       }
     ]
+  },
+  {
+    "day": 26,
+    "date": "26 Shkurt",
+    "videoId": "3_CAzb0MSiA",
+    "audioFile": "february-26.webm",
+    "readings": [
+      {
+        "title": "Eksodi 9",
+        "start": 0
+      },
+      {
+        "title": "Luka 12",
+        "start": 299
+      },
+      {
+        "title": "Jobi 27",
+        "start": 710
+      },
+      {
+        "title": "1 e Korintasve 13",
+        "start": 847
+      }
+    ]
   }
 ]
