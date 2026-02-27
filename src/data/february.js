@@ -639,5 +639,29 @@ export const february = [
         "start": 847
       }
     ]
+  },
+  {
+    "day": 27,
+    "date": "27 Shkurt",
+    "videoId": "Vehonef0oM0",
+    "audioFile": "february-27.webm",
+    "readings": [
+      {
+        "title": "Eksodi 10",
+        "start": 0
+      },
+      {
+        "title": "Luka 13",
+        "start": 294
+      },
+      {
+        "title": "Jobi 28",
+        "start": 562
+      },
+      {
+        "title": "1 e Korintasve 14",
+        "start": 700
+      }
+    ]
   }
 ]
