@@ -663,5 +663,33 @@ export const february = [
         "start": 700
       }
     ]
+  },
+  {
+    "day": 28,
+    "date": "28 Shkurt",
+    "videoId": "LOOXZTUQEPY",
+    "audioFile": "february-28.webm",
+    "readings": [
+      {
+        "title": "Eksodi 11",
+        "start": 0
+      },
+      {
+        "title": "Eksodi 12 : 1~21",
+        "start": 103
+      },
+      {
+        "title": "Luka 14",
+        "start": 295
+      },
+      {
+        "title": "Jobi 29",
+        "start": 533
+      },
+      {
+        "title": "1 e Korintasve 15",
+        "start": 665
+      }
+    ]
   }
 ]
