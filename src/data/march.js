@@ -23,5 +23,29 @@ export const march = [
         "start": 650
       }
     ]
+  },
+  {
+    "day": 2,
+    "date": "2 Mars",
+    "videoId": "rhWxQCOd3Dg",
+    "audioFile": "march-2.webm",
+    "readings": [
+      {
+        "title": "Eksodi 13",
+        "start": 0
+      },
+      {
+        "title": "Luka 16",
+        "start": 209
+      },
+      {
+        "title": "Jobi 31",
+        "start": 453
+      },
+      {
+        "title": "2 e Korintasve 1",
+        "start": 689
+      }
+    ]
   }
 ]
