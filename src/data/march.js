@@ -71,5 +71,29 @@ export const march = [
         "start": 646
       }
     ]
+  },
+  {
+    "day": 4,
+    "date": "4 Mars",
+    "videoId": "WiE85SqyDjo",
+    "audioFile": "march-4.webm",
+    "readings": [
+      {
+        "title": "Eksodi 15",
+        "start": 0
+      },
+      {
+        "title": "Luka 18",
+        "start": 217
+      },
+      {
+        "title": "Jobi 33",
+        "start": 493
+      },
+      {
+        "title": "2 e Korintasve 3",
+        "start": 668
+      }
+    ]
   }
 ]
