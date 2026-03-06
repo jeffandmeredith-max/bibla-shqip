@@ -119,5 +119,29 @@ export const march = [
         "start": 850
       }
     ]
+  },
+  {
+    "day": 6,
+    "date": "6 Mars",
+    "videoId": "X3QwTdS1fG0",
+    "audioFile": "march-6.webm",
+    "readings": [
+      {
+        "title": "Eksodi 17",
+        "start": 0
+      },
+      {
+        "title": "Luka 20",
+        "start": 154
+      },
+      {
+        "title": "Jobi 35",
+        "start": 455
+      },
+      {
+        "title": "2 e Korintasve 5",
+        "start": 544
+      }
+    ]
   }
 ]
