@@ -167,5 +167,29 @@ export const march = [
         "start": 654
       }
     ]
+  },
+  {
+    "day": 8,
+    "date": "8 Mars",
+    "videoId": "JdTJbtnu1CA",
+    "audioFile": "march-8.webm",
+    "readings": [
+      {
+        "title": "Eksodi 19",
+        "start": 0
+      },
+      {
+        "title": "Luka 22",
+        "start": 223
+      },
+      {
+        "title": "Jobi 37",
+        "start": 652
+      },
+      {
+        "title": "2 e Korintasve 7",
+        "start": 796
+      }
+    ]
   }
 ]
