@@ -191,5 +191,29 @@ export const march = [
         "start": 796
       }
     ]
+  },
+  {
+    "day": 9,
+    "date": "9 Mars",
+    "videoId": "PISt9kv-DfA",
+    "audioFile": "march-9.webm",
+    "readings": [
+      {
+        "title": "Eksodi 20",
+        "start": 0
+      },
+      {
+        "title": "Luka 23",
+        "start": 195
+      },
+      {
+        "title": "Jobi 38",
+        "start": 553
+      },
+      {
+        "title": "2 e Korintasve 8",
+        "start": 744
+      }
+    ]
   }
 ]
