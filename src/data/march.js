@@ -215,5 +215,29 @@ export const march = [
         "start": 744
       }
     ]
+  },
+  {
+    "day": 10,
+    "date": "10 Mars",
+    "videoId": "nJBoDg4E2ng",
+    "audioFile": "march-10.webm",
+    "readings": [
+      {
+        "title": "Eksodi 21",
+        "start": 0
+      },
+      {
+        "title": "Luka 24",
+        "start": 290
+      },
+      {
+        "title": "Jobi 39",
+        "start": 604
+      },
+      {
+        "title": "2 e Korintasve 9",
+        "start": 757
+      }
+    ]
   }
 ]
