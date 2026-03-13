@@ -63,5 +63,55 @@ jobs:
           else
             git commit -m "chore: daily update $(date +'%Y-%m-%d')"
             git push
-            echo "✅ Changes pushed — Cloudflare will rebuild automatically."
+            echo "✅ Changes pushed — Netlify will rebuild automatically."
           fi
+
+      - name: Check data integrity
+        id: integrity
+        run: node scripts/check-integrity.mjs
+        continue-on-error: true
+
+      - name: Send alert email if integrity check failed
+        if: steps.integrity.outcome == 'failure'
+        uses: dawidd6/action-send-mail@v3
+        with:
+          server_address: smtp.gmail.com
+          server_port: 465
+          secure: true
+          username: ${{ secrets.ALERT_EMAIL_USER }}
+          password: ${{ secrets.ALERT_EMAIL_PASS }}
+          to: ${{ secrets.ALERT_EMAIL_USER }}
+          from: Bibla Shqip Bot <${{ secrets.ALERT_EMAIL_USER }}>
+          subject: "⚠️ Bibla Shqip — integrity issues on ${{ github.run_id }}"
+          body: |
+            The daily update ran but the integrity check found problems.
+
+            ${{ steps.integrity.outputs.stdout }}
+
+            Issues found:
+            $(cat integrity-report.txt 2>/dev/null || echo "See workflow logs for details.")
+
+            View the full run:
+            https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}
+
+      - name: Send alert email if workflow step failed
+        if: failure() && steps.integrity.outcome != 'failure'
+        uses: dawidd6/action-send-mail@v3
+        with:
+          server_address: smtp.gmail.com
+          server_port: 465
+          secure: true
+          username: ${{ secrets.ALERT_EMAIL_USER }}
+          password: ${{ secrets.ALERT_EMAIL_PASS }}
+          to: ${{ secrets.ALERT_EMAIL_USER }}
+          from: Bibla Shqip Bot <${{ secrets.ALERT_EMAIL_USER }}>
+          subject: "🚨 Bibla Shqip — daily update failed on ${{ github.run_id }}"
+          body: |
+            The daily update workflow failed during one of its steps.
+
+            View the full run for details:
+            https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}
+
+      - name: Fail the job if integrity check failed
+        if: steps.integrity.outcome == 'failure'
+        run: exit 1
