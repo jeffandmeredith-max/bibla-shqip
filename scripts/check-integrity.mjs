@@ -69,6 +69,11 @@ for (const monthKey of MONTH_KEYS) {
       issues.push(`❌ ${label}: missing videoId`)
     }
 
+    // Empty readings (chapters failed to fetch)
+    if (!entry.readings || entry.readings.length === 0) {
+      issues.push(`❌ ${label} (videoId: ${entry.videoId}): empty readings — chapter fetch likely failed`)
+    }
+
     // Missing audioFile field
     if (!entry.audioFile) {
       issues.push(`⚠️  ${label} (videoId: ${entry.videoId}): missing audioFile in data`)
