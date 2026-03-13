@@ -244,18 +244,21 @@ export const march = [
     "day": 11,
     "date": "11 Mars",
     "videoId": "ibJek3EYh4s",
+    "audioFile": "march-11.webm",
     "readings": []
   },
   {
     "day": 12,
     "date": "12 Mars",
     "videoId": "27DKCdKkxrE",
+    "audioFile": "march-12.webm",
     "readings": []
   },
   {
     "day": 13,
     "date": "13 Mars",
     "videoId": "ivZHQ5WgomA",
+    "audioFile": "march-13.webm",
     "readings": []
   }
 ]
