@@ -245,20 +245,71 @@ export const march = [
     "date": "11 Mars",
     "videoId": "ibJek3EYh4s",
     "audioFile": "march-11.webm",
-    "readings": []
+    "readings": [
+      {
+        "title": "Eksodi 22",
+        "start": 0
+      },
+      {
+        "title": "Gjoni 1",
+        "start": 281
+      },
+      {
+        "title": "Jobi 40",
+        "start": 622
+      },
+      {
+        "title": "2 e Korintasve 10",
+        "start": 750
+      }
+    ]
   },
   {
     "day": 12,
     "date": "12 Mars",
     "videoId": "27DKCdKkxrE",
     "audioFile": "march-12.webm",
-    "readings": []
+    "readings": [
+      {
+        "title": "Eksodi 23",
+        "start": 0
+      },
+      {
+        "title": "Gjoni 2",
+        "start": 284
+      },
+      {
+        "title": "Jobi 41",
+        "start": 457
+      },
+      {
+        "title": "2 e Korintasve 11",
+        "start": 630
+      }
+    ]
   },
   {
     "day": 13,
     "date": "13 Mars",
     "videoId": "ivZHQ5WgomA",
     "audioFile": "march-13.webm",
-    "readings": []
+    "readings": [
+      {
+        "title": "Eksodi 24",
+        "start": 0
+      },
+      {
+        "title": "Gjoni 3",
+        "start": 159
+      },
+      {
+        "title": "Jobi 42",
+        "start": 419
+      },
+      {
+        "title": "2 e Korintasve 12",
+        "start": 564
+      }
+    ]
   }
 ]
