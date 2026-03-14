@@ -316,6 +316,24 @@ export const march = [
     "day": 14,
     "date": "14 Mars",
     "videoId": "eAkEkPY2wY8",
-    "readings": []
+    "audioFile": "march-14.webm",
+    "readings": [
+      {
+        "title": "Eksodi 25",
+        "start": 0
+      },
+      {
+        "title": "Gjoni 4",
+        "start": 310
+      },
+      {
+        "title": "Fjalët E Urta 1",
+        "start": 670
+      },
+      {
+        "title": "2 e Korintasve 13",
+        "start": 880
+      }
+    ]
   }
 ]
