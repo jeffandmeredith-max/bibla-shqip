@@ -340,12 +340,48 @@ export const march = [
     "day": 15,
     "date": "15 Mars",
     "videoId": "piBEKQGa9nk",
-    "readings": []
+    "audioFile": "march-15.webm",
+    "readings": [
+      {
+        "title": "Eksodi 26",
+        "start": 0
+      },
+      {
+        "title": "Gjoni 5",
+        "start": 318
+      },
+      {
+        "title": "Fjalët E Urta 2",
+        "start": 648
+      },
+      {
+        "title": "Galatasve 1",
+        "start": 769
+      }
+    ]
   },
   {
     "day": 16,
     "date": "16 Mars",
     "videoId": "icMuTySfM3k",
-    "readings": []
+    "audioFile": "march-16.webm",
+    "readings": [
+      {
+        "title": "Eksodi 27",
+        "start": 0
+      },
+      {
+        "title": "Gjoni 6",
+        "start": 207
+      },
+      {
+        "title": "Fjalët E Urta 3",
+        "start": 659
+      },
+      {
+        "title": "Galatasve 2",
+        "start": 842
+      }
+    ]
   }
 ]
