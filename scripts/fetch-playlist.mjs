@@ -76,10 +76,15 @@ async function fetchRssFeed() {
 
 // Get chapters for a single video via yt-dlp
 function fetchChapters(ytdlp, videoId) {
-  // Don't pass cookies for chapter fetching — chapters are public metadata and
-  // using stale/expired cookies can trigger stricter n-challenge enforcement that
-  // blocks metadata retrieval entirely. Cookies are only needed for audio download.
-  const args = ['--print', '%(chapters)s', '--no-download', '--ignore-errors']
+  // Use the iOS player client to bypass n-challenge throttling — chapters are
+  // public metadata and the iOS client never triggers the JS solver that fails
+  // in CI environments. Cookies are only needed for audio download.
+  const args = [
+    '--print', '%(chapters)s',
+    '--no-download',
+    '--ignore-errors',
+    '--extractor-args', 'youtube:player_client=ios',
+  ]
   args.push(`https://www.youtube.com/watch?v=${videoId}`)
   const result = spawnSync(ytdlp, args, { encoding: 'utf8', maxBuffer: 1024 * 1024 })
   return result.stdout?.trim() || ''
