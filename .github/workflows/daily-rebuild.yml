@@ -2,11 +2,17 @@ name: Daily Update
 
 on:
   schedule:
-    # 9am Albania time year-round:
-    # Winter (Nov-Mar, UTC+1): 08:00 UTC = 9am Albania
-    - cron: '0 8 * 1,2,3,11,12 *'
-    # Summer (Apr-Oct, UTC+2): 07:00 UTC = 9am Albania
-    - cron: '0 7 * 4,5,6,7,8,9,10 *'
+    # Run 4x daily to catch videos uploaded at any time of day.
+    # Winter (Nov-Mar, UTC+1): Albania = UTC+1
+    - cron: '0 8  * 1,2,3,11,12 *'   # 9am  Albania (winter)
+    - cron: '0 11 * 1,2,3,11,12 *'   # noon Albania (winter)
+    - cron: '0 14 * 1,2,3,11,12 *'   # 3pm  Albania (winter)
+    - cron: '0 17 * 1,2,3,11,12 *'   # 6pm  Albania (winter)
+    # Summer (Apr-Oct, UTC+2): Albania = UTC+2
+    - cron: '0 7  * 4,5,6,7,8,9,10 *'   # 9am  Albania (summer)
+    - cron: '0 10 * 4,5,6,7,8,9,10 *'   # noon Albania (summer)
+    - cron: '0 13 * 4,5,6,7,8,9,10 *'   # 3pm  Albania (summer)
+    - cron: '0 16 * 4,5,6,7,8,9,10 *'   # 6pm  Albania (summer)
   workflow_dispatch: # manual trigger from GitHub UI
 
 jobs:
