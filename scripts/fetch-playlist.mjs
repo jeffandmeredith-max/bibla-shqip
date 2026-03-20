@@ -76,14 +76,12 @@ async function fetchRssFeed() {
 
 // Get chapters for a single video via yt-dlp
 function fetchChapters(ytdlp, videoId) {
-  // Use the iOS player client to bypass n-challenge throttling — chapters are
-  // public metadata and the iOS client never triggers the JS solver that fails
-  // in CI environments. Cookies are only needed for audio download.
+  // Use default client — chapters are public metadata and this works reliably.
+  // Cookies are only needed for audio download.
   const args = [
     '--print', '%(chapters)s',
     '--no-download',
     '--ignore-errors',
-    '--extractor-args', 'youtube:player_client=ios',
   ]
   args.push(`https://www.youtube.com/watch?v=${videoId}`)
   const result = spawnSync(ytdlp, args, { encoding: 'utf8', maxBuffer: 1024 * 1024 })
@@ -207,6 +205,28 @@ function getExistingByMonth() {
   return byMonth
 }
 
+// Fetch playlist via yt-dlp — used as fallback when RSS is unavailable
+function fetchPlaylistViaYtDlp(ytdlp) {
+  console.log('⏳ Fetching playlist via yt-dlp (RSS fallback)…')
+  const args = [
+    '--flat-playlist',
+    '--print', '%(id)s\t%(title)s',
+    '--ignore-errors',
+    `https://www.youtube.com/playlist?list=${PLAYLIST_ID}`,
+  ]
+  const result = spawnSync(ytdlp, args, { encoding: 'utf8', maxBuffer: 4 * 1024 * 1024 })
+  const videos = []
+  for (const line of (result.stdout || '').split('\n')) {
+    const tab = line.indexOf('\t')
+    if (tab === -1) continue
+    const id = line.slice(0, tab).trim()
+    const title = line.slice(tab + 1).trim()
+    if (id && title) videos.push({ id, title })
+  }
+  console.log(`  Found ${videos.length} videos via yt-dlp`)
+  return videos
+}
+
 // ── Main ──────────────────────────────────────────────────────────────────────
 
 const ytdlp = getYtDlpPath()
@@ -216,8 +236,12 @@ try {
   rssVideos = await fetchRssFeed()
 } catch (err) {
   console.warn('⚠ RSS fetch failed:', err.message)
-  console.warn('  Falling back to existing committed data files.')
-  process.exit(0)
+  console.warn('  Trying yt-dlp playlist fallback…')
+  rssVideos = fetchPlaylistViaYtDlp(ytdlp)
+  if (rssVideos.length === 0) {
+    console.warn('  yt-dlp fallback also returned no videos — skipping update.')
+    process.exit(0)
+  }
 }
 
 const existingIds = getExistingVideoIds()
