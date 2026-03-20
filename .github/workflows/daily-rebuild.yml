@@ -15,6 +15,10 @@ on:
     - cron: '0 16 * 4,5,6,7,8,9,10 *'   # 6pm  Albania (summer)
   workflow_dispatch: # manual trigger from GitHub UI
 
+concurrency:
+  group: daily-update
+  cancel-in-progress: true
+
 jobs:
   update:
     runs-on: ubuntu-latest
@@ -71,6 +75,24 @@ jobs:
             echo "No changes — everything is up to date."
           else
             git commit -m "chore: daily update $(date +'%Y-%m-%d')"
-            git push
-            echo "✅ Changes pushed — Netlify will rebuild automatically."
+            # Retry push up to 3 times in case of concurrent run conflicts
+            for i in 1 2 3; do
+              git push && break
+              echo "⚠ Push attempt $i failed — retrying after pull..."
+              git pull --rebase
+            done
+            echo "✅ Changes pushed."
+          fi
+
+      - name: Purge jsdelivr CDN cache for new audio files
+        if: success()
+        run: |
+          # Find audio files added in this commit
+          NEW_AUDIO=$(git diff --name-only HEAD~1 HEAD -- public/audio/ 2>/dev/null || true)
+          if [ -n "$NEW_AUDIO" ]; then
+            for f in $NEW_AUDIO; do
+              URL="https://purge.jsdelivr.net/gh/jeffandmeredith-max/bibla-shqip@master/$f"
+              echo "Purging CDN cache: $f"
+              curl -s "$URL" || true
+            done
           fi

@@ -54,7 +54,7 @@ export default function DayPlayer({ day, onClose, mode }) {
       videoId: day.videoId,
       playerVars: {
         autoplay: 1,
-        start: day.readings[0].start,
+        start: day.readings?.[0]?.start ?? 0,
         rel: 0,
       },
     })
@@ -94,7 +94,7 @@ export default function DayPlayer({ day, onClose, mode }) {
 
   function seekTo(index) {
     setActiveReading(index)
-    const start = day.readings[index].start
+    const start = day.readings?.[index]?.start ?? 0
     if (mode === 'audio') {
       if (audioRef.current) {
         audioRef.current.currentTime = start
