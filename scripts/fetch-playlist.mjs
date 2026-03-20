@@ -112,6 +112,8 @@ function parseChapters(chaptersStr) {
 
 function fixEncoding(str) {
   return str
+    // Replace Unicode replacement character (U+FFFD) that appears when Ë gets corrupted
+    .replace(/\uFFFD/g, 'ë')
     .replace(/ZANAFLLA/g, 'Zanafilla')
     .replace(/Zanaflla/gi, 'Zanafilla')
     .replace(/ZANAFILLA/g, 'Zanafilla')
@@ -132,6 +134,7 @@ function fixEncoding(str) {
     .replace(/EFESIANËVE/g, 'Efesianëve')
     .replace(/FILIPIANËVE/g, 'Filipianëve')
     .replace(/KOLOSIANËVE/g, 'Kolosianëve')
+    .replace(/FJAL.T E URTA/gi, 'Fjalët E Urta')
     .replace(/HYRJE/gi, 'Hyrje')
     .replace(/\b([A-ZËÇ]{2,})\b/g, (w) => w[0] + w.slice(1).toLowerCase())
     .trim()
