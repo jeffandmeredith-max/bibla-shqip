@@ -447,7 +447,7 @@ export const march = [
         "start": 292
       },
       {
-        "title": "Fjal�T E Urta 6",
+        "title": "Fjalët E Urta 6",
         "start": 572
       },
       {
@@ -471,7 +471,7 @@ export const march = [
         "start": 155
       },
       {
-        "title": "Fjal�T E Urta 7",
+        "title": "Fjalët E Urta 7",
         "start": 414
       },
       {
