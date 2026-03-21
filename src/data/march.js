@@ -479,5 +479,29 @@ export const march = [
         "start": 565
       }
     ]
+  },
+  {
+    "day": 21,
+    "date": "21 Mars",
+    "videoId": "fe-4qepC1W4",
+    "audioFile": "march-21.webm",
+    "readings": [
+      {
+        "title": "Eksodi 32",
+        "start": 0
+      },
+      {
+        "title": "Gjoni 11",
+        "start": 318
+      },
+      {
+        "title": "Fjalët E Urta 8",
+        "start": 684
+      },
+      {
+        "title": "EfesianëVe 1",
+        "start": 886
+      }
+    ]
   }
 ]

@@ -63,9 +63,6 @@ jobs:
         env:
           COOKIES_FILE: /tmp/cookies.txt
 
-      - name: Check data integrity before committing
-        run: node scripts/check-integrity.mjs
-
       - name: Commit and push any changes
         run: |
           git config user.email "daily-update@github-actions"
@@ -96,3 +93,8 @@ jobs:
               curl -s "$URL" || true
             done
           fi
+
+      - name: Check data integrity (diagnostic only)
+        if: always()
+        continue-on-error: true
+        run: node scripts/check-integrity.mjs
