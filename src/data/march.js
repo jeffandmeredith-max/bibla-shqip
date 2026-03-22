@@ -508,7 +508,6 @@ export const march = [
     "day": 22,
     "date": "22 Mars",
     "videoId": "NU1Xlj1zlUU",
-    "audioFile": "march-22.webm",
     "readings": [
       {
         "title": "Eksodi 33",
