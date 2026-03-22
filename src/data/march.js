@@ -508,6 +508,24 @@ export const march = [
     "day": 22,
     "date": "22 Mars",
     "videoId": "NU1Xlj1zlUU",
-    "readings": []
+    "audioFile": "march-22.webm",
+    "readings": [
+      {
+        "title": "Eksodi 33",
+        "start": 0
+      },
+      {
+        "title": "Gjoni 12",
+        "start": 219
+      },
+      {
+        "title": "Fjalët E Urta 9",
+        "start": 566
+      },
+      {
+        "title": "EfesianëVe 2",
+        "start": 665
+      }
+    ]
   }
 ]

@@ -95,10 +95,33 @@ for (let i = 0; i < MONTH_KEYS.length; i++) {
     } else {
       console.log(`⬇ Downloading audio for ${day} ${monthName} (${videoId})…`)
       const cookiesFile = process.env.COOKIES_FILE
-      const dlArgs = ['-x', '--audio-format', 'opus', '--remote-components', 'ejs:github']
-      if (cookiesFile) dlArgs.push('--cookies', cookiesFile)
-      dlArgs.push('-o', audioPath.replace('.webm', '.%(ext)s'), `https://www.youtube.com/watch?v=${videoId}`)
-      const result = spawnSync(ytdlp, dlArgs, { encoding: 'utf8', stdio: 'inherit' })
+      const url = `https://www.youtube.com/watch?v=${videoId}`
+      const outputTpl = audioPath.replace('.webm', '.%(ext)s')
+
+      // Try multiple strategies — YouTube's n-challenge can block downloads
+      const strategies = [
+        // Strategy 1: EJS solver from GitHub (works on CI runners without Deno)
+        ['-x', '--audio-format', 'opus', '--remote-components', 'ejs:github'],
+        // Strategy 2: web client which sometimes bypasses n-challenge
+        ['-x', '--audio-format', 'opus', '--extractor-args', 'youtube:player_client=web'],
+        // Strategy 3: download best audio without format conversion
+        ['-f', 'bestaudio', '--remote-components', 'ejs:github'],
+      ]
+
+      let downloaded = false
+      for (const baseArgs of strategies) {
+        const dlArgs = [...baseArgs]
+        if (cookiesFile) dlArgs.push('--cookies', cookiesFile)
+        dlArgs.push('-o', outputTpl, url)
+        const result = spawnSync(ytdlp, dlArgs, { encoding: 'utf8', stdio: 'inherit' })
+        // Check if any output file was created
+        const opusPath = audioPath.replace('.webm', '.opus')
+        if (existsSync(opusPath) || existsSync(audioPath)) {
+          downloaded = true
+          break
+        }
+        console.log(`  ⚠ Strategy failed, trying next…`)
+      }
 
       // yt-dlp saves as .opus then we rename to .webm
       const opusPath = audioPath.replace('.webm', '.opus')
@@ -107,7 +130,11 @@ for (let i = 0; i < MONTH_KEYS.length; i++) {
         renameSync(opusPath, audioPath)
         console.log(`  ✓ Saved as ${audioFilename}`)
       } else if (!existsSync(audioPath)) {
-        console.warn(`  ✗ Download failed for ${videoId} — skipping`)
+        if (!downloaded) {
+          console.warn(`  ✗ All download strategies failed for ${videoId} — skipping`)
+        } else {
+          console.warn(`  ✗ Download reported success but file not found for ${videoId} — skipping`)
+        }
         continue
       }
     }

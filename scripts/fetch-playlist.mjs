@@ -76,16 +76,30 @@ async function fetchRssFeed() {
 
 // Get chapters for a single video via yt-dlp
 function fetchChapters(ytdlp, videoId) {
-  // Use default client — chapters are public metadata and this works reliably.
-  // Cookies are only needed for audio download.
-  const args = [
-    '--print', '%(chapters)s',
-    '--no-download',
-    '--ignore-errors',
+  // Try multiple client strategies — the n-challenge on GitHub Actions runners
+  // can block metadata retrieval, so we try different approaches.
+  const strategies = [
+    // Strategy 1: default client with EJS solver from GitHub
+    ['--print', '%(chapters)s', '--no-download', '--ignore-errors',
+     '--remote-components', 'ejs:github',
+     `https://www.youtube.com/watch?v=${videoId}`],
+    // Strategy 2: use web_music client which sometimes bypasses n-challenge
+    ['--print', '%(chapters)s', '--no-download', '--ignore-errors',
+     '--extractor-args', 'youtube:player_client=web',
+     `https://www.youtube.com/watch?v=${videoId}`],
+    // Strategy 3: plain default (works locally with Deno)
+    ['--print', '%(chapters)s', '--no-download', '--ignore-errors',
+     `https://www.youtube.com/watch?v=${videoId}`],
   ]
-  args.push(`https://www.youtube.com/watch?v=${videoId}`)
-  const result = spawnSync(ytdlp, args, { encoding: 'utf8', maxBuffer: 1024 * 1024 })
-  return result.stdout?.trim() || ''
+
+  for (const args of strategies) {
+    const result = spawnSync(ytdlp, args, { encoding: 'utf8', maxBuffer: 1024 * 1024 })
+    const output = result.stdout?.trim() || ''
+    if (output && output !== 'NA' && output !== 'None') {
+      return output
+    }
+  }
+  return ''
 }
 
 function parseTitle(title) {
