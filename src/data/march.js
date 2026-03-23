@@ -527,5 +527,12 @@ export const march = [
         "start": 665
       }
     ]
+  },
+  {
+    "day": 23,
+    "date": "23 Mars",
+    "videoId": "VbYKDPpNCWY",
+    "audioFile": "march-23.webm",
+    "readings": []
   }
 ]
