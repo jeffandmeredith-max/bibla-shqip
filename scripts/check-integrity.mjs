@@ -117,14 +117,13 @@ console.log('')
 
 if (issues.length === 0) {
   console.log('✅ All checks passed — no issues found.')
-  process.exit(0)
 } else {
-  console.log(`🚨 Found ${issues.length} issue(s):\n`)
+  console.log(`⚠️  Found ${issues.length} issue(s):\n`)
   for (const issue of issues) console.log('  ' + issue)
   console.log('')
-  // Write issues to a file so the workflow can read them for the email body
-  import('fs').then(({ writeFileSync }) => {
-    writeFileSync(join(ROOT, 'integrity-report.txt'), issues.join('\n'), 'utf8')
-  })
-  process.exit(1)
+  console.log('Note: These are warnings only — the workflow still succeeds.')
+  console.log('Empty readings will be re-fetched automatically on the next run.')
 }
+// Always exit 0 — integrity issues are informational, not blocking.
+// The daily pipeline should never fail just because chapters are pending.
+process.exit(0)

@@ -74,38 +74,100 @@ async function fetchRssFeed() {
   return videos
 }
 
-// Get chapters for a single video via yt-dlp
+// Get chapters for a single video via yt-dlp.
+// Primary: --dump-json (proper JSON). Fallback: --print %(chapters)s.
 function fetchChapters(ytdlp, videoId) {
-  // Try multiple client strategies — the n-challenge on GitHub Actions runners
-  // can block metadata retrieval, so we try different approaches.
   const cookiesFile = process.env.COOKIES_FILE
   const cookiesArgs = cookiesFile ? ['--cookies', cookiesFile] : []
+  const url = `https://www.youtube.com/watch?v=${videoId}`
 
+  // Strategy list: each entry is [label, args, parser]
   const strategies = [
-    // Strategy 1: default client with EJS solver from GitHub
-    ['--print', '%(chapters)s', '--no-download', '--ignore-errors',
-     '--remote-components', 'ejs:github',
-     ...cookiesArgs,
-     `https://www.youtube.com/watch?v=${videoId}`],
-    // Strategy 2: use web_music client which sometimes bypasses n-challenge
-    ['--print', '%(chapters)s', '--no-download', '--ignore-errors',
-     '--extractor-args', 'youtube:player_client=web',
-     ...cookiesArgs,
-     `https://www.youtube.com/watch?v=${videoId}`],
-    // Strategy 3: plain default (works locally with Deno)
-    ['--print', '%(chapters)s', '--no-download', '--ignore-errors',
-     ...cookiesArgs,
-     `https://www.youtube.com/watch?v=${videoId}`],
+    {
+      label: 'dump-json + ejs:github',
+      args: ['--dump-json', '--no-download', '--ignore-errors',
+             '--remote-components', 'ejs:github', ...cookiesArgs, url],
+      parse: parseJsonChapters,
+    },
+    {
+      label: 'dump-json + web client',
+      args: ['--dump-json', '--no-download', '--ignore-errors',
+             '--extractor-args', 'youtube:player_client=web', ...cookiesArgs, url],
+      parse: parseJsonChapters,
+    },
+    {
+      label: 'print chapters + ejs:github',
+      args: ['--print', '%(chapters)s', '--no-download', '--ignore-errors',
+             '--remote-components', 'ejs:github', ...cookiesArgs, url],
+      parse: parsePrintChapters,
+    },
+    {
+      label: 'print chapters + web client',
+      args: ['--print', '%(chapters)s', '--no-download', '--ignore-errors',
+             '--extractor-args', 'youtube:player_client=web', ...cookiesArgs, url],
+      parse: parsePrintChapters,
+    },
+    {
+      label: 'dump-json + default',
+      args: ['--dump-json', '--no-download', '--ignore-errors', ...cookiesArgs, url],
+      parse: parseJsonChapters,
+    },
   ]
 
-  for (const args of strategies) {
-    const result = spawnSync(ytdlp, args, { encoding: 'utf8', maxBuffer: 1024 * 1024 })
+  for (const { label, args, parse } of strategies) {
+    const result = spawnSync(ytdlp, args, { encoding: 'utf8', maxBuffer: 10 * 1024 * 1024 })
     const output = result.stdout?.trim() || ''
-    if (output && output !== 'NA' && output !== 'None') {
-      return output
+    const stderr = result.stderr?.trim() || ''
+
+    if (stderr) {
+      // Log first few lines of stderr for diagnostics (skip noisy warnings)
+      const important = stderr.split('\n').filter(l =>
+        l.includes('ERROR') || l.includes('error') || l.includes('WARNING')
+      ).slice(0, 3)
+      if (important.length) {
+        console.log(`    [${label}] ${important.join(' | ')}`)
+      }
+    }
+
+    const chapters = parse(output)
+    if (chapters && chapters.length > 0) {
+      console.log(`    ✓ Strategy "${label}" returned ${chapters.length} chapters`)
+      return chapters
     }
   }
-  return ''
+
+  console.log(`    ✗ All strategies returned no chapters`)
+  return []
+}
+
+// Parse chapters from --dump-json output (proper JSON)
+function parseJsonChapters(output) {
+  if (!output || output === 'NA' || output === 'None') return []
+  try {
+    const data = JSON.parse(output)
+    if (!data.chapters || !Array.isArray(data.chapters)) return []
+    return data.chapters.map(ch => ({
+      title: fixEncoding(ch.title || ''),
+      start: Math.round(ch.start_time || 0),
+    }))
+  } catch {
+    return []
+  }
+}
+
+// Parse chapters from --print %(chapters)s output (Python repr format)
+function parsePrintChapters(output) {
+  if (!output || output === 'NA' || output === 'None') return []
+  const entries = []
+  const re = /\{'start_time':\s*([\d.]+),\s*'title':\s*'([^']+)',\s*'end_time':\s*([\d.]+)\}/g
+  let m
+  while ((m = re.exec(output)) !== null) {
+    entries.push({
+      title: fixEncoding(m[2]),
+      start: Math.round(parseFloat(m[1])),
+    })
+  }
+  return entries
 }
 
 function parseTitle(title) {
@@ -114,20 +176,6 @@ function parseTitle(title) {
   const match = title.match(/\]\s*(\d+)\s+(\S+)\s*$/)
   if (!match) return null
   return { day: parseInt(match[1], 10), monthName: match[2] }
-}
-
-function parseChapters(chaptersStr) {
-  if (!chaptersStr || chaptersStr === 'NA' || chaptersStr === 'None') return []
-  const entries = []
-  const re = /\{'start_time':\s*([\d.]+),\s*'title':\s*'([^']+)',\s*'end_time':\s*([\d.]+)\}/g
-  let m
-  while ((m = re.exec(chaptersStr)) !== null) {
-    entries.push({
-      title: fixEncoding(m[2]),
-      start: Math.round(parseFloat(m[1])),
-    })
-  }
-  return entries
 }
 
 function fixEncoding(str) {
@@ -191,25 +239,6 @@ function getExistingVideoIds() {
   return ids
 }
 
-// Get all existing entries from data files, keyed by videoId
-function getExistingEntries() {
-  const map = {}
-  if (!existsSync(DATA_DIR)) return map
-  for (const file of readdirSync(DATA_DIR)) {
-    if (!file.endsWith('.js') || file === 'months.js') continue
-    const content = readFileSync(join(DATA_DIR, file), 'utf8')
-    // Extract each entry block
-    for (const m of content.matchAll(/\{[^{}]*"videoId"[^{}]*\}/gs)) {
-      try {
-        const json = m[0].replace(/,(\s*[}\]])/g, '$1')
-        const obj = JSON.parse(json)
-        if (obj.videoId) map[obj.videoId] = obj
-      } catch {}
-    }
-  }
-  return map
-}
-
 // Read existing data file entries by month
 function getExistingByMonth() {
   const byMonth = {}
@@ -231,10 +260,13 @@ function getExistingByMonth() {
 // Fetch playlist via yt-dlp — used as fallback when RSS is unavailable
 function fetchPlaylistViaYtDlp(ytdlp) {
   console.log('⏳ Fetching playlist via yt-dlp (RSS fallback)…')
+  const cookiesFile = process.env.COOKIES_FILE
+  const cookiesArgs = cookiesFile ? ['--cookies', cookiesFile] : []
   const args = [
     '--flat-playlist',
     '--print', '%(id)s\t%(title)s',
     '--ignore-errors',
+    ...cookiesArgs,
     `https://www.youtube.com/playlist?list=${PLAYLIST_ID}`,
   ]
   const result = spawnSync(ytdlp, args, { encoding: 'utf8', maxBuffer: 4 * 1024 * 1024 })
@@ -253,6 +285,12 @@ function fetchPlaylistViaYtDlp(ytdlp) {
 // ── Main ──────────────────────────────────────────────────────────────────────
 
 const ytdlp = getYtDlpPath()
+
+// Log yt-dlp version for diagnostics
+try {
+  const ver = execSync(`"${ytdlp}" --version`, { encoding: 'utf8' }).trim()
+  console.log(`yt-dlp version: ${ver}`)
+} catch {}
 
 let rssVideos
 try {
@@ -280,15 +318,14 @@ for (const [monthName, entries] of Object.entries(byMonth)) {
   for (const entry of entries) {
     if (entry.readings && entry.readings.length === 0 && entry.videoId) {
       console.log(`  📥 Re-fetching chapters for ${entry.date} (${entry.videoId})…`)
-      const chaptersStr = fetchChapters(ytdlp, entry.videoId)
-      const allReadings = parseChapters(chaptersStr)
-      const readings = allReadings.filter(
-        (r) => r.title.toLowerCase() !== 'hyrje' || allReadings.length === 1
+      const readings = fetchChapters(ytdlp, entry.videoId)
+      const filtered = readings.filter(
+        (r) => r.title.toLowerCase() !== 'hyrje' || readings.length === 1
       )
-      if (readings.length > 0) {
-        entry.readings = readings
+      if (filtered.length > 0) {
+        entry.readings = filtered
         needsChapterFetch = true
-        console.log(`  ✓ Updated ${entry.date} with ${readings.length} readings`)
+        console.log(`  ✓ Updated ${entry.date} with ${filtered.length} readings`)
       }
     }
   }
@@ -315,8 +352,7 @@ for (const video of newVideos) {
   }
 
   console.log(`  📥 Fetching chapters for ${day} ${monthName} (${video.id})…`)
-  const chaptersStr = fetchChapters(ytdlp, video.id)
-  const allReadings = parseChapters(chaptersStr)
+  const allReadings = fetchChapters(ytdlp, video.id)
   const readings = allReadings.filter(
     (r) => r.title.toLowerCase() !== 'hyrje' || allReadings.length === 1
   )
