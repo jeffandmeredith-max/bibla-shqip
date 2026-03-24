@@ -533,13 +533,47 @@ export const march = [
     "date": "23 Mars",
     "videoId": "VbYKDPpNCWY",
     "audioFile": "march-23.webm",
-    "readings": []
+    "readings": [
+      {
+        "title": "Eksodi 34",
+        "start": 0
+      },
+      {
+        "title": "Gjoni 13",
+        "start": 355
+      },
+      {
+        "title": "Fjalët E Urta 10",
+        "start": 645
+      },
+      {
+        "title": "Efesianëve 3",
+        "start": 844
+      }
+    ]
   },
   {
     "day": 24,
     "date": "24 Mars",
     "videoId": "h0Xa3BNyr1g",
     "audioFile": "march-24.webm",
-    "readings": []
+    "readings": [
+      {
+        "title": "Eksodi 35",
+        "start": 0
+      },
+      {
+        "title": "Gjoni 14",
+        "start": 293
+      },
+      {
+        "title": "Fjalët E Urta 11",
+        "start": 523
+      },
+      {
+        "title": "Efesianëve 4",
+        "start": 729
+      }
+    ]
   }
 ]
