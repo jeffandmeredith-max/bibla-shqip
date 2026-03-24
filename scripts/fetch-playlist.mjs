@@ -78,17 +78,23 @@ async function fetchRssFeed() {
 function fetchChapters(ytdlp, videoId) {
   // Try multiple client strategies — the n-challenge on GitHub Actions runners
   // can block metadata retrieval, so we try different approaches.
+  const cookiesFile = process.env.COOKIES_FILE
+  const cookiesArgs = cookiesFile ? ['--cookies', cookiesFile] : []
+
   const strategies = [
     // Strategy 1: default client with EJS solver from GitHub
     ['--print', '%(chapters)s', '--no-download', '--ignore-errors',
      '--remote-components', 'ejs:github',
+     ...cookiesArgs,
      `https://www.youtube.com/watch?v=${videoId}`],
     // Strategy 2: use web_music client which sometimes bypasses n-challenge
     ['--print', '%(chapters)s', '--no-download', '--ignore-errors',
      '--extractor-args', 'youtube:player_client=web',
+     ...cookiesArgs,
      `https://www.youtube.com/watch?v=${videoId}`],
     // Strategy 3: plain default (works locally with Deno)
     ['--print', '%(chapters)s', '--no-download', '--ignore-errors',
+     ...cookiesArgs,
      `https://www.youtube.com/watch?v=${videoId}`],
   ]
 
