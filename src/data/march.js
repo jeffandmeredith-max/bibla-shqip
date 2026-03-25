@@ -575,5 +575,29 @@ export const march = [
         "start": 729
       }
     ]
+  },
+  {
+    "day": 25,
+    "date": "25 Mars",
+    "videoId": "BdW05LysTNA",
+    "readings": [
+      {
+        "title": "Eksodi 36",
+        "start": 0
+      },
+      {
+        "title": "Gjoni 15",
+        "start": 323
+      },
+      {
+        "title": "Fjalët E Urta 12",
+        "start": 531
+      },
+      {
+        "title": "Efesianëve 5",
+        "start": 717
+      }
+    ],
+    "audioFile": "march-25.webm"
   }
 ]
