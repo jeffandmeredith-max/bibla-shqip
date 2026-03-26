@@ -599,5 +599,29 @@ export const march = [
       }
     ],
     "audioFile": "march-25.webm"
+  },
+  {
+    "day": 26,
+    "date": "26 Mars",
+    "videoId": "oWH0Wunzpm4",
+    "readings": [
+      {
+        "title": "Eksodi 37",
+        "start": 0
+      },
+      {
+        "title": "Gjoni 16",
+        "start": 255
+      },
+      {
+        "title": "Fjalët E Urta 13",
+        "start": 496
+      },
+      {
+        "title": "Efesianëve 6",
+        "start": 664
+      }
+    ],
+    "audioFile": "march-26.webm"
   }
 ]
