@@ -647,5 +647,29 @@ export const march = [
       }
     ],
     "audioFile": "march-27.webm"
+  },
+  {
+    "day": 28,
+    "date": "28 Mars",
+    "videoId": "-tYE9gu4ytE",
+    "readings": [
+      {
+        "title": "Eksodi 39",
+        "start": 0
+      },
+      {
+        "title": "Gjoni 18",
+        "start": 385
+      },
+      {
+        "title": "Fjalët E Urta 15",
+        "start": 699
+      },
+      {
+        "title": "Filipianëve 2",
+        "start": 905
+      }
+    ],
+    "audioFile": "march-28.webm"
   }
 ]
