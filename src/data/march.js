@@ -695,5 +695,29 @@ export const march = [
       }
     ],
     "audioFile": "march-29.webm"
+  },
+  {
+    "day": 30,
+    "date": "30 Mars",
+    "videoId": "fC3Y78OeC2Y",
+    "readings": [
+      {
+        "title": "Levitiku 1",
+        "start": 0
+      },
+      {
+        "title": "Gjoni 20",
+        "start": 165
+      },
+      {
+        "title": "Fjalët E Urta 17",
+        "start": 405
+      },
+      {
+        "title": "Filipianëve 4",
+        "start": 585
+      }
+    ],
+    "audioFile": "march-30.webm"
   }
 ]
