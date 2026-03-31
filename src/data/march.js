@@ -719,5 +719,33 @@ export const march = [
       }
     ],
     "audioFile": "march-30.webm"
+  },
+  {
+    "day": 31,
+    "date": "31 Mars",
+    "videoId": "8rg33w0Vygc",
+    "readings": [
+      {
+        "title": "Levitiku 2",
+        "start": 0
+      },
+      {
+        "title": "Levitiku 3",
+        "start": 159
+      },
+      {
+        "title": "Gjoni 21",
+        "start": 318
+      },
+      {
+        "title": "Fjalët E Urta 18",
+        "start": 551
+      },
+      {
+        "title": "Kolosianëve 1",
+        "start": 692
+      }
+    ],
+    "audioFile": "march-31.webm"
   }
 ]
