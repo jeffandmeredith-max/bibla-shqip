@@ -55,5 +55,33 @@ export const april = [
       }
     ],
     "audioFile": "april-2.webm"
+  },
+  {
+    "day": 3,
+    "date": "3 Prill",
+    "videoId": "cN2Mj560QvU",
+    "readings": [
+      {
+        "title": "Levitiku 6",
+        "start": 0
+      },
+      {
+        "title": "Psalmi 5",
+        "start": 275
+      },
+      {
+        "title": "Psalmi 6",
+        "start": 366
+      },
+      {
+        "title": "Fjalët E Urta 21",
+        "start": 425
+      },
+      {
+        "title": "Kolosianëve 4",
+        "start": 615
+      }
+    ],
+    "audioFile": "april-3.webm"
   }
 ]
