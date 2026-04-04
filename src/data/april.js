@@ -83,5 +83,33 @@ export const april = [
       }
     ],
     "audioFile": "april-3.webm"
+  },
+  {
+    "day": 4,
+    "date": "4 Prill",
+    "videoId": "ttuCdshfca8",
+    "readings": [
+      {
+        "title": "Levitiku 7",
+        "start": 0
+      },
+      {
+        "title": "Psalmi 7",
+        "start": 308
+      },
+      {
+        "title": "Psalmi 8",
+        "start": 418
+      },
+      {
+        "title": "Fjalët E Urta 22",
+        "start": 477
+      },
+      {
+        "title": "1 E Thesalonikasve 1",
+        "start": 649
+      }
+    ],
+    "audioFile": "april-4.webm"
   }
 ]
