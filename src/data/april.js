@@ -159,5 +159,33 @@ export const april = [
       }
     ],
     "audioFile": "april-6.webm"
+  },
+  {
+    "day": 7,
+    "date": "7 Prill",
+    "videoId": "sACteqxeq4A",
+    "readings": [
+      {
+        "title": "Levitiku 10",
+        "start": 0
+      },
+      {
+        "title": "Psalmi 11",
+        "start": 220
+      },
+      {
+        "title": "Psalmi 12",
+        "start": 274
+      },
+      {
+        "title": "Fjalët E Urta 25",
+        "start": 334
+      },
+      {
+        "title": "1 E Thesalonikasve 4",
+        "start": 510
+      }
+    ],
+    "audioFile": "april-7.webm"
   }
 ]
