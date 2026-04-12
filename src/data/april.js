@@ -295,5 +295,29 @@ export const april = [
       }
     ],
     "audioFile": "april-11.webm"
+  },
+  {
+    "day": 12,
+    "date": "12 Prill",
+    "videoId": "VwQq4pAWltU",
+    "readings": [
+      {
+        "title": "Levitiku 16",
+        "start": 0
+      },
+      {
+        "title": "Psalmi 19",
+        "start": 376
+      },
+      {
+        "title": "Fjalët E Urta 30",
+        "start": 487
+      },
+      {
+        "title": "1 E Timoteut 1",
+        "start": 723
+      }
+    ],
+    "audioFile": "april-12.webm"
   }
 ]
