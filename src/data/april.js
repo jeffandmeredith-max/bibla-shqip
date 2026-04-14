@@ -347,5 +347,29 @@ export const april = [
       }
     ],
     "audioFile": "april-13.webm"
+  },
+  {
+    "day": 14,
+    "date": "14 Prill",
+    "videoId": "_eUyimu0n14",
+    "readings": [
+      {
+        "title": "Levitiku 18",
+        "start": 0
+      },
+      {
+        "title": "Psalmi 22",
+        "start": 256
+      },
+      {
+        "title": "Predikuesi 1",
+        "start": 460
+      },
+      {
+        "title": "1 E Timoteut 3",
+        "start": 610
+      }
+    ],
+    "audioFile": "april-14.webm"
   }
 ]
