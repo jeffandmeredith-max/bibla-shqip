@@ -404,6 +404,7 @@ export const april = [
     "day": 16,
     "date": "16 Prill",
     "videoId": "ImQGhjeHCZc",
-    "readings": []
+    "readings": [],
+    "audioFile": "april-16.webm"
   }
 ]
