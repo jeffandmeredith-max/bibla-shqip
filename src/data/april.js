@@ -411,6 +411,27 @@ export const april = [
     "day": 17,
     "date": "17 Prill",
     "videoId": "1QAdsdkblRw",
-    "readings": []
+    "readings": [
+      {
+        "title": "Levitiku 21",
+        "start": 0
+      },
+      {
+        "title": "Psalmi 26",
+        "start": 212
+      },
+      {
+        "title": "Psalmi 27",
+        "start": 284
+      },
+      {
+        "title": "Predikuesi 4",
+        "start": 401
+      },
+      {
+        "title": "1 E Timoteut 6",
+        "start": 546
+      }
+    ]
   }
 ]
