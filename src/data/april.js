@@ -406,5 +406,11 @@ export const april = [
     "videoId": "ImQGhjeHCZc",
     "readings": [],
     "audioFile": "april-16.webm"
+  },
+  {
+    "day": 17,
+    "date": "17 Prill",
+    "videoId": "1QAdsdkblRw",
+    "readings": []
   }
 ]
