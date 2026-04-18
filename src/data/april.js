@@ -404,7 +404,24 @@ export const april = [
     "day": 16,
     "date": "16 Prill",
     "videoId": "ImQGhjeHCZc",
-    "readings": [],
+    "readings": [
+      {
+        "title": "Levitiku 20",
+        "start": 0
+      },
+      {
+        "title": "Psalmi 25",
+        "start": 291
+      },
+      {
+        "title": "Predikuesi 3",
+        "start": 425
+      },
+      {
+        "title": "1 E Timoteut 5",
+        "start": 606
+      }
+    ],
     "audioFile": "april-16.webm"
   },
   {
