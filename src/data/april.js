@@ -433,5 +433,11 @@ export const april = [
         "start": 546
       }
     ]
+  },
+  {
+    "day": 18,
+    "date": "18 Prill",
+    "videoId": "SpTIQmZhGng",
+    "readings": []
   }
 ]
