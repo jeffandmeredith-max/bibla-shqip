@@ -432,12 +432,35 @@ export const april = [
         "title": "1 E Timoteut 6",
         "start": 546
       }
-    ]
+    ],
+    "audioFile": "april-17.webm"
   },
   {
     "day": 18,
     "date": "18 Prill",
     "videoId": "SpTIQmZhGng",
-    "readings": []
+    "readings": [
+      {
+        "title": "Levitiku 22",
+        "start": 0
+      },
+      {
+        "title": "Psalmi 28",
+        "start": 301
+      },
+      {
+        "title": "Psalmi 29",
+        "start": 378
+      },
+      {
+        "title": "Predikuesi 5",
+        "start": 443
+      },
+      {
+        "title": "2 E Timoteut 1",
+        "start": 627
+      }
+    ],
+    "audioFile": "april-18.webm"
   }
 ]
