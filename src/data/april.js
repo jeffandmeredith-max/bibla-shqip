@@ -479,5 +479,11 @@ export const april = [
       }
     ],
     "audioFile": "april-18.webm"
+  },
+  {
+    "day": 19,
+    "date": "19 Prill",
+    "videoId": "9iXzj-tMIxc",
+    "readings": []
   }
 ]
