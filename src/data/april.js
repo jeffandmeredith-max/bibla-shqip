@@ -485,5 +485,11 @@ export const april = [
     "date": "19 Prill",
     "videoId": "9iXzj-tMIxc",
     "readings": []
+  },
+  {
+    "day": 20,
+    "date": "20 Prill",
+    "videoId": "K8SdYIjsn4c",
+    "readings": []
   }
 ]
