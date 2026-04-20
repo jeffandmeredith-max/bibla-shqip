@@ -484,12 +484,46 @@ export const april = [
     "day": 19,
     "date": "19 Prill",
     "videoId": "9iXzj-tMIxc",
-    "readings": []
+    "readings": [
+      {
+        "title": "Levitiku 23",
+        "start": 0
+      },
+      {
+        "title": "Psalmi 30",
+        "start": 397
+      },
+      {
+        "title": "Predikuesi 6",
+        "start": 480
+      },
+      {
+        "title": "2 E Timoteut 2",
+        "start": 594
+      }
+    ]
   },
   {
     "day": 20,
     "date": "20 Prill",
     "videoId": "K8SdYIjsn4c",
-    "readings": []
+    "readings": [
+      {
+        "title": "Levitiku 24",
+        "start": 0
+      },
+      {
+        "title": "Psalmi 31",
+        "start": 189
+      },
+      {
+        "title": "Predikuesi 7",
+        "start": 367
+      },
+      {
+        "title": "2 E Timoteut 3",
+        "start": 594
+      }
+    ]
   }
 ]
