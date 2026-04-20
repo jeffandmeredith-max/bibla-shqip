@@ -501,7 +501,8 @@ export const april = [
         "title": "2 E Timoteut 2",
         "start": 594
       }
-    ]
+    ],
+    "audioFile": "april-19.webm"
   },
   {
     "day": 20,
@@ -524,6 +525,7 @@ export const april = [
         "title": "2 E Timoteut 3",
         "start": 594
       }
-    ]
+    ],
+    "audioFile": "april-20.webm"
   }
 ]
