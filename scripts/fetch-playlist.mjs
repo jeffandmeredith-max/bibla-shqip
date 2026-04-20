@@ -357,6 +357,11 @@ for (const video of newVideos) {
     (r) => r.title.toLowerCase() !== 'hyrje' || allReadings.length === 1
   )
 
+  if (readings.length === 0) {
+    console.warn(`  ⚠ Skipping ${day} ${monthName} — no chapters found (will retry next run)`)
+    continue
+  }
+
   const entry = {
     day,
     date: `${day} ${monthName}`,
