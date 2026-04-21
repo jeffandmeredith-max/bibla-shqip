@@ -257,13 +257,14 @@ function getExistingByMonth() {
   return byMonth
 }
 
-// Fetch playlist via yt-dlp — used as fallback when RSS is unavailable
+// Fetch recent playlist entries via yt-dlp — always run alongside RSS to catch lag
 function fetchPlaylistViaYtDlp(ytdlp) {
-  console.log('⏳ Fetching playlist via yt-dlp (RSS fallback)…')
+  console.log('⏳ Fetching playlist via yt-dlp…')
   const cookiesFile = process.env.COOKIES_FILE
   const cookiesArgs = cookiesFile ? ['--cookies', cookiesFile] : []
   const args = [
     '--flat-playlist',
+    '--playlist-end', '30',   // only need recent entries; avoids fetching all 100+
     '--print', '%(id)s\t%(title)s',
     '--ignore-errors',
     ...cookiesArgs,
@@ -292,24 +293,38 @@ try {
   console.log(`yt-dlp version: ${ver}`)
 } catch {}
 
-let rssVideos
+// Always run both sources and merge — RSS can lag 30-60 min behind YouTube,
+// so yt-dlp is needed to catch videos that haven't propagated to the feed yet.
+let rssVideos = []
 try {
   rssVideos = await fetchRssFeed()
 } catch (err) {
   console.warn('⚠ RSS fetch failed:', err.message)
-  console.warn('  Trying yt-dlp playlist fallback…')
-  rssVideos = fetchPlaylistViaYtDlp(ytdlp)
-  if (rssVideos.length === 0) {
-    console.warn('  yt-dlp fallback also returned no videos — skipping update.')
-    process.exit(0)
+}
+
+const ytdlpVideos = fetchPlaylistViaYtDlp(ytdlp)
+
+// Merge: union by video ID, preferring yt-dlp entries (fetched directly from YouTube)
+const seenIds = new Set()
+const allVideos = []
+for (const v of [...ytdlpVideos, ...rssVideos]) {
+  if (!seenIds.has(v.id)) {
+    seenIds.add(v.id)
+    allVideos.push(v)
   }
+}
+console.log(`  Combined: ${allVideos.length} unique video(s) from both sources`)
+
+if (allVideos.length === 0) {
+  console.warn('⚠ Both RSS and yt-dlp returned no videos — skipping update.')
+  process.exit(0)
 }
 
 const existingIds = getExistingVideoIds()
 const byMonth = getExistingByMonth()
 
 // Find new videos not yet in our data files
-const newVideos = rssVideos.filter((v) => !existingIds.has(v.id))
+const newVideos = allVideos.filter((v) => !existingIds.has(v.id))
 console.log(`  ${existingIds.size} existing, ${newVideos.length} new video(s) to add`)
 
 // Also check for existing entries with empty readings that need chapter fetching

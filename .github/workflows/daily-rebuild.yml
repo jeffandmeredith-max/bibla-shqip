@@ -17,7 +17,7 @@ on:
 
 concurrency:
   group: daily-update
-  cancel-in-progress: true
+  cancel-in-progress: false
 
 env:
   FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
@@ -55,6 +55,9 @@ jobs:
           head -1 /tmp/cookies.txt
           echo "Line count: $(wc -l < /tmp/cookies.txt)"
           echo "File size: $(wc -c < /tmp/cookies.txt)"
+          if [ "$(wc -c < /tmp/cookies.txt)" -lt 100 ]; then
+            echo "::warning::Cookies file looks empty or too small — downloads may fail. Check the COOKIES secret."
+          fi
 
       - name: Fetch playlist metadata and update data files
         run: node scripts/fetch-playlist.mjs
