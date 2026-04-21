@@ -527,5 +527,29 @@ export const april = [
       }
     ],
     "audioFile": "april-20.webm"
+  },
+  {
+    "day": 21,
+    "date": "21 Prill",
+    "videoId": "4r4JweK8XTk",
+    "readings": [
+      {
+        "title": "Levitiku 25",
+        "start": 0
+      },
+      {
+        "title": "Psalmi 32",
+        "start": 467
+      },
+      {
+        "title": "Predikuesi 8",
+        "start": 561
+      },
+      {
+        "title": "2 E Timoteut 4",
+        "start": 735
+      }
+    ],
+    "audioFile": "april-21.webm"
   }
 ]
