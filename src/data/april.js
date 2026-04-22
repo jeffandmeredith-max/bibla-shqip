@@ -556,6 +556,24 @@ export const april = [
     "day": 22,
     "date": "22 Prill",
     "videoId": "mLMl-JikCtc",
-    "readings": []
+    "readings": [
+      {
+        "title": "Levitiku 26",
+        "start": 0
+      },
+      {
+        "title": "Psalmi 33",
+        "start": 403
+      },
+      {
+        "title": "Predikuesi 9",
+        "start": 521
+      },
+      {
+        "title": "Titi 1",
+        "start": 711
+      }
+    ],
+    "audioFile": "april-22.webm"
   }
 ]
