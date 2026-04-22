@@ -58,7 +58,7 @@ async function fetchRssFeed() {
   if (!res.ok) throw new Error(`RSS fetch failed: ${res.status}`)
   const xml = await res.text()
 
-  // Parse video IDs and titles from Atom XML
+  // Parse video IDs, titles, and descriptions from Atom XML
   const videos = []
   const entryRe = /<entry>([\s\S]*?)<\/entry>/g
   let m
@@ -66,12 +66,32 @@ async function fetchRssFeed() {
     const entry = m[1]
     const idMatch = entry.match(/<yt:videoId>([^<]+)<\/yt:videoId>/)
     const titleMatch = entry.match(/<title>([^<]+)<\/title>/)
+    const descMatch = entry.match(/<media:description>([\s\S]*?)<\/media:description>/)
     if (idMatch && titleMatch) {
-      videos.push({ id: idMatch[1], title: titleMatch[1] })
+      videos.push({
+        id: idMatch[1],
+        title: titleMatch[1],
+        description: descMatch ? descMatch[1].trim() : '',
+      })
     }
   }
   console.log(`  Found ${videos.length} videos in RSS feed`)
   return videos
+}
+
+// Parse chapter timestamps from video description text.
+// Expects lines like "00:00 LEVITIKU 26" or "6:43 PSALMI 33".
+function parseChaptersFromDescription(description) {
+  if (!description) return []
+  const chapters = []
+  for (const line of description.split('\n')) {
+    const m = line.trim().match(/^(\d{1,2}):(\d{2})\s+(.+)$/)
+    if (!m) continue
+    const start = parseInt(m[1], 10) * 60 + parseInt(m[2], 10)
+    const title = fixEncoding(m[3].trim())
+    if (title.toLowerCase() !== 'hyrje') chapters.push({ title, start })
+  }
+  return chapters
 }
 
 // Get chapters for a single video via yt-dlp.
@@ -309,10 +329,10 @@ try {
 
 const ytdlpVideos = fetchPlaylistViaYtDlp(ytdlp)
 
-// Merge: union by video ID, preferring yt-dlp entries (fetched directly from YouTube)
+// Merge: union by video ID, preferring RSS entries (they carry description/chapters)
 const seenIds = new Set()
 const allVideos = []
-for (const v of [...ytdlpVideos, ...rssVideos]) {
+for (const v of [...rssVideos, ...ytdlpVideos]) {
   if (!seenIds.has(v.id)) {
     seenIds.add(v.id)
     allVideos.push(v)
@@ -332,16 +352,22 @@ const byMonth = getExistingByMonth()
 const newVideos = allVideos.filter((v) => !existingIds.has(v.id))
 console.log(`  ${existingIds.size} existing, ${newVideos.length} new video(s) to add`)
 
+// Build a description lookup from RSS for the retry loop below
+const rssDescByVideoId = Object.fromEntries(rssVideos.map(v => [v.id, v.description || '']))
+
 // Also check for existing entries with empty readings that need chapter fetching
 let needsChapterFetch = false
 for (const [monthName, entries] of Object.entries(byMonth)) {
   for (const entry of entries) {
     if (entry.readings && entry.readings.length === 0 && entry.videoId) {
       console.log(`  📥 Re-fetching chapters for ${entry.date} (${entry.videoId})…`)
-      const readings = fetchChapters(ytdlp, entry.videoId)
-      const filtered = readings.filter(
-        (r) => r.title.toLowerCase() !== 'hyrje' || readings.length === 1
-      )
+      let filtered = parseChaptersFromDescription(rssDescByVideoId[entry.videoId])
+      if (filtered.length === 0) {
+        const readings = fetchChapters(ytdlp, entry.videoId)
+        filtered = readings.filter(
+          (r) => r.title.toLowerCase() !== 'hyrje' || readings.length === 1
+        )
+      }
       if (filtered.length > 0) {
         entry.readings = filtered
         needsChapterFetch = true
@@ -371,14 +397,19 @@ for (const video of newVideos) {
     continue
   }
 
-  console.log(`  📥 Fetching chapters for ${day} ${monthName} (${video.id})…`)
-  const allReadings = fetchChapters(ytdlp, video.id)
-  const readings = allReadings.filter(
-    (r) => r.title.toLowerCase() !== 'hyrje' || allReadings.length === 1
-  )
-
-  if (readings.length === 0) {
-    console.warn(`  ⚠ No chapters found for ${day} ${monthName} — adding with empty readings so retry logic can re-fetch next run`)
+  // Try RSS description first (works in CI, never blocked), fall back to yt-dlp
+  let readings = parseChaptersFromDescription(video.description)
+  if (readings.length > 0) {
+    console.log(`  ✓ Got ${readings.length} chapters from RSS description for ${day} ${monthName}`)
+  } else {
+    console.log(`  📥 No description chapters — fetching via yt-dlp for ${day} ${monthName} (${video.id})…`)
+    const allReadings = fetchChapters(ytdlp, video.id)
+    readings = allReadings.filter(
+      (r) => r.title.toLowerCase() !== 'hyrje' || allReadings.length === 1
+    )
+    if (readings.length === 0) {
+      console.warn(`  ⚠ No chapters found for ${day} ${monthName} — adding with empty readings so retry logic can re-fetch next run`)
+    }
   }
 
   const entry = {
