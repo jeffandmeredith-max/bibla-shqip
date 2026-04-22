@@ -112,6 +112,11 @@ function fetchChapters(ytdlp, videoId) {
       args: ['--dump-json', '--no-download', '--ignore-errors', ...cookiesArgs, url],
       parse: parseJsonChapters,
     },
+    {
+      label: 'print chapters + default',
+      args: ['--print', '%(chapters)s', '--no-download', '--ignore-errors', ...cookiesArgs, url],
+      parse: parsePrintChapters,
+    },
   ]
 
   for (const { label, args, parse } of strategies) {
@@ -373,8 +378,7 @@ for (const video of newVideos) {
   )
 
   if (readings.length === 0) {
-    console.warn(`  ⚠ Skipping ${day} ${monthName} — no chapters found (will retry next run)`)
-    continue
+    console.warn(`  ⚠ No chapters found for ${day} ${monthName} — adding with empty readings so retry logic can re-fetch next run`)
   }
 
   const entry = {
