@@ -575,5 +575,28 @@ export const april = [
       }
     ],
     "audioFile": "april-22.webm"
+  },
+  {
+    "day": 23,
+    "date": "23 Prill",
+    "videoId": "0o_CX3kLWWY",
+    "readings": [
+      {
+        "title": "Levitiku 27",
+        "start": 0
+      },
+      {
+        "title": "Psalmi 34",
+        "start": 297
+      },
+      {
+        "title": "Predikuesi 10",
+        "start": 420
+      },
+      {
+        "title": "Titi 2",
+        "start": 556
+      }
+    ]
   }
 ]
