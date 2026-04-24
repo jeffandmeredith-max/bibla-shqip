@@ -598,5 +598,28 @@ export const april = [
         "start": 556
       }
     ]
+  },
+  {
+    "day": 24,
+    "date": "24 Prill",
+    "videoId": "HJDyP1zrEnQ",
+    "readings": [
+      {
+        "title": "Numrat 1",
+        "start": 0
+      },
+      {
+        "title": "Psalmi 35",
+        "start": 437
+      },
+      {
+        "title": "Predikuesi 11",
+        "start": 631
+      },
+      {
+        "title": "Titi 3",
+        "start": 720
+      }
+    ]
   }
 ]
