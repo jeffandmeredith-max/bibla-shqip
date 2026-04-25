@@ -621,5 +621,28 @@ export const april = [
         "start": 720
       }
     ]
+  },
+  {
+    "day": 25,
+    "date": "25 Prill",
+    "videoId": "LANO5lt-ot8",
+    "readings": [
+      {
+        "title": "Numrat 2",
+        "start": 0
+      },
+      {
+        "title": "Psalmi 36",
+        "start": 285
+      },
+      {
+        "title": "Predikuesi 12",
+        "start": 369
+      },
+      {
+        "title": "Filemoni 1",
+        "start": 496
+      }
+    ]
   }
 ]
