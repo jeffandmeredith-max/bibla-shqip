@@ -644,5 +644,28 @@ export const april = [
         "start": 496
       }
     ]
+  },
+  {
+    "day": 26,
+    "date": "26 Prill",
+    "videoId": "44mpI964L_M",
+    "readings": [
+      {
+        "title": "Numrat 3",
+        "start": 0
+      },
+      {
+        "title": "Psalmi 37",
+        "start": 442
+      },
+      {
+        "title": "Kënga E Këngëve 1",
+        "start": 685
+      },
+      {
+        "title": "Hebrenjve 1",
+        "start": 815
+      }
+    ]
   }
 ]
