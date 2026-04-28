@@ -690,5 +690,28 @@ export const april = [
         "start": 701
       }
     ]
+  },
+  {
+    "day": 28,
+    "date": "28 Prill",
+    "videoId": "Vz4T5akxYG4",
+    "readings": [
+      {
+        "title": "Numrat 5",
+        "start": 0
+      },
+      {
+        "title": "Psalmi 39",
+        "start": 317
+      },
+      {
+        "title": "Kënga E Këngëve 3",
+        "start": 422
+      },
+      {
+        "title": "Hebrenjve 3",
+        "start": 521
+      }
+    ]
   }
 ]
