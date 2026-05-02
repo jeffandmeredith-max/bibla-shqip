@@ -22,5 +22,28 @@ export const may = [
         "start": 522
       }
     ]
+  },
+  {
+    "day": 2,
+    "date": "2 Maj",
+    "videoId": "l3d8mM5wwC0",
+    "readings": [
+      {
+        "title": "Numrat 9",
+        "start": 0
+      },
+      {
+        "title": "Psalmi 45",
+        "start": 234
+      },
+      {
+        "title": "Kënga E Këngëve 7",
+        "start": 367
+      },
+      {
+        "title": "Hebrenjve 7",
+        "start": 485
+      }
+    ]
   }
 ]
