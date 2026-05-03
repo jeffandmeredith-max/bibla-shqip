@@ -45,5 +45,32 @@ export const may = [
         "start": 485
       }
     ]
+  },
+  {
+    "day": 3,
+    "date": "3 Maj",
+    "videoId": "cVWCbwqbBA8",
+    "readings": [
+      {
+        "title": "Numrat 10",
+        "start": 0
+      },
+      {
+        "title": "Psalmi 46",
+        "start": 279
+      },
+      {
+        "title": "Psalmi 47",
+        "start": 352
+      },
+      {
+        "title": "Kënga E Këngëve 8",
+        "start": 405
+      },
+      {
+        "title": "Hebrenjve 8",
+        "start": 542
+      }
+    ]
   }
 ]
