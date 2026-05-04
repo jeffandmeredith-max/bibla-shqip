@@ -72,5 +72,28 @@ export const may = [
         "start": 542
       }
     ]
+  },
+  {
+    "day": 4,
+    "date": "4 Maj",
+    "videoId": "vZTJ2dLU-tk",
+    "readings": [
+      {
+        "title": "Numrat 11",
+        "start": 0
+      },
+      {
+        "title": "Psalmi 48",
+        "start": 323
+      },
+      {
+        "title": "Isaia 1",
+        "start": 413
+      },
+      {
+        "title": "Hebrenjve 9",
+        "start": 684
+      }
+    ]
   }
 ]
