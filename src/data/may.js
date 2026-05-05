@@ -95,5 +95,32 @@ export const may = [
         "start": 684
       }
     ]
+  },
+  {
+    "day": 5,
+    "date": "5 Maj",
+    "videoId": "bgB6HBLFhD0",
+    "readings": [
+      {
+        "title": "Numrat 12",
+        "start": 0
+      },
+      {
+        "title": "Numrat 13",
+        "start": 137
+      },
+      {
+        "title": "Psalmi 49",
+        "start": 376
+      },
+      {
+        "title": "Isaia 2",
+        "start": 511
+      },
+      {
+        "title": "Hebrenjve 10",
+        "start": 692
+      }
+    ]
   }
 ]
