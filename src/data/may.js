@@ -122,5 +122,32 @@ export const may = [
         "start": 692
       }
     ]
+  },
+  {
+    "day": 6,
+    "date": "6 Maj",
+    "videoId": "tMDo7QzMJ7U",
+    "readings": [
+      {
+        "title": "Numrat 14",
+        "start": 0
+      },
+      {
+        "title": "Psalmi 50",
+        "start": 381
+      },
+      {
+        "title": "Isaia 3",
+        "start": 521
+      },
+      {
+        "title": "Isaia 4",
+        "start": 716
+      },
+      {
+        "title": "Hebrenjve 11",
+        "start": 785
+      }
+    ]
   }
 ]
