@@ -149,5 +149,28 @@ export const may = [
         "start": 785
       }
     ]
+  },
+  {
+    "day": 7,
+    "date": "7 Maj",
+    "videoId": "8mtrOQFar3w",
+    "readings": [
+      {
+        "title": "Numrat 15",
+        "start": 0
+      },
+      {
+        "title": "Psalmi 51",
+        "start": 346
+      },
+      {
+        "title": "Isaia 5",
+        "start": 466
+      },
+      {
+        "title": "Hebrenjve 12",
+        "start": 787
+      }
+    ]
   }
 ]
