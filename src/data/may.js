@@ -172,5 +172,36 @@ export const may = [
         "start": 787
       }
     ]
+  },
+  {
+    "day": 8,
+    "date": "8 Maj",
+    "videoId": "gqdRKvCMvTE",
+    "readings": [
+      {
+        "title": "Numrat 16",
+        "start": 0
+      },
+      {
+        "title": "Psalmi 52",
+        "start": 436
+      },
+      {
+        "title": "Psalmi 53",
+        "start": 499
+      },
+      {
+        "title": "Psalmi 54",
+        "start": 559
+      },
+      {
+        "title": "Isaia 6",
+        "start": 602
+      },
+      {
+        "title": "Hebrenjve 13",
+        "start": 744
+      }
+    ]
   }
 ]
