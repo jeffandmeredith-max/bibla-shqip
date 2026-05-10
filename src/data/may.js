@@ -231,5 +231,36 @@ export const may = [
         "start": 819
       }
     ]
+  },
+  {
+    "day": 10,
+    "date": "10 Maj",
+    "videoId": "xxJ1rS2OoYo",
+    "readings": [
+      {
+        "title": "Numrat 19",
+        "start": 0
+      },
+      {
+        "title": "Psalmi 56",
+        "start": 213
+      },
+      {
+        "title": "Psalmi 57",
+        "start": 306
+      },
+      {
+        "title": "Isaia 8",
+        "start": 390
+      },
+      {
+        "title": "Isaia 9:1~7",
+        "start": 608
+      },
+      {
+        "title": "Jakobit 2",
+        "start": 689
+      }
+    ]
   }
 ]
