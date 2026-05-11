@@ -262,5 +262,36 @@ export const may = [
         "start": 689
       }
     ]
+  },
+  {
+    "day": 11,
+    "date": "11 Maj",
+    "videoId": "_VkAG5sMW64",
+    "readings": [
+      {
+        "title": "Numrat 20",
+        "start": 0
+      },
+      {
+        "title": "Psalmi 58",
+        "start": 262
+      },
+      {
+        "title": "Psalmi 59",
+        "start": 337
+      },
+      {
+        "title": "Isaia 9:8~21",
+        "start": 465
+      },
+      {
+        "title": "Isaia 10:1~4",
+        "start": 574
+      },
+      {
+        "title": "Jakobit 3",
+        "start": 618
+      }
+    ]
   }
 ]
