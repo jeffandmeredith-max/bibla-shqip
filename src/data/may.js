@@ -320,5 +320,36 @@ export const may = [
         "start": 741
       }
     ]
+  },
+  {
+    "day": 13,
+    "date": "13 Maj",
+    "videoId": "pQXQNIkJiAM",
+    "readings": [
+      {
+        "title": "Numrat 22",
+        "start": 0
+      },
+      {
+        "title": "Psalmi 62",
+        "start": 378
+      },
+      {
+        "title": "Psalmi 63",
+        "start": 476
+      },
+      {
+        "title": "Isaia 11",
+        "start": 548
+      },
+      {
+        "title": "Isaia 12",
+        "start": 714
+      },
+      {
+        "title": "Jakobit 5",
+        "start": 761
+      }
+    ]
   }
 ]
