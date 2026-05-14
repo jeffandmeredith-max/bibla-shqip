@@ -351,5 +351,32 @@ export const may = [
         "start": 761
       }
     ]
+  },
+  {
+    "day": 14,
+    "date": "14 Maj",
+    "videoId": "ihaK9aDdOjo",
+    "readings": [
+      {
+        "title": "Numrat 23",
+        "start": 0
+      },
+      {
+        "title": "Psalmi 64",
+        "start": 252
+      },
+      {
+        "title": "Psalmi 65",
+        "start": 321
+      },
+      {
+        "title": "Isaia 13",
+        "start": 413
+      },
+      {
+        "title": "1 E Pjetrit 1",
+        "start": 607
+      }
+    ]
   }
 ]
