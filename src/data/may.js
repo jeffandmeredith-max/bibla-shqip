@@ -231,7 +231,8 @@ export const may = [
         "title": "Jakobit 1",
         "start": 819
       }
-    ]
+    ],
+    "audioFile": "may-9.webm"
   },
   {
     "day": 10,
@@ -377,6 +378,33 @@ export const may = [
       {
         "title": "1 E Pjetrit 1",
         "start": 607
+      }
+    ]
+  },
+  {
+    "day": 15,
+    "date": "15 Maj",
+    "videoId": "MN0DZMvPwDk",
+    "readings": [
+      {
+        "title": "Numrat 24",
+        "start": 0
+      },
+      {
+        "title": "Psalmi 66",
+        "start": 228
+      },
+      {
+        "title": "Psalmi 67",
+        "start": 349
+      },
+      {
+        "title": "Isaia 14",
+        "start": 389
+      },
+      {
+        "title": "1 E Pjetrit 2",
+        "start": 670
       }
     ]
   }
