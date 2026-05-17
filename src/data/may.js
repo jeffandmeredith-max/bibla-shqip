@@ -430,5 +430,28 @@ export const may = [
         "start": 482
       }
     ]
+  },
+  {
+    "day": 17,
+    "date": "17 Maj",
+    "videoId": "8G0QgxHfm08",
+    "readings": [
+      {
+        "title": "Numrat 26",
+        "start": 0
+      },
+      {
+        "title": "Psalmi 69",
+        "start": 521
+      },
+      {
+        "title": "Isaia 16",
+        "start": 752
+      },
+      {
+        "title": "1 E Pjetrit 4",
+        "start": 905
+      }
+    ]
   }
 ]
