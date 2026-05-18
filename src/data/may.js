@@ -453,5 +453,36 @@ export const may = [
         "start": 905
       }
     ]
+  },
+  {
+    "day": 18,
+    "date": "18 Maj",
+    "videoId": "kZtfT2wkjCU",
+    "readings": [
+      {
+        "title": "Numrat 27",
+        "start": 0
+      },
+      {
+        "title": "Psalmi 70",
+        "start": 189
+      },
+      {
+        "title": "Psalmi 71",
+        "start": 229
+      },
+      {
+        "title": "Isaia 17",
+        "start": 390
+      },
+      {
+        "title": "Isaia 18",
+        "start": 529
+      },
+      {
+        "title": "1 E Pjetrit 5",
+        "start": 620
+      }
+    ]
   }
 ]
