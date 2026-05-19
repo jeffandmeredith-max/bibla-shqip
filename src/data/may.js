@@ -484,5 +484,32 @@ export const may = [
         "start": 620
       }
     ]
+  },
+  {
+    "day": 19,
+    "date": "19 Maj",
+    "videoId": "Ijb-Q8T_-hc",
+    "readings": [
+      {
+        "title": "Numrat 28",
+        "start": 0
+      },
+      {
+        "title": "Psalmi 72",
+        "start": 255
+      },
+      {
+        "title": "Isaia 19",
+        "start": 397
+      },
+      {
+        "title": "Isaia 20",
+        "start": 634
+      },
+      {
+        "title": "2 E Pjetrit 1",
+        "start": 710
+      }
+    ]
   }
 ]
