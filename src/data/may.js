@@ -511,5 +511,28 @@ export const may = [
         "start": 710
       }
     ]
+  },
+  {
+    "day": 20,
+    "date": "20 Maj",
+    "videoId": "-95ymt3eFMo",
+    "readings": [
+      {
+        "title": "Numrat 29",
+        "start": 0
+      },
+      {
+        "title": "Psalmi 73",
+        "start": 321
+      },
+      {
+        "title": "Isaia 21",
+        "start": 480
+      },
+      {
+        "title": "2 E Pjetrit 2",
+        "start": 641
+      }
+    ]
   }
 ]
