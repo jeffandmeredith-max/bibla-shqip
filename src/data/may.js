@@ -534,5 +534,28 @@ export const may = [
         "start": 641
       }
     ]
+  },
+  {
+    "day": 21,
+    "date": "21 Maj",
+    "videoId": "V4Z0to5pNJA",
+    "readings": [
+      {
+        "title": "Numrat 30",
+        "start": 0
+      },
+      {
+        "title": "Psalmi 74",
+        "start": 166
+      },
+      {
+        "title": "Isaia 22",
+        "start": 306
+      },
+      {
+        "title": "2 E Pjetrit 3",
+        "start": 540
+      }
+    ]
   }
 ]
