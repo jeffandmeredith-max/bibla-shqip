@@ -584,5 +584,28 @@ export const may = [
         "start": 700
       }
     ]
+  },
+  {
+    "day": 23,
+    "date": "23 Maj",
+    "videoId": "QrDSKrR3HfA",
+    "readings": [
+      {
+        "title": "Numrat 32",
+        "start": 0
+      },
+      {
+        "title": "Psalmi 77",
+        "start": 351
+      },
+      {
+        "title": "Isaia 24",
+        "start": 486
+      },
+      {
+        "title": "1 E Gjonit 2",
+        "start": 677
+      }
+    ]
   }
 ]
