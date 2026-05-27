@@ -676,5 +676,11 @@ export const may = [
         "start": 540
       }
     ]
+  },
+  {
+    "day": 27,
+    "date": "27 Maj",
+    "videoId": "7UE_oOFtd8I",
+    "readings": []
   }
 ]
