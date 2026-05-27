@@ -681,6 +681,23 @@ export const may = [
     "day": 27,
     "date": "27 Maj",
     "videoId": "7UE_oOFtd8I",
-    "readings": []
+    "readings": [
+      {
+        "title": "Numrat 36",
+        "start": 0
+      },
+      {
+        "title": "Psalmi 80",
+        "start": 150
+      },
+      {
+        "title": "Isaia 28",
+        "start": 265
+      },
+      {
+        "title": "2 E Gjonit 1",
+        "start": 545
+      }
+    ]
   }
 ]
