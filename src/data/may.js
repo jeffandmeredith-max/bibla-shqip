@@ -700,5 +700,32 @@ export const may = [
         "start": 545
       }
     ]
+  },
+  {
+    "day": 28,
+    "date": "28 Maj",
+    "videoId": "A04EAXvM5jM",
+    "readings": [
+      {
+        "title": "Ligji I PërtërirË 1",
+        "start": 0
+      },
+      {
+        "title": "Psalmi 81",
+        "start": 407
+      },
+      {
+        "title": "Psalmi 82",
+        "start": 514
+      },
+      {
+        "title": "Isaia 29",
+        "start": 558
+      },
+      {
+        "title": "3 E Gjonit 1",
+        "start": 795
+      }
+    ]
   }
 ]
