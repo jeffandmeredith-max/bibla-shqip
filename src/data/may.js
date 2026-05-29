@@ -727,5 +727,32 @@ export const may = [
         "start": 795
       }
     ]
+  },
+  {
+    "day": 29,
+    "date": "29 Maj",
+    "videoId": "fIg6Qpb9c7c",
+    "readings": [
+      {
+        "title": "Ligji I PërtërirË 2",
+        "start": 0
+      },
+      {
+        "title": "Psalmi 83",
+        "start": 319
+      },
+      {
+        "title": "Psalmi 84",
+        "start": 413
+      },
+      {
+        "title": "Isaia 30",
+        "start": 498
+      },
+      {
+        "title": "Juda 1",
+        "start": 840
+      }
+    ]
   }
 ]
