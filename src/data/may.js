@@ -777,5 +777,32 @@ export const may = [
         "start": 451
       }
     ]
+  },
+  {
+    "day": 31,
+    "date": "31 Maj",
+    "videoId": "kvurH5OMhMQ",
+    "readings": [
+      {
+        "title": "Ligji I PërtërirË 4",
+        "start": 0
+      },
+      {
+        "title": "Psalmi 86",
+        "start": 468
+      },
+      {
+        "title": "Psalmi 87",
+        "start": 586
+      },
+      {
+        "title": "Isaia 32",
+        "start": 634
+      },
+      {
+        "title": "Zbulesa 2",
+        "start": 790
+      }
+    ]
   }
 ]
