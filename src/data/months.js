@@ -4,11 +4,13 @@ import { february } from './february'
 import { march } from './march'
 import { april } from './april'
 import { may } from './may'
+import { june } from './june'
 
 export const MONTHS = [
   { key: 'january', label: 'Janar', days: january },
   { key: 'february', label: 'Shkurt', days: february },
   { key: 'march', label: 'Mars', days: march },
   { key: 'april', label: 'Prill', days: april },
-  { key: 'may', label: 'Maj', days: may }
+  { key: 'may', label: 'Maj', days: may },
+  { key: 'june', label: 'Qershor', days: june }
 ]
