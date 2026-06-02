@@ -22,5 +22,28 @@ export const june = [
         "start": 620
       }
     ]
+  },
+  {
+    "day": 2,
+    "date": "2 Qershor",
+    "videoId": "1ONb6smeXiI",
+    "readings": [
+      {
+        "title": "Ligji I PërtërirË 6",
+        "start": 0
+      },
+      {
+        "title": "Psalmi 89",
+        "start": 207
+      },
+      {
+        "title": "Isaia 34",
+        "start": 500
+      },
+      {
+        "title": "Zbulesa 4",
+        "start": 670
+      }
+    ]
   }
 ]
