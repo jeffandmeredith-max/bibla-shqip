@@ -45,5 +45,28 @@ export const june = [
         "start": 670
       }
     ]
+  },
+  {
+    "day": 3,
+    "date": "3 Qershor",
+    "videoId": "Mt0Dyb-uxzE",
+    "readings": [
+      {
+        "title": "Ligji I PërtërirË 7",
+        "start": 0
+      },
+      {
+        "title": "Psalmi 90",
+        "start": 275
+      },
+      {
+        "title": "Isaia 35",
+        "start": 389
+      },
+      {
+        "title": "Zbulesa 5",
+        "start": 493
+      }
+    ]
   }
 ]
