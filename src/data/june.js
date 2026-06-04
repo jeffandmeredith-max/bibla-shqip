@@ -68,5 +68,28 @@ export const june = [
         "start": 493
       }
     ]
+  },
+  {
+    "day": 4,
+    "date": "4 Qershor",
+    "videoId": "eX_Rnb3_TbM",
+    "readings": [
+      {
+        "title": "Ligji I PërtërirË 8",
+        "start": 0
+      },
+      {
+        "title": "Psalmi 91",
+        "start": 185
+      },
+      {
+        "title": "Isaia 36",
+        "start": 289
+      },
+      {
+        "title": "Zbulesa 6",
+        "start": 530
+      }
+    ]
   }
 ]
