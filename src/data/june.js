@@ -91,5 +91,32 @@ export const june = [
         "start": 530
       }
     ]
+  },
+  {
+    "day": 5,
+    "date": "5 Qershor",
+    "videoId": "tpDEzcq-k_4",
+    "readings": [
+      {
+        "title": "Ligji I PërtërirË 9",
+        "start": 0
+      },
+      {
+        "title": "Psalmi 92",
+        "start": 297
+      },
+      {
+        "title": "Psalmi 93",
+        "start": 387
+      },
+      {
+        "title": "Isaia 37",
+        "start": 430
+      },
+      {
+        "title": "Zbulesa 7",
+        "start": 794
+      }
+    ]
   }
 ]
