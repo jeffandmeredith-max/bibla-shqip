@@ -118,5 +118,28 @@ export const june = [
         "start": 794
       }
     ]
+  },
+  {
+    "day": 6,
+    "date": "6 Qershor",
+    "videoId": "HknNZaU6NXg",
+    "readings": [
+      {
+        "title": "Ligji I PërtërirË 10",
+        "start": 0
+      },
+      {
+        "title": "Psalmi 94",
+        "start": 197
+      },
+      {
+        "title": "Isaia 38",
+        "start": 325
+      },
+      {
+        "title": "Zbulesa 8",
+        "start": 523
+      }
+    ]
   }
 ]
