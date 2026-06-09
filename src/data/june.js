@@ -195,5 +195,40 @@ export const june = [
         "start": 729
       }
     ]
+  },
+  {
+    "day": 9,
+    "date": "9 Qershor",
+    "videoId": "ZyAO4R4QLZo",
+    "readings": [
+      {
+        "title": "Ligji I PërtërirË 13",
+        "start": 0
+      },
+      {
+        "title": "Ligji I PërtërirË 14",
+        "start": 211
+      },
+      {
+        "title": "Psalmi 99",
+        "start": 420
+      },
+      {
+        "title": "Psalmi 100",
+        "start": 489
+      },
+      {
+        "title": "Psalmi 101",
+        "start": 523
+      },
+      {
+        "title": "Isaia 41",
+        "start": 586
+      },
+      {
+        "title": "Zbulesa 11",
+        "start": 856
+      }
+    ]
   }
 ]
