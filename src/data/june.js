@@ -230,5 +230,28 @@ export const june = [
         "start": 856
       }
     ]
+  },
+  {
+    "day": 10,
+    "date": "10 Qershor",
+    "videoId": "fNyAyAi9Wgs",
+    "readings": [
+      {
+        "title": "Ligji I PërtërirË 15",
+        "start": 0
+      },
+      {
+        "title": "Psalmi 102",
+        "start": 213
+      },
+      {
+        "title": "Isaia 42",
+        "start": 370
+      },
+      {
+        "title": "Zbulesa 12",
+        "start": 596
+      }
+    ]
   }
 ]
