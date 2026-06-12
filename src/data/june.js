@@ -276,5 +276,28 @@ export const june = [
         "start": 565
       }
     ]
+  },
+  {
+    "day": 12,
+    "date": "12 Qershor",
+    "videoId": "hvgblKUVKE4",
+    "readings": [
+      {
+        "title": "Ligji I PërtërirË 17",
+        "start": 0
+      },
+      {
+        "title": "Psalmi 104",
+        "start": 212
+      },
+      {
+        "title": "Isaia 44",
+        "start": 405
+      },
+      {
+        "title": "Zbulesa 14",
+        "start": 689
+      }
+    ]
   }
 ]
