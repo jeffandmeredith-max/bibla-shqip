@@ -299,5 +299,28 @@ export const june = [
         "start": 689
       }
     ]
+  },
+  {
+    "day": 13,
+    "date": "13 Qershor",
+    "videoId": "AZmuoKqi35o",
+    "readings": [
+      {
+        "title": "Ligji I PërtërirË 18",
+        "start": 0
+      },
+      {
+        "title": "Psalmi 105",
+        "start": 193
+      },
+      {
+        "title": "Isaia 45",
+        "start": 427
+      },
+      {
+        "title": "Zbulesa 15",
+        "start": 696
+      }
+    ]
   }
 ]
