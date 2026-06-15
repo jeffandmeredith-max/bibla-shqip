@@ -345,5 +345,28 @@ export const june = [
         "start": 568
       }
     ]
+  },
+  {
+    "day": 15,
+    "date": "15 Qershor",
+    "videoId": "F9GL35k2Hc0",
+    "readings": [
+      {
+        "title": "Ligji I PërtërirË 20",
+        "start": 0
+      },
+      {
+        "title": "Psalmi 107",
+        "start": 195
+      },
+      {
+        "title": "Isaia 47",
+        "start": 408
+      },
+      {
+        "title": "Zbulesa 17",
+        "start": 573
+      }
+    ]
   }
 ]
