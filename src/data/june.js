@@ -368,5 +368,32 @@ export const june = [
         "start": 573
       }
     ]
+  },
+  {
+    "day": 16,
+    "date": "16 Qershor",
+    "videoId": "oRdqTQG7UFc",
+    "readings": [
+      {
+        "title": "Ligji I PërtërirË 21",
+        "start": 0
+      },
+      {
+        "title": "Psalmi 108",
+        "start": 221
+      },
+      {
+        "title": "Psalmi 109",
+        "start": 301
+      },
+      {
+        "title": "Isaia 48",
+        "start": 471
+      },
+      {
+        "title": "Zbulesa 18",
+        "start": 676
+      }
+    ]
   }
 ]
