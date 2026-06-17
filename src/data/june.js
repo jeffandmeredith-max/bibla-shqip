@@ -395,5 +395,32 @@ export const june = [
         "start": 676
       }
     ]
+  },
+  {
+    "day": 17,
+    "date": "17 Qershor",
+    "videoId": "uc_0wuXciSk",
+    "readings": [
+      {
+        "title": "Ligji I PërtërirË 22",
+        "start": 0
+      },
+      {
+        "title": "Psalmi 110",
+        "start": 266
+      },
+      {
+        "title": "Psalmi 111",
+        "start": 323
+      },
+      {
+        "title": "Isaia 49",
+        "start": 394
+      },
+      {
+        "title": "Zbulesa 19",
+        "start": 675
+      }
+    ]
   }
 ]
