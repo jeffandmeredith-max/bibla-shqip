@@ -449,5 +449,32 @@ export const june = [
         "start": 441
       }
     ]
+  },
+  {
+    "day": 19,
+    "date": "19 Qershor",
+    "videoId": "BAMPaSOYndU",
+    "readings": [
+      {
+        "title": "Ligji I PërtërirË 24",
+        "start": 0
+      },
+      {
+        "title": "Psalmi 114",
+        "start": 203
+      },
+      {
+        "title": "Psalmi 115",
+        "start": 243
+      },
+      {
+        "title": "Isaia 51",
+        "start": 335
+      },
+      {
+        "title": "Zbulesa 21",
+        "start": 570
+      }
+    ]
   }
 ]
