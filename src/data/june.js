@@ -476,5 +476,28 @@ export const june = [
         "start": 570
       }
     ]
+  },
+  {
+    "day": 20,
+    "date": "20 Qershor",
+    "videoId": "d4Lq98g2TCw",
+    "readings": [
+      {
+        "title": "Ligji I PërtërirË 25",
+        "start": 0
+      },
+      {
+        "title": "Psalmi 116",
+        "start": 167
+      },
+      {
+        "title": "Isaia 52",
+        "start": 261
+      },
+      {
+        "title": "Zbulesa 22",
+        "start": 397
+      }
+    ]
   }
 ]
