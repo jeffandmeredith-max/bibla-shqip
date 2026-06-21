@@ -499,5 +499,32 @@ export const june = [
         "start": 397
       }
     ]
+  },
+  {
+    "day": 21,
+    "date": "21 Qershor",
+    "videoId": "q0JTJxARwf0",
+    "readings": [
+      {
+        "title": "Ligji I PërtërirË 26",
+        "start": 0
+      },
+      {
+        "title": "Psalmi 117",
+        "start": 208
+      },
+      {
+        "title": "Psalmi 118",
+        "start": 226
+      },
+      {
+        "title": "Isaia 53",
+        "start": 376
+      },
+      {
+        "title": "Mateu 1",
+        "start": 536
+      }
+    ]
   }
 ]
