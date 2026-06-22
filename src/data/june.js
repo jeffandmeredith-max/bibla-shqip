@@ -526,5 +526,32 @@ export const june = [
         "start": 536
       }
     ]
+  },
+  {
+    "day": 22,
+    "date": "22 Qershor",
+    "videoId": "FIyhi6_b2yY",
+    "readings": [
+      {
+        "title": "Ligji I PërtërirË 27",
+        "start": 0
+      },
+      {
+        "title": "Ligji I PërtërirË 28:1~19",
+        "start": 219
+      },
+      {
+        "title": "Psalmi 119:1~24",
+        "start": 378
+      },
+      {
+        "title": "Isaia 54",
+        "start": 497
+      },
+      {
+        "title": "Mateu 2",
+        "start": 657
+      }
+    ]
   }
 ]
