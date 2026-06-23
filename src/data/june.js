@@ -553,5 +553,28 @@ export const june = [
         "start": 657
       }
     ]
+  },
+  {
+    "day": 23,
+    "date": "23 Qershor",
+    "videoId": "vbanb3-VIzg",
+    "readings": [
+      {
+        "title": "Ligji I PërtërirË 28:20~68",
+        "start": 0
+      },
+      {
+        "title": "Psalmi 119:25~48",
+        "start": 463
+      },
+      {
+        "title": "Isaia 55",
+        "start": 585
+      },
+      {
+        "title": "Mateu 3",
+        "start": 716
+      }
+    ]
   }
 ]
