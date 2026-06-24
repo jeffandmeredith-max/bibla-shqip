@@ -576,5 +576,28 @@ export const june = [
         "start": 716
       }
     ]
+  },
+  {
+    "day": 24,
+    "date": "24 Qershor",
+    "videoId": "FW3HofZCJ70",
+    "readings": [
+      {
+        "title": "Ligji I PërtërirË 29",
+        "start": 0
+      },
+      {
+        "title": "Psalmi 119:49~72",
+        "start": 256
+      },
+      {
+        "title": "Isaia 56",
+        "start": 377
+      },
+      {
+        "title": "Mateu 4",
+        "start": 504
+      }
+    ]
   }
 ]
