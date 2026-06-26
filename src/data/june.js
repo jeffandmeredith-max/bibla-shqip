@@ -622,5 +622,28 @@ export const june = [
         "start": 527
       }
     ]
+  },
+  {
+    "day": 26,
+    "date": "26 Qershor",
+    "videoId": "h5TGs1ZVEZQ",
+    "readings": [
+      {
+        "title": "Ligji I PërtërirË 31",
+        "start": 0
+      },
+      {
+        "title": "Psalmi 119:97~120",
+        "start": 316
+      },
+      {
+        "title": "Isaia 58",
+        "start": 450
+      },
+      {
+        "title": "Mateu 6",
+        "start": 632
+      }
+    ]
   }
 ]
