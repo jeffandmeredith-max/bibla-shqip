@@ -668,5 +668,32 @@ export const june = [
         "start": 777
       }
     ]
+  },
+  {
+    "day": 28,
+    "date": "28 Qershor",
+    "videoId": "9d68Xk2FE_8",
+    "readings": [
+      {
+        "title": "Ligji I PërtërirË 33",
+        "start": 0
+      },
+      {
+        "title": "Ligji I PërtërirË 34",
+        "start": 280
+      },
+      {
+        "title": "Psalmi 119:145~176",
+        "start": 392
+      },
+      {
+        "title": "Isaia 60",
+        "start": 557
+      },
+      {
+        "title": "Mateu 8",
+        "start": 779
+      }
+    ]
   }
 ]
