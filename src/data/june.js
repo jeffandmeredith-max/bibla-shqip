@@ -695,5 +695,36 @@ export const june = [
         "start": 779
       }
     ]
+  },
+  {
+    "day": 29,
+    "date": "29 Qershor",
+    "videoId": "s7deiGK8lqk",
+    "readings": [
+      {
+        "title": "Jozueu 1",
+        "start": 0
+      },
+      {
+        "title": "Psalmi 120",
+        "start": 182
+      },
+      {
+        "title": "Psalmi 121",
+        "start": 217
+      },
+      {
+        "title": "Psalmi 122",
+        "start": 257
+      },
+      {
+        "title": "Isaia 61",
+        "start": 303
+      },
+      {
+        "title": "Mateu 9",
+        "start": 437
+      }
+    ]
   }
 ]
