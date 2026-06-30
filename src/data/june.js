@@ -726,5 +726,36 @@ export const june = [
         "start": 437
       }
     ]
+  },
+  {
+    "day": 30,
+    "date": "30 Qershor",
+    "videoId": "X6jNXLvdKaA",
+    "readings": [
+      {
+        "title": "Jozueu 2",
+        "start": 0
+      },
+      {
+        "title": "Psalmi 123",
+        "start": 229
+      },
+      {
+        "title": "Psalmi 124",
+        "start": 264
+      },
+      {
+        "title": "Psalmi 125",
+        "start": 306
+      },
+      {
+        "title": "Isaia 62",
+        "start": 346
+      },
+      {
+        "title": "Mateu 10",
+        "start": 469
+      }
+    ]
   }
 ]
