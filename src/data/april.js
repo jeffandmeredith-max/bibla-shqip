@@ -597,7 +597,8 @@ export const april = [
         "title": "Titi 2",
         "start": 556
       }
-    ]
+    ],
+    "audioFile": "april-23.webm"
   },
   {
     "day": 24,
@@ -620,7 +621,8 @@ export const april = [
         "title": "Titi 3",
         "start": 720
       }
-    ]
+    ],
+    "audioFile": "april-24.webm"
   },
   {
     "day": 25,
@@ -643,7 +645,8 @@ export const april = [
         "title": "Filemoni 1",
         "start": 496
       }
-    ]
+    ],
+    "audioFile": "april-25.webm"
   },
   {
     "day": 26,
@@ -690,7 +693,8 @@ export const april = [
         "title": "Hebrenjve 2",
         "start": 701
       }
-    ]
+    ],
+    "audioFile": "april-27.webm"
   },
   {
     "day": 28,
@@ -713,7 +717,8 @@ export const april = [
         "title": "Hebrenjve 3",
         "start": 521
       }
-    ]
+    ],
+    "audioFile": "april-28.webm"
   },
   {
     "day": 29,
@@ -740,7 +745,8 @@ export const april = [
         "title": "Hebrenjve 4",
         "start": 654
       }
-    ]
+    ],
+    "audioFile": "april-29.webm"
   },
   {
     "day": 30,
@@ -767,6 +773,7 @@ export const april = [
         "title": "Hebrenjve 5",
         "start": 995
       }
-    ]
+    ],
+    "audioFile": "april-30.webm"
   }
 ]

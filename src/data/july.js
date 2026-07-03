@@ -29,7 +29,8 @@ export const july = [
         "title": "Mateu 11",
         "start": 469
       }
-    ]
+    ],
+    "audioFile": "july-1.webm"
   },
   {
     "day": 2,
@@ -60,7 +61,8 @@ export const july = [
         "title": "Mateu 12",
         "start": 432
       }
-    ]
+    ],
+    "audioFile": "july-2.webm"
   },
   {
     "day": 3,
@@ -95,6 +97,7 @@ export const july = [
         "title": "Mateu 13",
         "start": 590
       }
-    ]
+    ],
+    "audioFile": "july-3.webm"
   }
 ]

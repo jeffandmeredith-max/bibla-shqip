@@ -21,7 +21,8 @@ export const may = [
         "title": "Hebrenjve 6",
         "start": 522
       }
-    ]
+    ],
+    "audioFile": "may-1.webm"
   },
   {
     "day": 2,
@@ -44,7 +45,8 @@ export const may = [
         "title": "Hebrenjve 7",
         "start": 485
       }
-    ]
+    ],
+    "audioFile": "may-2.webm"
   },
   {
     "day": 3,
@@ -71,7 +73,8 @@ export const may = [
         "title": "Hebrenjve 8",
         "start": 542
       }
-    ]
+    ],
+    "audioFile": "may-3.webm"
   },
   {
     "day": 4,
@@ -94,7 +97,8 @@ export const may = [
         "title": "Hebrenjve 9",
         "start": 684
       }
-    ]
+    ],
+    "audioFile": "may-4.webm"
   },
   {
     "day": 5,
@@ -205,7 +209,8 @@ export const may = [
         "title": "Hebrenjve 13",
         "start": 744
       }
-    ]
+    ],
+    "audioFile": "may-8.webm"
   },
   {
     "day": 9,
@@ -264,7 +269,8 @@ export const may = [
         "title": "Jakobit 2",
         "start": 689
       }
-    ]
+    ],
+    "audioFile": "may-10.webm"
   },
   {
     "day": 11,
@@ -295,7 +301,8 @@ export const may = [
         "title": "Jakobit 3",
         "start": 618
       }
-    ]
+    ],
+    "audioFile": "may-11.webm"
   },
   {
     "day": 12,
@@ -322,7 +329,8 @@ export const may = [
         "title": "Jakobit 4",
         "start": 741
       }
-    ]
+    ],
+    "audioFile": "may-12.webm"
   },
   {
     "day": 13,
@@ -353,7 +361,8 @@ export const may = [
         "title": "Jakobit 5",
         "start": 761
       }
-    ]
+    ],
+    "audioFile": "may-13.webm"
   },
   {
     "day": 14,
@@ -380,7 +389,8 @@ export const may = [
         "title": "1 E Pjetrit 1",
         "start": 607
       }
-    ]
+    ],
+    "audioFile": "may-14.webm"
   },
   {
     "day": 15,
@@ -407,7 +417,8 @@ export const may = [
         "title": "1 E Pjetrit 2",
         "start": 670
       }
-    ]
+    ],
+    "audioFile": "may-15.webm"
   },
   {
     "day": 16,
@@ -430,7 +441,8 @@ export const may = [
         "title": "1 E Pjetrit 3",
         "start": 482
       }
-    ]
+    ],
+    "audioFile": "may-16.webm"
   },
   {
     "day": 17,
@@ -453,7 +465,8 @@ export const may = [
         "title": "1 E Pjetrit 4",
         "start": 905
       }
-    ]
+    ],
+    "audioFile": "may-17.webm"
   },
   {
     "day": 18,
@@ -484,7 +497,8 @@ export const may = [
         "title": "1 E Pjetrit 5",
         "start": 620
       }
-    ]
+    ],
+    "audioFile": "may-18.webm"
   },
   {
     "day": 19,
@@ -511,7 +525,8 @@ export const may = [
         "title": "2 E Pjetrit 1",
         "start": 710
       }
-    ]
+    ],
+    "audioFile": "may-19.webm"
   },
   {
     "day": 20,
@@ -534,7 +549,8 @@ export const may = [
         "title": "2 E Pjetrit 2",
         "start": 641
       }
-    ]
+    ],
+    "audioFile": "may-20.webm"
   },
   {
     "day": 21,
@@ -557,7 +573,8 @@ export const may = [
         "title": "2 E Pjetrit 3",
         "start": 540
       }
-    ]
+    ],
+    "audioFile": "may-21.webm"
   },
   {
     "day": 22,
@@ -584,7 +601,8 @@ export const may = [
         "title": "1 E Gjonit 1",
         "start": 700
       }
-    ]
+    ],
+    "audioFile": "may-22.webm"
   },
   {
     "day": 23,
@@ -607,7 +625,8 @@ export const may = [
         "title": "1 E Gjonit 2",
         "start": 677
       }
-    ]
+    ],
+    "audioFile": "may-23.webm"
   },
   {
     "day": 24,
@@ -630,7 +649,8 @@ export const may = [
         "title": "1 E Gjonit 3",
         "start": 695
       }
-    ]
+    ],
+    "audioFile": "may-24.webm"
   },
   {
     "day": 25,
@@ -653,7 +673,8 @@ export const may = [
         "title": "1 E Gjonit 4",
         "start": 601
       }
-    ]
+    ],
+    "audioFile": "may-25.webm"
   },
   {
     "day": 26,
@@ -676,7 +697,8 @@ export const may = [
         "title": "1 E Gjonit 5",
         "start": 540
       }
-    ]
+    ],
+    "audioFile": "may-26.webm"
   },
   {
     "day": 27,
@@ -699,7 +721,8 @@ export const may = [
         "title": "2 E Gjonit 1",
         "start": 545
       }
-    ]
+    ],
+    "audioFile": "may-27.webm"
   },
   {
     "day": 28,
@@ -726,7 +749,8 @@ export const may = [
         "title": "3 E Gjonit 1",
         "start": 795
       }
-    ]
+    ],
+    "audioFile": "may-28.webm"
   },
   {
     "day": 29,
@@ -753,7 +777,8 @@ export const may = [
         "title": "Juda 1",
         "start": 840
       }
-    ]
+    ],
+    "audioFile": "may-29.webm"
   },
   {
     "day": 30,
@@ -776,7 +801,8 @@ export const may = [
         "title": "Zbulesa 1",
         "start": 451
       }
-    ]
+    ],
+    "audioFile": "may-30.webm"
   },
   {
     "day": 31,
@@ -803,6 +829,7 @@ export const may = [
         "title": "Zbulesa 2",
         "start": 790
       }
-    ]
+    ],
+    "audioFile": "may-31.webm"
   }
 ]

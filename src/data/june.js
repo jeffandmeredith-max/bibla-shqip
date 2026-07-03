@@ -21,7 +21,8 @@ export const june = [
         "title": "Zbulesa 3",
         "start": 620
       }
-    ]
+    ],
+    "audioFile": "june-1.webm"
   },
   {
     "day": 2,
@@ -44,7 +45,8 @@ export const june = [
         "title": "Zbulesa 4",
         "start": 670
       }
-    ]
+    ],
+    "audioFile": "june-2.webm"
   },
   {
     "day": 3,
@@ -67,7 +69,8 @@ export const june = [
         "title": "Zbulesa 5",
         "start": 493
       }
-    ]
+    ],
+    "audioFile": "june-3.webm"
   },
   {
     "day": 4,
@@ -90,7 +93,8 @@ export const june = [
         "title": "Zbulesa 6",
         "start": 530
       }
-    ]
+    ],
+    "audioFile": "june-4.webm"
   },
   {
     "day": 5,
@@ -117,7 +121,8 @@ export const june = [
         "title": "Zbulesa 7",
         "start": 794
       }
-    ]
+    ],
+    "audioFile": "june-5.webm"
   },
   {
     "day": 6,
@@ -140,7 +145,8 @@ export const june = [
         "title": "Zbulesa 8",
         "start": 523
       }
-    ]
+    ],
+    "audioFile": "june-6.webm"
   },
   {
     "day": 7,
@@ -167,7 +173,8 @@ export const june = [
         "title": "Zbulesa 9",
         "start": 536
       }
-    ]
+    ],
+    "audioFile": "june-7.webm"
   },
   {
     "day": 8,
@@ -194,7 +201,8 @@ export const june = [
         "title": "Zbulesa 10",
         "start": 729
       }
-    ]
+    ],
+    "audioFile": "june-8.webm"
   },
   {
     "day": 9,
@@ -229,7 +237,8 @@ export const june = [
         "title": "Zbulesa 11",
         "start": 856
       }
-    ]
+    ],
+    "audioFile": "june-9.webm"
   },
   {
     "day": 10,
@@ -252,7 +261,8 @@ export const june = [
         "title": "Zbulesa 12",
         "start": 596
       }
-    ]
+    ],
+    "audioFile": "june-10.webm"
   },
   {
     "day": 11,
@@ -275,7 +285,8 @@ export const june = [
         "title": "Zbulesa 13",
         "start": 565
       }
-    ]
+    ],
+    "audioFile": "june-11.webm"
   },
   {
     "day": 12,
@@ -298,7 +309,8 @@ export const june = [
         "title": "Zbulesa 14",
         "start": 689
       }
-    ]
+    ],
+    "audioFile": "june-12.webm"
   },
   {
     "day": 13,
@@ -321,7 +333,8 @@ export const june = [
         "title": "Zbulesa 15",
         "start": 696
       }
-    ]
+    ],
+    "audioFile": "june-13.webm"
   },
   {
     "day": 14,
@@ -344,7 +357,8 @@ export const june = [
         "title": "Zbulesa 16",
         "start": 568
       }
-    ]
+    ],
+    "audioFile": "june-14.webm"
   },
   {
     "day": 15,
@@ -367,7 +381,8 @@ export const june = [
         "title": "Zbulesa 17",
         "start": 573
       }
-    ]
+    ],
+    "audioFile": "june-15.webm"
   },
   {
     "day": 16,
@@ -394,7 +409,8 @@ export const june = [
         "title": "Zbulesa 18",
         "start": 676
       }
-    ]
+    ],
+    "audioFile": "june-16.webm"
   },
   {
     "day": 17,
@@ -421,7 +437,8 @@ export const june = [
         "title": "Zbulesa 19",
         "start": 675
       }
-    ]
+    ],
+    "audioFile": "june-17.webm"
   },
   {
     "day": 18,
@@ -448,7 +465,8 @@ export const june = [
         "title": "Zbulesa 20",
         "start": 441
       }
-    ]
+    ],
+    "audioFile": "june-18.webm"
   },
   {
     "day": 19,
@@ -475,7 +493,8 @@ export const june = [
         "title": "Zbulesa 21",
         "start": 570
       }
-    ]
+    ],
+    "audioFile": "june-19.webm"
   },
   {
     "day": 20,
@@ -498,7 +517,8 @@ export const june = [
         "title": "Zbulesa 22",
         "start": 397
       }
-    ]
+    ],
+    "audioFile": "june-20.webm"
   },
   {
     "day": 21,
@@ -525,7 +545,8 @@ export const june = [
         "title": "Mateu 1",
         "start": 536
       }
-    ]
+    ],
+    "audioFile": "june-21.webm"
   },
   {
     "day": 22,
@@ -552,7 +573,8 @@ export const june = [
         "title": "Mateu 2",
         "start": 657
       }
-    ]
+    ],
+    "audioFile": "june-22.webm"
   },
   {
     "day": 23,
@@ -575,7 +597,8 @@ export const june = [
         "title": "Mateu 3",
         "start": 716
       }
-    ]
+    ],
+    "audioFile": "june-23.webm"
   },
   {
     "day": 24,
@@ -598,7 +621,8 @@ export const june = [
         "title": "Mateu 4",
         "start": 504
       }
-    ]
+    ],
+    "audioFile": "june-24.webm"
   },
   {
     "day": 25,
@@ -621,7 +645,8 @@ export const june = [
         "title": "Mateu 5",
         "start": 527
       }
-    ]
+    ],
+    "audioFile": "june-25.webm"
   },
   {
     "day": 26,
@@ -644,7 +669,8 @@ export const june = [
         "title": "Mateu 6",
         "start": 632
       }
-    ]
+    ],
+    "audioFile": "june-26.webm"
   },
   {
     "day": 27,
@@ -667,7 +693,8 @@ export const june = [
         "title": "Mateu 7",
         "start": 777
       }
-    ]
+    ],
+    "audioFile": "june-27.webm"
   },
   {
     "day": 28,
@@ -694,7 +721,8 @@ export const june = [
         "title": "Mateu 8",
         "start": 779
       }
-    ]
+    ],
+    "audioFile": "june-28.webm"
   },
   {
     "day": 29,
@@ -725,7 +753,8 @@ export const june = [
         "title": "Mateu 9",
         "start": 437
       }
-    ]
+    ],
+    "audioFile": "june-29.webm"
   },
   {
     "day": 30,
@@ -756,6 +785,7 @@ export const june = [
         "title": "Mateu 10",
         "start": 469
       }
-    ]
+    ],
+    "audioFile": "june-30.webm"
   }
 ]
