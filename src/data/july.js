@@ -61,5 +61,40 @@ export const july = [
         "start": 432
       }
     ]
+  },
+  {
+    "day": 3,
+    "date": "3 Korrik",
+    "videoId": "Al9n9jI9S2Q",
+    "readings": [
+      {
+        "title": "Jozueu 5",
+        "start": 0
+      },
+      {
+        "title": "Jozueu 6:1~5",
+        "start": 152
+      },
+      {
+        "title": "Psalmi 132",
+        "start": 202
+      },
+      {
+        "title": "Psalmi 133",
+        "start": 302
+      },
+      {
+        "title": "Psalmi 134",
+        "start": 327
+      },
+      {
+        "title": "Isaia 65",
+        "start": 347
+      },
+      {
+        "title": "Mateu 13",
+        "start": 590
+      }
+    ]
   }
 ]
