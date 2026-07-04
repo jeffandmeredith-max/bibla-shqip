@@ -99,5 +99,32 @@ export const july = [
       }
     ],
     "audioFile": "july-3.webm"
+  },
+  {
+    "day": 4,
+    "date": "4 Korrik",
+    "videoId": "W_zetbl1sHE",
+    "readings": [
+      {
+        "title": "Jozueu 6:6~27",
+        "start": 0
+      },
+      {
+        "title": "Psalmi 135",
+        "start": 226
+      },
+      {
+        "title": "Psalmi 136",
+        "start": 336
+      },
+      {
+        "title": "Isaia 66",
+        "start": 462
+      },
+      {
+        "title": "Mateu 14",
+        "start": 732
+      }
+    ]
   }
 ]
