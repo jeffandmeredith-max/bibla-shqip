@@ -126,5 +126,32 @@ export const july = [
         "start": 732
       }
     ]
+  },
+  {
+    "day": 5,
+    "date": "5 Korrik",
+    "videoId": "LrENyIdAy-I",
+    "readings": [
+      {
+        "title": "Jozueu 7",
+        "start": 0
+      },
+      {
+        "title": "Psalmi 137",
+        "start": 278
+      },
+      {
+        "title": "Psalmi 138",
+        "start": 340
+      },
+      {
+        "title": "Jeremia 1",
+        "start": 403
+      },
+      {
+        "title": "Mateu 15",
+        "start": 570
+      }
+    ]
   }
 ]
