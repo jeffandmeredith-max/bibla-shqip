@@ -203,5 +203,32 @@ export const july = [
         "start": 628
       }
     ]
+  },
+  {
+    "day": 8,
+    "date": "8 Korrik",
+    "videoId": "7ExNiiWeSUc",
+    "readings": [
+      {
+        "title": "Jozueu 10",
+        "start": 0
+      },
+      {
+        "title": "Psalmi 142",
+        "start": 411
+      },
+      {
+        "title": "Psalmi 143",
+        "start": 460
+      },
+      {
+        "title": "Jeremia 4",
+        "start": 541
+      },
+      {
+        "title": "Mateu 18",
+        "start": 813
+      }
+    ]
   }
 ]
