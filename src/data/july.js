@@ -253,5 +253,32 @@ export const july = [
         "start": 590
       }
     ]
+  },
+  {
+    "day": 10,
+    "date": "10 Korrik",
+    "videoId": "vi44akElxUI",
+    "readings": [
+      {
+        "title": "Jozueu 12",
+        "start": 0
+      },
+      {
+        "title": "Jozueu 13",
+        "start": 166
+      },
+      {
+        "title": "Psalmi 145",
+        "start": 445
+      },
+      {
+        "title": "Jeremia 6",
+        "start": 561
+      },
+      {
+        "title": "Mateu 20",
+        "start": 824
+      }
+    ]
   }
 ]
