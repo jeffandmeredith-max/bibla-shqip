@@ -338,5 +338,36 @@ export const july = [
         "start": 570
       }
     ]
+  },
+  {
+    "day": 13,
+    "date": "13 Korrik",
+    "videoId": "olRi8yELUTE",
+    "readings": [
+      {
+        "title": "Jozueu 18",
+        "start": 0
+      },
+      {
+        "title": "Jozueu 19",
+        "start": 250
+      },
+      {
+        "title": "Psalmi 149",
+        "start": 590
+      },
+      {
+        "title": "Psalmi 150",
+        "start": 645
+      },
+      {
+        "title": "Jeremia 9",
+        "start": 680
+      },
+      {
+        "title": "Mateu 23",
+        "start": 929
+      }
+    ]
   }
 ]
