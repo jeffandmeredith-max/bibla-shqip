@@ -603,5 +603,28 @@ export const july = [
         "start": 942
       }
     ]
+  },
+  {
+    "day": 24,
+    "date": "24 Korrik",
+    "videoId": "6JMkv47ZLN0",
+    "readings": [
+      {
+        "title": "Gjyqtarët 7",
+        "start": 0
+      },
+      {
+        "title": "Veprat 11",
+        "start": 281
+      },
+      {
+        "title": "Jeremia 20",
+        "start": 507
+      },
+      {
+        "title": "Marku 6",
+        "start": 694
+      }
+    ]
   }
 ]
