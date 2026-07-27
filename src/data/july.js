@@ -672,5 +672,32 @@ export const july = [
         "start": 1202
       }
     ]
+  },
+  {
+    "day": 27,
+    "date": "27 Korrik",
+    "videoId": "nz1KxE0Im2g",
+    "readings": [
+      {
+        "title": "Gjyqtarët 10",
+        "start": 0
+      },
+      {
+        "title": "Gjyqtarët 11:1~11",
+        "start": 156
+      },
+      {
+        "title": "Veprat 14",
+        "start": 256
+      },
+      {
+        "title": "Jeremia 23",
+        "start": 493
+      },
+      {
+        "title": "Marku 9",
+        "start": 856
+      }
+    ]
   }
 ]
