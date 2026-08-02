@@ -22,5 +22,28 @@ export const august = [
         "start": 671
       }
     ]
+  },
+  {
+    "day": 2,
+    "date": "2 Gusht",
+    "videoId": "nCVpfR3dx3I",
+    "readings": [
+      {
+        "title": "Gjyqtarët 16",
+        "start": 0
+      },
+      {
+        "title": "Veprat 20",
+        "start": 340
+      },
+      {
+        "title": "Jeremia 29",
+        "start": 660
+      },
+      {
+        "title": "Marku 15",
+        "start": 947
+      }
+    ]
   }
 ]
