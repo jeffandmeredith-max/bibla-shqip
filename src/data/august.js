@@ -72,5 +72,32 @@ export const august = [
         "start": 1059
       }
     ]
+  },
+  {
+    "day": 4,
+    "date": "4 Gusht",
+    "videoId": "dKH5GjyGp_8",
+    "readings": [
+      {
+        "title": "Gjyqtarët 18",
+        "start": 0
+      },
+      {
+        "title": "Veprat 22",
+        "start": 300
+      },
+      {
+        "title": "Jeremia 32",
+        "start": 581
+      },
+      {
+        "title": "Psalmi 1",
+        "start": 1007
+      },
+      {
+        "title": "Psalmi 2",
+        "start": 1059
+      }
+    ]
   }
 ]
