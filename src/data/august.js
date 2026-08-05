@@ -99,5 +99,32 @@ export const august = [
         "start": 1059
       }
     ]
+  },
+  {
+    "day": 5,
+    "date": "5 Gusht",
+    "videoId": "hh_fUI60ofk",
+    "readings": [
+      {
+        "title": "Gjyqtarët 19",
+        "start": 0
+      },
+      {
+        "title": "Veprat 23",
+        "start": 351
+      },
+      {
+        "title": "Jeremia 33",
+        "start": 672
+      },
+      {
+        "title": "Psalmi 3",
+        "start": 925
+      },
+      {
+        "title": "Psalmi 4",
+        "start": 973
+      }
+    ]
   }
 ]
