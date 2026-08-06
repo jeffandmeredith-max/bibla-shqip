@@ -126,5 +126,32 @@ export const august = [
         "start": 973
       }
     ]
+  },
+  {
+    "day": 6,
+    "date": "6 Gusht",
+    "videoId": "r_kPcNB1NVU",
+    "readings": [
+      {
+        "title": "Gjyqtarët 20",
+        "start": 0
+      },
+      {
+        "title": "Veprat 24",
+        "start": 475
+      },
+      {
+        "title": "Jeremia 34",
+        "start": 715
+      },
+      {
+        "title": "Psalmi 5",
+        "start": 956
+      },
+      {
+        "title": "Psalmi 6",
+        "start": 1047
+      }
+    ]
   }
 ]
