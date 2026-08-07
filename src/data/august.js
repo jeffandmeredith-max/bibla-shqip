@@ -153,5 +153,32 @@ export const august = [
         "start": 1047
       }
     ]
+  },
+  {
+    "day": 7,
+    "date": "7 Gusht",
+    "videoId": "LMGOE7nGAws",
+    "readings": [
+      {
+        "title": "Gjyqtarët 21",
+        "start": 0
+      },
+      {
+        "title": "Veprat 25",
+        "start": 219
+      },
+      {
+        "title": "Jeremia 35",
+        "start": 460
+      },
+      {
+        "title": "Psalmi 7",
+        "start": 661
+      },
+      {
+        "title": "Psalmi 8",
+        "start": 771
+      }
+    ]
   }
 ]
