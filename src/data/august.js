@@ -207,5 +207,28 @@ export const august = [
         "start": 868
       }
     ]
+  },
+  {
+    "day": 9,
+    "date": "9 Gusht",
+    "videoId": "001q6tG34WM",
+    "readings": [
+      {
+        "title": "Ruthi 2",
+        "start": 0
+      },
+      {
+        "title": "Veprat 27",
+        "start": 224
+      },
+      {
+        "title": "Jeremia 37",
+        "start": 590
+      },
+      {
+        "title": "Psalmi 10",
+        "start": 774
+      }
+    ]
   }
 ]
