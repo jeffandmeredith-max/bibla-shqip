@@ -230,5 +230,36 @@ export const august = [
         "start": 774
       }
     ]
+  },
+  {
+    "day": 10,
+    "date": "10 Gusht",
+    "videoId": "aDtOfywrgbI",
+    "readings": [
+      {
+        "title": "Ruthi 3",
+        "start": 0
+      },
+      {
+        "title": "Ruthi 4",
+        "start": 167
+      },
+      {
+        "title": "Veprat 28",
+        "start": 377
+      },
+      {
+        "title": "Jeremia 38",
+        "start": 641
+      },
+      {
+        "title": "Psalmi 11",
+        "start": 924
+      },
+      {
+        "title": "Psalmi 12",
+        "start": 978
+      }
+    ]
   }
 ]
