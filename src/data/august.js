@@ -261,5 +261,32 @@ export const august = [
         "start": 978
       }
     ]
+  },
+  {
+    "day": 11,
+    "date": "11 Gusht",
+    "videoId": "WqyDk1mZTMs",
+    "readings": [
+      {
+        "title": "1 Samuelit 1",
+        "start": 0
+      },
+      {
+        "title": "Romakëve 1",
+        "start": 264
+      },
+      {
+        "title": "Jeremia 39",
+        "start": 547
+      },
+      {
+        "title": "Psalmi 13",
+        "start": 722
+      },
+      {
+        "title": "Psalmi 14",
+        "start": 766
+      }
+    ]
   }
 ]
