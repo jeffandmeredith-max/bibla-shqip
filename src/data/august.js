@@ -361,5 +361,32 @@ export const august = [
         "start": 639
       }
     ]
+  },
+  {
+    "day": 15,
+    "date": "15 Gusht",
+    "videoId": "mWEjVNvKCfc",
+    "readings": [
+      {
+        "title": "1 I Samuelit 5",
+        "start": 0
+      },
+      {
+        "title": "1 I Samuelit 6",
+        "start": 132
+      },
+      {
+        "title": "Romakëve 5",
+        "start": 353
+      },
+      {
+        "title": "Jeremia 43",
+        "start": 535
+      },
+      {
+        "title": "Psalmi 19",
+        "start": 684
+      }
+    ]
   }
 ]
