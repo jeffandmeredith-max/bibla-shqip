@@ -388,5 +388,36 @@ export const august = [
         "start": 684
       }
     ]
+  },
+  {
+    "day": 16,
+    "date": "16 Gusht",
+    "videoId": "TUeG-FuOt1c",
+    "readings": [
+      {
+        "title": "1 I Samuelit 7",
+        "start": 0
+      },
+      {
+        "title": "1 I Samuelit 8",
+        "start": 166
+      },
+      {
+        "title": "Romakëve 6",
+        "start": 325
+      },
+      {
+        "title": "Jeremia 44",
+        "start": 515
+      },
+      {
+        "title": "Psalmi 20",
+        "start": 883
+      },
+      {
+        "title": "Psalmi 21",
+        "start": 946
+      }
+    ]
   }
 ]
