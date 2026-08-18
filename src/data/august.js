@@ -442,5 +442,32 @@ export const august = [
         "start": 744
       }
     ]
+  },
+  {
+    "day": 18,
+    "date": "18 Gusht",
+    "videoId": "Hw-bqMasG7o",
+    "readings": [
+      {
+        "title": "1 I Samuelit 10",
+        "start": 0
+      },
+      {
+        "title": "Romakëve 8",
+        "start": 264
+      },
+      {
+        "title": "Jeremia 47",
+        "start": 575
+      },
+      {
+        "title": "Psalmi 23",
+        "start": 647
+      },
+      {
+        "title": "Psalmi 24",
+        "start": 698
+      }
+    ]
   }
 ]
