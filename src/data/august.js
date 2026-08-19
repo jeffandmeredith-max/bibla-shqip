@@ -469,5 +469,28 @@ export const august = [
         "start": 698
       }
     ]
+  },
+  {
+    "day": 19,
+    "date": "19 Gusht",
+    "videoId": "XaZofVtOMtY",
+    "readings": [
+      {
+        "title": "1 I Samuelit 11",
+        "start": 0
+      },
+      {
+        "title": "Romakëve 9",
+        "start": 264
+      },
+      {
+        "title": "Jeremia 48",
+        "start": 575
+      },
+      {
+        "title": "Psalmi 25",
+        "start": 647
+      }
+    ]
   }
 ]
