@@ -492,5 +492,32 @@ export const august = [
         "start": 647
       }
     ]
+  },
+  {
+    "day": 20,
+    "date": "20 Gusht",
+    "videoId": "rL6Qn0XE-Vc",
+    "readings": [
+      {
+        "title": "1 I Samuelit 12",
+        "start": 0
+      },
+      {
+        "title": "Romakëve 10",
+        "start": 246
+      },
+      {
+        "title": "Jeremia 49",
+        "start": 394
+      },
+      {
+        "title": "Psalmi 26",
+        "start": 788
+      },
+      {
+        "title": "Psalmi 27",
+        "start": 860
+      }
+    ]
   }
 ]
