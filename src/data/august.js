@@ -519,5 +519,32 @@ export const august = [
         "start": 860
       }
     ]
+  },
+  {
+    "day": 21,
+    "date": "21 Gusht",
+    "videoId": "-vRepgS77Uw",
+    "readings": [
+      {
+        "title": "1 I Samuelit 13",
+        "start": 0
+      },
+      {
+        "title": "Romakëve 11",
+        "start": 215
+      },
+      {
+        "title": "Jeremia 50",
+        "start": 503
+      },
+      {
+        "title": "Psalmi 28",
+        "start": 963
+      },
+      {
+        "title": "Psalmi 29",
+        "start": 1040
+      }
+    ]
   }
 ]
