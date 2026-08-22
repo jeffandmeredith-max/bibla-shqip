@@ -546,5 +546,28 @@ export const august = [
         "start": 1040
       }
     ]
+  },
+  {
+    "day": 22,
+    "date": "22 Gusht",
+    "videoId": "_FBMHqh5uj4",
+    "readings": [
+      {
+        "title": "1 I Samuelit 14",
+        "start": 0
+      },
+      {
+        "title": "Romakëve 12",
+        "start": 487
+      },
+      {
+        "title": "Jeremia 51",
+        "start": 643
+      },
+      {
+        "title": "Psalmi 30",
+        "start": 1257
+      }
+    ]
   }
 ]
