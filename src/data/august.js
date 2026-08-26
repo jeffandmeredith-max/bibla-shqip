@@ -638,5 +638,28 @@ export const august = [
         "start": 1052
       }
     ]
+  },
+  {
+    "day": 26,
+    "date": "26 Gusht",
+    "videoId": "G-3BmQgDh5Y",
+    "readings": [
+      {
+        "title": "1 I Samuelit 18",
+        "start": 0
+      },
+      {
+        "title": "Romakëve 16",
+        "start": 250
+      },
+      {
+        "title": "Vajtimet 3",
+        "start": 439
+      },
+      {
+        "title": "Psalmi 34",
+        "start": 712
+      }
+    ]
   }
 ]
