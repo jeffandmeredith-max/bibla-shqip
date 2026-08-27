@@ -661,5 +661,28 @@ export const august = [
         "start": 712
       }
     ]
+  },
+  {
+    "day": 27,
+    "date": "27 Gusht",
+    "videoId": "wwgzKo9XXPs",
+    "readings": [
+      {
+        "title": "1 I Samuelit 19",
+        "start": 0
+      },
+      {
+        "title": "1 e Korintasve 1",
+        "start": 237
+      },
+      {
+        "title": "Vajtimet 4",
+        "start": 462
+      },
+      {
+        "title": "Psalmi 35",
+        "start": 663
+      }
+    ]
   }
 ]
