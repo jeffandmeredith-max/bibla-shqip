@@ -684,5 +684,28 @@ export const august = [
         "start": 663
       }
     ]
+  },
+  {
+    "day": 28,
+    "date": "28 Gusht",
+    "videoId": "cqVGVJw91EA",
+    "readings": [
+      {
+        "title": "1 I Samuelit 20",
+        "start": 0
+      },
+      {
+        "title": "1 e Korintasve 2",
+        "start": 378
+      },
+      {
+        "title": "Vajtimet 5",
+        "start": 499
+      },
+      {
+        "title": "Psalmi 36",
+        "start": 605
+      }
+    ]
   }
 ]
