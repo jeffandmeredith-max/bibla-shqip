@@ -734,5 +734,28 @@ export const august = [
         "start": 813
       }
     ]
+  },
+  {
+    "day": 30,
+    "date": "30 Gusht",
+    "videoId": "8j14r-vgV1g",
+    "readings": [
+      {
+        "title": "1 I Samuelit 23",
+        "start": 0
+      },
+      {
+        "title": "1 e Korintasve 4",
+        "start": 255
+      },
+      {
+        "title": "Ezekieli 2",
+        "start": 406
+      },
+      {
+        "title": "Psalmi 38",
+        "start": 494
+      }
+    ]
   }
 ]
