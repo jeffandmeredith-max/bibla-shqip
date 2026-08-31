@@ -757,5 +757,28 @@ export const august = [
         "start": 494
       }
     ]
+  },
+  {
+    "day": 31,
+    "date": "31 Gusht",
+    "videoId": "KK8qW90rlzY",
+    "readings": [
+      {
+        "title": "1 I Samuelit 24",
+        "start": 0
+      },
+      {
+        "title": "1 e Korintasve 5",
+        "start": 193
+      },
+      {
+        "title": "Ezekieli 3",
+        "start": 289
+      },
+      {
+        "title": "Psalmi 39",
+        "start": 533
+      }
+    ]
   }
 ]
