@@ -7,6 +7,7 @@ import { may } from './may'
 import { june } from './june'
 import { july } from './july'
 import { august } from './august'
+import { september } from './september'
 
 export const MONTHS = [
   { key: 'january', label: 'Janar', days: january },
@@ -16,5 +17,6 @@ export const MONTHS = [
   { key: 'may', label: 'Maj', days: may },
   { key: 'june', label: 'Qershor', days: june },
   { key: 'july', label: 'Korrik', days: july },
-  { key: 'august', label: 'Gusht', days: august }
+  { key: 'august', label: 'Gusht', days: august },
+  { key: 'september', label: 'Shtator', days: september }
 ]
