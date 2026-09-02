@@ -26,5 +26,32 @@ export const september = [
         "start": 895
       }
     ]
+  },
+  {
+    "day": 2,
+    "date": "2 Shtator",
+    "videoId": "LrIy-h79JkQ",
+    "readings": [
+      {
+        "title": "1 I Samuelit 26",
+        "start": 0
+      },
+      {
+        "title": "1 e Korintasve 7",
+        "start": 282
+      },
+      {
+        "title": "Ezekieli 5",
+        "start": 573
+      },
+      {
+        "title": "Psalmi 42",
+        "start": 771
+      },
+      {
+        "title": "Psalmi 43",
+        "start": 878
+      }
+    ]
   }
 ]
