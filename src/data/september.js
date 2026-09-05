@@ -99,5 +99,36 @@ export const september = [
         "start": 682
       }
     ]
+  },
+  {
+    "day": 5,
+    "date": "5 Shtator",
+    "videoId": "ko-G8H-ld2o",
+    "readings": [
+      {
+        "title": "1 I Samuelit 29",
+        "start": 0
+      },
+      {
+        "title": "1 I Samuelit 30",
+        "start": 120
+      },
+      {
+        "title": "1 e Korintasve 10",
+        "start": 388
+      },
+      {
+        "title": "Ezekieli 8",
+        "start": 589
+      },
+      {
+        "title": "Psalmi 46",
+        "start": 791
+      },
+      {
+        "title": "Psalmi 47",
+        "start": 865
+      }
+    ]
   }
 ]
