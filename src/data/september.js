@@ -222,5 +222,40 @@ export const september = [
         "start": 866
       }
     ]
+  },
+  {
+    "day": 10,
+    "date": "10 Shtator",
+    "videoId": "bPaLAOPfudk",
+    "readings": [
+      {
+        "title": "2 I Samuelit 4",
+        "start": 0
+      },
+      {
+        "title": "2 I Samuelit 5",
+        "start": 140
+      },
+      {
+        "title": "1 e Korintasve 15",
+        "start": 340
+      },
+      {
+        "title": "Ezekieli 13",
+        "start": 711
+      },
+      {
+        "title": "Psalmi 52",
+        "start": 936
+      },
+      {
+        "title": "Psalmi 53",
+        "start": 1000
+      },
+      {
+        "title": "Psalmi 54",
+        "start": 1058
+      }
+    ]
   }
 ]
