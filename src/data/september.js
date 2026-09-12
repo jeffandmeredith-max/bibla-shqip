@@ -280,5 +280,32 @@ export const september = [
         "start": 573
       }
     ]
+  },
+  {
+    "day": 12,
+    "date": "12 Shtator",
+    "videoId": "WoI86Q6Pmb4",
+    "readings": [
+      {
+        "title": "2 I Samuelit 7",
+        "start": 0
+      },
+      {
+        "title": "2 e Korintasve 1",
+        "start": 252
+      },
+      {
+        "title": "Ezekieli 15",
+        "start": 441
+      },
+      {
+        "title": "Psalmi 56",
+        "start": 504
+      },
+      {
+        "title": "Psalmi 57",
+        "start": 597
+      }
+    ]
   }
 ]
