@@ -307,5 +307,36 @@ export const september = [
         "start": 597
       }
     ]
+  },
+  {
+    "day": 13,
+    "date": "13 Shtator",
+    "videoId": "jHL9COwcMLs",
+    "readings": [
+      {
+        "title": "2 I Samuelit 8",
+        "start": 0
+      },
+      {
+        "title": "2 I Samuelit 9",
+        "start": 158
+      },
+      {
+        "title": "2 e Korintasve 2",
+        "start": 281
+      },
+      {
+        "title": "Ezekieli 16",
+        "start": 399
+      },
+      {
+        "title": "Psalmi 58",
+        "start": 968
+      },
+      {
+        "title": "Psalmi 59",
+        "start": 1042
+      }
+    ]
   }
 ]
