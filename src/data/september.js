@@ -365,5 +365,32 @@ export const september = [
         "start": 660
       }
     ]
+  },
+  {
+    "day": 15,
+    "date": "15 Shtator",
+    "videoId": "Te89oUPieEg",
+    "readings": [
+      {
+        "title": "2 I Samuelit 11",
+        "start": 0
+      },
+      {
+        "title": "2 e Korintasve 4",
+        "start": 263
+      },
+      {
+        "title": "Ezekieli 18",
+        "start": 412
+      },
+      {
+        "title": "Psalmi 62",
+        "start": 699
+      },
+      {
+        "title": "Psalmi 63",
+        "start": 796
+      }
+    ]
   }
 ]
