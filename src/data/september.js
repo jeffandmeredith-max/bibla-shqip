@@ -446,5 +446,28 @@ export const september = [
         "start": 1058
       }
     ]
+  },
+  {
+    "day": 18,
+    "date": "18 Shtator",
+    "videoId": "3RXJrDlJ4tI",
+    "readings": [
+      {
+        "title": "2 I Samuelit 14",
+        "start": 0
+      },
+      {
+        "title": "2 e Korintasve 7",
+        "start": 322
+      },
+      {
+        "title": "Ezekieli 21",
+        "start": 465
+      },
+      {
+        "title": "Psalmi 68",
+        "start": 842
+      }
+    ]
   }
 ]
