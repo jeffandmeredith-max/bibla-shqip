@@ -661,5 +661,28 @@ export const september = [
         "start": 738
       }
     ]
+  },
+  {
+    "day": 27,
+    "date": "27 Shtator",
+    "videoId": "nPq5Sp9TuO4",
+    "readings": [
+      {
+        "title": "2 I Samuelit 23",
+        "start": 0
+      },
+      {
+        "title": "Galatasve 3",
+        "start": 323
+      },
+      {
+        "title": "Ezekieli 30",
+        "start": 548
+      },
+      {
+        "title": "Psalmi 78:38~72",
+        "start": 784
+      }
+    ]
   }
 ]
