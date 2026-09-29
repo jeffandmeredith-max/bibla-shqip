@@ -707,5 +707,28 @@ export const september = [
         "start": 696
       }
     ]
+  },
+  {
+    "day": 29,
+    "date": "29 Shtator",
+    "videoId": "28TC-Sde9Zg",
+    "readings": [
+      {
+        "title": "1 I Mbretërve 1",
+        "start": 0
+      },
+      {
+        "title": "Galatasve 5",
+        "start": 466
+      },
+      {
+        "title": "Ezekieli 32",
+        "start": 643
+      },
+      {
+        "title": "Psalmi 80",
+        "start": 956
+      }
+    ]
   }
 ]
