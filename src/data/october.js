@@ -26,5 +26,32 @@ export const october = [
         "start": 871
       }
     ]
+  },
+  {
+    "day": 2,
+    "date": "2 Tetor",
+    "videoId": "ocF8Em4ocqM",
+    "readings": [
+      {
+        "title": "1 I Mbretërve 4",
+        "start": 0
+      },
+      {
+        "title": "1 I Mbretërve 5",
+        "start": 285
+      },
+      {
+        "title": "Efesianëve 2",
+        "start": 465
+      },
+      {
+        "title": "Ezekieli 35",
+        "start": 634
+      },
+      {
+        "title": "Psalmi 85",
+        "start": 758
+      }
+    ]
   }
 ]
