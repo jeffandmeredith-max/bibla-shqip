@@ -53,5 +53,28 @@ export const october = [
         "start": 758
       }
     ]
+  },
+  {
+    "day": 3,
+    "date": "3 Tetor",
+    "videoId": "1wycSpLf1nU",
+    "readings": [
+      {
+        "title": "1 I Mbretërve 6",
+        "start": 0
+      },
+      {
+        "title": "Efesianëve 3",
+        "start": 330
+      },
+      {
+        "title": "Ezekieli 36",
+        "start": 489
+      },
+      {
+        "title": "Psalmi 86",
+        "start": 853
+      }
+    ]
   }
 ]
