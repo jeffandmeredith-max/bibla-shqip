@@ -76,5 +76,32 @@ export const october = [
         "start": 853
       }
     ]
+  },
+  {
+    "day": 4,
+    "date": "4 Tetor",
+    "videoId": "sEO8gebL-Rw",
+    "readings": [
+      {
+        "title": "1 I Mbretërve 7",
+        "start": 0
+      },
+      {
+        "title": "Efesianëve 4",
+        "start": 489
+      },
+      {
+        "title": "Ezekieli 37",
+        "start": 716
+      },
+      {
+        "title": "Psalmi 87",
+        "start": 1008
+      },
+      {
+        "title": "Psalmi 88",
+        "start": 1055
+      }
+    ]
   }
 ]
