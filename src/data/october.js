@@ -103,5 +103,28 @@ export const october = [
         "start": 1055
       }
     ]
+  },
+  {
+    "day": 5,
+    "date": "5 Tetor",
+    "videoId": "-ivwwApV8Us",
+    "readings": [
+      {
+        "title": "1 I Mbretërve 8",
+        "start": 0
+      },
+      {
+        "title": "Efesianëve 5",
+        "start": 669
+      },
+      {
+        "title": "Ezekieli 38",
+        "start": 876
+      },
+      {
+        "title": "Psalmi 89",
+        "start": 1110
+      }
+    ]
   }
 ]
