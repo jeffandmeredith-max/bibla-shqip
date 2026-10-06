@@ -126,5 +126,28 @@ export const october = [
         "start": 1110
       }
     ]
+  },
+  {
+    "day": 6,
+    "date": "6 Tetor",
+    "videoId": "ioWnCj0xS7c",
+    "readings": [
+      {
+        "title": "1 I Mbretërve 9",
+        "start": 0
+      },
+      {
+        "title": "Efesianëve 6",
+        "start": 292
+      },
+      {
+        "title": "Ezekieli 39",
+        "start": 455
+      },
+      {
+        "title": "Psalmi 90",
+        "start": 728
+      }
+    ]
   }
 ]
