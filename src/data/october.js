@@ -149,5 +149,28 @@ export const october = [
         "start": 728
       }
     ]
+  },
+  {
+    "day": 7,
+    "date": "7 Tetor",
+    "videoId": "CPaoIKoVGns",
+    "readings": [
+      {
+        "title": "1 I Mbretërve 10",
+        "start": 0
+      },
+      {
+        "title": "Filipianëve 1",
+        "start": 280
+      },
+      {
+        "title": "Ezekieli 40",
+        "start": 497
+      },
+      {
+        "title": "Psalmi 91",
+        "start": 977
+      }
+    ]
   }
 ]
