@@ -172,5 +172,55 @@ export const october = [
         "start": 977
       }
     ]
+  },
+  {
+    "day": 8,
+    "date": "8 Tetor",
+    "videoId": "V6n64_hb61k",
+    "readings": [
+      {
+        "title": "1 I Mbretërve 11",
+        "start": 0
+      },
+      {
+        "title": "Filipianëve 2",
+        "start": 419
+      },
+      {
+        "title": "Ezekieli 41",
+        "start": 636
+      },
+      {
+        "title": "Psalmi 92",
+        "start": 875
+      },
+      {
+        "title": "Psalmi 93",
+        "start": 965
+      }
+    ]
+  },
+  {
+    "day": 9,
+    "date": "9 Tetor",
+    "videoId": "HvrHRUheJMo",
+    "readings": [
+      {
+        "title": "1 I Mbretërve 12",
+        "start": 0
+      },
+      {
+        "title": "Filipianëve 3",
+        "start": 333
+      },
+      {
+        "title": "Ezekieli 42",
+        "start": 492
+      },
+      {
+        "title": "Psalmi 94",
+        "start": 660
+      }
+    ]
   }
 ]
