@@ -224,6 +224,29 @@ export const october = [
     ]
   },
   {
+    "day": 9,
+    "date": "9 Tetor",
+    "videoId": "jb5Qux5kOyo",
+    "readings": [
+      {
+        "title": "1 I Mbretërve 12",
+        "start": 0
+      },
+      {
+        "title": "Filipianëve 3",
+        "start": 333
+      },
+      {
+        "title": "Ezekieli 42",
+        "start": 503
+      },
+      {
+        "title": "Psalmi 94",
+        "start": 671
+      }
+    ]
+  },
+  {
     "day": 10,
     "date": "10 Tetor",
     "videoId": "ehhOoFyM030",
@@ -247,6 +270,33 @@ export const october = [
       {
         "title": "Psalmi 96",
         "start": 873
+      }
+    ]
+  },
+  {
+    "day": 10,
+    "date": "10 Tetor",
+    "videoId": "yhkMvR3p7i8",
+    "readings": [
+      {
+        "title": "1 I Mbretërve 13",
+        "start": 0
+      },
+      {
+        "title": "Filipianëve 4",
+        "start": 316
+      },
+      {
+        "title": "Ezekieli 43",
+        "start": 488
+      },
+      {
+        "title": "Psalmi 95",
+        "start": 748
+      },
+      {
+        "title": "Psalmi 96",
+        "start": 817
       }
     ]
   }
