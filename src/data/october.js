@@ -222,5 +222,32 @@ export const october = [
         "start": 660
       }
     ]
+  },
+  {
+    "day": 10,
+    "date": "10 Tetor",
+    "videoId": "ehhOoFyM030",
+    "readings": [
+      {
+        "title": "1 I Mbretërve 13",
+        "start": 0
+      },
+      {
+        "title": "Filipianëve 4",
+        "start": 316
+      },
+      {
+        "title": "Ezekieli 43",
+        "start": 543
+      },
+      {
+        "title": "Psalmi 95",
+        "start": 803
+      },
+      {
+        "title": "Psalmi 96",
+        "start": 873
+      }
+    ]
   }
 ]
