@@ -326,5 +326,36 @@ export const october = [
         "start": 909
       }
     ]
+  },
+  {
+    "day": 12,
+    "date": "12 Tetor",
+    "videoId": "HKjfPl7XREs",
+    "readings": [
+      {
+        "title": "1 I Mbretërve 15",
+        "start": 0
+      },
+      {
+        "title": "Kolosianëve 2",
+        "start": 332
+      },
+      {
+        "title": "Ezekieli 45",
+        "start": 512
+      },
+      {
+        "title": "Psalmi 99",
+        "start": 774
+      },
+      {
+        "title": "Psalmi 100",
+        "start": 843
+      },
+      {
+        "title": "Psalmi 101",
+        "start": 877
+      }
+    ]
   }
 ]
