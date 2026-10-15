@@ -403,5 +403,28 @@ export const october = [
         "start": 612
       }
     ]
+  },
+  {
+    "day": 15,
+    "date": "15 Tetor",
+    "videoId": "Ll2K4kOqaRs",
+    "readings": [
+      {
+        "title": "1 I Mbretërve 18",
+        "start": 0
+      },
+      {
+        "title": "1 E Thesalonikasve 1",
+        "start": 461
+      },
+      {
+        "title": "Ezekieli 48",
+        "start": 553
+      },
+      {
+        "title": "Psalmi 104",
+        "start": 869
+      }
+    ]
   }
 ]
