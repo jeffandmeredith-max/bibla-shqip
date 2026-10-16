@@ -426,5 +426,28 @@ export const october = [
         "start": 869
       }
     ]
+  },
+  {
+    "day": 16,
+    "date": "16 Tetor",
+    "videoId": "7ZVo2GmAgio",
+    "readings": [
+      {
+        "title": "1 I Mbretërve 19",
+        "start": 0
+      },
+      {
+        "title": "1 E Thesalonikasve 2",
+        "start": 234
+      },
+      {
+        "title": "Danieli 1",
+        "start": 414
+      },
+      {
+        "title": "Psalmi 105",
+        "start": 620
+      }
+    ]
   }
 ]
