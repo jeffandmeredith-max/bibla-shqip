@@ -472,5 +472,28 @@ export const october = [
         "start": 1033
       }
     ]
+  },
+  {
+    "day": 18,
+    "date": "18 Tetor",
+    "videoId": "F6T82GUMfRE",
+    "readings": [
+      {
+        "title": "1 I Mbretërve 21",
+        "start": 0
+      },
+      {
+        "title": "1 E Thesalonikasve 4",
+        "start": 288
+      },
+      {
+        "title": "Danieli 3",
+        "start": 419
+      },
+      {
+        "title": "Psalmi 107",
+        "start": 772
+      }
+    ]
   }
 ]
