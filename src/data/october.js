@@ -495,5 +495,32 @@ export const october = [
         "start": 772
       }
     ]
+  },
+  {
+    "day": 19,
+    "date": "19 Tetor",
+    "videoId": "HnoWe_lAZvg",
+    "readings": [
+      {
+        "title": "1 I Mbretërve 22",
+        "start": 0
+      },
+      {
+        "title": "1 E Thesalonikasve 5",
+        "start": 496
+      },
+      {
+        "title": "Danieli 4",
+        "start": 637
+      },
+      {
+        "title": "Psalmi 108",
+        "start": 1035
+      },
+      {
+        "title": "Psalmi 109",
+        "start": 1114
+      }
+    ]
   }
 ]
