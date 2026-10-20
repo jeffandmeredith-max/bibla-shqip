@@ -522,5 +522,32 @@ export const october = [
         "start": 1114
       }
     ]
+  },
+  {
+    "day": 20,
+    "date": "20 Tetor",
+    "videoId": "gVftabp36WY",
+    "readings": [
+      {
+        "title": "2 I Mbretërve 1",
+        "start": 0
+      },
+      {
+        "title": "2 E Thesalonikasve 1",
+        "start": 239
+      },
+      {
+        "title": "Danieli 5",
+        "start": 348
+      },
+      {
+        "title": "Psalmi 110",
+        "start": 705
+      },
+      {
+        "title": "Psalmi 111",
+        "start": 762
+      }
+    ]
   }
 ]
