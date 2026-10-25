@@ -653,5 +653,28 @@ export const october = [
         "start": 755
       }
     ]
+  },
+  {
+    "day": 25,
+    "date": "25 Tetor",
+    "videoId": "2RQodF5yp5Y",
+    "readings": [
+      {
+        "title": "2 I Mbretërve 6",
+        "start": 0
+      },
+      {
+        "title": "1 E Timoteut 3",
+        "start": 315
+      },
+      {
+        "title": "Danieli 10",
+        "start": 410
+      },
+      {
+        "title": "Psalmi 119:1~24",
+        "start": 737
+      }
+    ]
   }
 ]
