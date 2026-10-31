@@ -776,5 +776,32 @@ export const october = [
         "start": 836
       }
     ]
+  },
+  {
+    "day": 31,
+    "date": "31 Tetor",
+    "videoId": "z0n46NwFqNY",
+    "readings": [
+      {
+        "title": "2 I Mbretërve 13",
+        "start": 0
+      },
+      {
+        "title": "2 E Timoteut 3",
+        "start": 263
+      },
+      {
+        "title": "Osea 5",
+        "start": 381
+      },
+      {
+        "title": "Osea 6",
+        "start": 509
+      },
+      {
+        "title": "Psalmi 119:145~176",
+        "start": 595
+      }
+    ]
   }
 ]
