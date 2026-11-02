@@ -30,5 +30,36 @@ export const november = [
         "start": 668
       }
     ]
+  },
+  {
+    "day": 2,
+    "date": "2 Nëntor",
+    "videoId": "FEN-dRUigMk",
+    "readings": [
+      {
+        "title": "2 I Mbretërve 15",
+        "start": 0
+      },
+      {
+        "title": "Titi 1",
+        "start": 380
+      },
+      {
+        "title": "Osea 8",
+        "start": 517
+      },
+      {
+        "title": "Psalmi 123",
+        "start": 633
+      },
+      {
+        "title": "Psalmi 124",
+        "start": 668
+      },
+      {
+        "title": "Psalmi 125",
+        "start": 711
+      }
+    ]
   }
 ]
