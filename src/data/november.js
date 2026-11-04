@@ -92,5 +92,36 @@ export const november = [
         "start": 577
       }
     ]
+  },
+  {
+    "day": 4,
+    "date": "4 Nëntor",
+    "videoId": "yDHjqj71ceE",
+    "readings": [
+      {
+        "title": "2 I Mbretërve 17",
+        "start": 0
+      },
+      {
+        "title": "Titi 3",
+        "start": 409
+      },
+      {
+        "title": "Osea 10",
+        "start": 524
+      },
+      {
+        "title": "Psalmi 129",
+        "start": 681
+      },
+      {
+        "title": "Psalmi 130",
+        "start": 720
+      },
+      {
+        "title": "Psalmi 131",
+        "start": 759
+      }
+    ]
   }
 ]
