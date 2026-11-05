@@ -123,5 +123,36 @@ export const november = [
         "start": 759
       }
     ]
+  },
+  {
+    "day": 5,
+    "date": "5 Nëntor",
+    "videoId": "aaA5d5Rv4sQ",
+    "readings": [
+      {
+        "title": "2 I Mbretërve 18",
+        "start": 0
+      },
+      {
+        "title": "Filemonit 1",
+        "start": 375
+      },
+      {
+        "title": "Osea 11",
+        "start": 530
+      },
+      {
+        "title": "Psalmi 132",
+        "start": 634
+      },
+      {
+        "title": "Psalmi 133",
+        "start": 733
+      },
+      {
+        "title": "Psalmi 134",
+        "start": 759
+      }
+    ]
   }
 ]
