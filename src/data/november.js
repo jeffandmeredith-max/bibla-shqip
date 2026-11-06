@@ -154,5 +154,32 @@ export const november = [
         "start": 759
       }
     ]
+  },
+  {
+    "day": 6,
+    "date": "6 Nëntor",
+    "videoId": "5jyWWveAFZE",
+    "readings": [
+      {
+        "title": "2 I Mbretërve 19",
+        "start": 0
+      },
+      {
+        "title": "Hebrenjve 1",
+        "start": 395
+      },
+      {
+        "title": "Osea 12",
+        "start": 513
+      },
+      {
+        "title": "Psalmi 135",
+        "start": 640
+      },
+      {
+        "title": "Psalmi 136",
+        "start": 750
+      }
+    ]
   }
 ]
