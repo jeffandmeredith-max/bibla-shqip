@@ -181,5 +181,32 @@ export const november = [
         "start": 750
       }
     ]
+  },
+  {
+    "day": 7,
+    "date": "7 Nëntor",
+    "videoId": "K086wl1M7rM",
+    "readings": [
+      {
+        "title": "2 I Mbretërve 20",
+        "start": 0
+      },
+      {
+        "title": "Hebrenjve 2",
+        "start": 230
+      },
+      {
+        "title": "Osea 13",
+        "start": 392
+      },
+      {
+        "title": "Psalmi 137",
+        "start": 537
+      },
+      {
+        "title": "Psalmi 138",
+        "start": 599
+      }
+    ]
   }
 ]
