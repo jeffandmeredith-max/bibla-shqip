@@ -724,6 +724,29 @@ export const october = [
     ]
   },
   {
+    "day": 28,
+    "date": "28 Tetor",
+    "videoId": "pzXNsLYCtBk",
+    "readings": [
+      {
+        "title": "2 I Mbretërve 9",
+        "start": 0
+      },
+      {
+        "title": "1 E Timoteut 6",
+        "start": 408
+      },
+      {
+        "title": "Osea 1",
+        "start": 600
+      },
+      {
+        "title": "Psalmi 119:73~96",
+        "start": 717
+      }
+    ]
+  },
+  {
     "day": 29,
     "date": "29 Tetor",
     "videoId": "eZQ04pnlHfA",

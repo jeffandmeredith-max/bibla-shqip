@@ -208,5 +208,28 @@ export const november = [
         "start": 599
       }
     ]
+  },
+  {
+    "day": 8,
+    "date": "8 Nëntor",
+    "videoId": "tYj32UTMRIU",
+    "readings": [
+      {
+        "title": "2 I Mbretërve 21",
+        "start": 0
+      },
+      {
+        "title": "Hebrenjve 3",
+        "start": 249
+      },
+      {
+        "title": "Osea 14",
+        "start": 375
+      },
+      {
+        "title": "Psalmi 139",
+        "start": 461
+      }
+    ]
   }
 ]
