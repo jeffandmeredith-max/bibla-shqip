@@ -231,5 +231,32 @@ export const november = [
         "start": 461
       }
     ]
+  },
+  {
+    "day": 9,
+    "date": "9 Nëntor",
+    "videoId": "D3T5uCHXhDg",
+    "readings": [
+      {
+        "title": "2 I Mbretërve 22",
+        "start": 0
+      },
+      {
+        "title": "Hebrenjve 4",
+        "start": 226
+      },
+      {
+        "title": "Joeli 1",
+        "start": 370
+      },
+      {
+        "title": "Psalmi 140",
+        "start": 530
+      },
+      {
+        "title": "Psalmi 141",
+        "start": 605
+      }
+    ]
   }
 ]
