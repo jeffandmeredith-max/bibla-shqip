@@ -281,5 +281,28 @@ export const november = [
         "start": 858
       }
     ]
+  },
+  {
+    "day": 11,
+    "date": "11 Nëntor",
+    "videoId": "RkgIFyO-oCI",
+    "readings": [
+      {
+        "title": "2 I Mbretërve 24",
+        "start": 0
+      },
+      {
+        "title": "Hebrenjve 6",
+        "start": 212
+      },
+      {
+        "title": "Joeli 3",
+        "start": 365
+      },
+      {
+        "title": "Psalmi 143",
+        "start": 554
+      }
+    ]
   }
 ]
