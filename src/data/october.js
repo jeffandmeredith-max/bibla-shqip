@@ -229,7 +229,8 @@ export const october = [
         "title": "Psalmi 94",
         "start": 660
       }
-    ]
+    ],
+    "audioFile": "october-9.webm"
   },
   {
     "day": 9,
@@ -280,7 +281,8 @@ export const october = [
         "title": "Psalmi 96",
         "start": 873
       }
-    ]
+    ],
+    "audioFile": "october-10.webm"
   },
   {
     "day": 10,
