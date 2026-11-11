@@ -125,7 +125,8 @@ export const july = [
         "title": "Mateu 14",
         "start": 732
       }
-    ]
+    ],
+    "audioFile": "july-4.webm"
   },
   {
     "day": 5,
@@ -152,7 +153,8 @@ export const july = [
         "title": "Mateu 15",
         "start": 570
       }
-    ]
+    ],
+    "audioFile": "july-5.webm"
   },
   {
     "day": 6,
@@ -175,7 +177,8 @@ export const july = [
         "title": "Mateu 16",
         "start": 825
       }
-    ]
+    ],
+    "audioFile": "july-6.webm"
   },
   {
     "day": 7,
@@ -202,7 +205,8 @@ export const july = [
         "title": "Mateu 17",
         "start": 628
       }
-    ]
+    ],
+    "audioFile": "july-7.webm"
   },
   {
     "day": 8,
@@ -229,7 +233,8 @@ export const july = [
         "title": "Mateu 18",
         "start": 813
       }
-    ]
+    ],
+    "audioFile": "july-8.webm"
   },
   {
     "day": 9,
@@ -252,7 +257,8 @@ export const july = [
         "title": "Mateu 19",
         "start": 590
       }
-    ]
+    ],
+    "audioFile": "july-9.webm"
   },
   {
     "day": 10,
@@ -279,7 +285,8 @@ export const july = [
         "title": "Mateu 20",
         "start": 824
       }
-    ]
+    ],
+    "audioFile": "july-10.webm"
   },
   {
     "day": 11,
@@ -310,7 +317,8 @@ export const july = [
         "title": "Mateu 21",
         "start": 996
       }
-    ]
+    ],
+    "audioFile": "july-11.webm"
   },
   {
     "day": 12,
@@ -337,7 +345,8 @@ export const july = [
         "title": "Mateu 22",
         "start": 570
       }
-    ]
+    ],
+    "audioFile": "july-12.webm"
   },
   {
     "day": 13,
@@ -368,7 +377,8 @@ export const july = [
         "title": "Mateu 23",
         "start": 929
       }
-    ]
+    ],
+    "audioFile": "july-13.webm"
   },
   {
     "day": 14,
@@ -395,7 +405,8 @@ export const july = [
         "title": "Mateu 24",
         "start": 896
       }
-    ]
+    ],
+    "audioFile": "july-14.webm"
   },
   {
     "day": 15,
@@ -418,7 +429,8 @@ export const july = [
         "title": "Mateu 25",
         "start": 1027
       }
-    ]
+    ],
+    "audioFile": "july-15.webm"
   },
   {
     "day": 16,
@@ -441,7 +453,8 @@ export const july = [
         "title": "Mateu 26",
         "start": 585
       }
-    ]
+    ],
+    "audioFile": "july-16.webm"
   },
   {
     "day": 17,
@@ -464,7 +477,8 @@ export const july = [
         "title": "Mateu 27",
         "start": 834
       }
-    ]
+    ],
+    "audioFile": "july-17.webm"
   },
   {
     "day": 18,
@@ -487,7 +501,8 @@ export const july = [
         "title": "Mateu 28",
         "start": 889
       }
-    ]
+    ],
+    "audioFile": "july-18.webm"
   },
   {
     "day": 19,
@@ -510,7 +525,8 @@ export const july = [
         "title": "Marku 1",
         "start": 534
       }
-    ]
+    ],
+    "audioFile": "july-19.webm"
   },
   {
     "day": 20,
@@ -533,7 +549,8 @@ export const july = [
         "title": "Marku 2",
         "start": 985
       }
-    ]
+    ],
+    "audioFile": "july-20.webm"
   },
   {
     "day": 21,
@@ -556,7 +573,8 @@ export const july = [
         "title": "Marku 3",
         "start": 796
       }
-    ]
+    ],
+    "audioFile": "july-21.webm"
   },
   {
     "day": 22,
@@ -579,7 +597,8 @@ export const july = [
         "title": "Marku 4",
         "start": 886
       }
-    ]
+    ],
+    "audioFile": "july-22.webm"
   },
   {
     "day": 23,
@@ -602,7 +621,8 @@ export const july = [
         "title": "Marku 5",
         "start": 942
       }
-    ]
+    ],
+    "audioFile": "july-23.webm"
   },
   {
     "day": 24,
@@ -625,7 +645,8 @@ export const july = [
         "title": "Marku 6",
         "start": 694
       }
-    ]
+    ],
+    "audioFile": "july-24.webm"
   },
   {
     "day": 25,
@@ -648,7 +669,8 @@ export const july = [
         "title": "Marku 7",
         "start": 654
       }
-    ]
+    ],
+    "audioFile": "july-25.webm"
   },
   {
     "day": 26,
@@ -671,7 +693,8 @@ export const july = [
         "title": "Marku 8",
         "start": 1202
       }
-    ]
+    ],
+    "audioFile": "july-26.webm"
   },
   {
     "day": 27,
@@ -698,7 +721,8 @@ export const july = [
         "title": "Marku 9",
         "start": 856
       }
-    ]
+    ],
+    "audioFile": "july-27.webm"
   },
   {
     "day": 28,
@@ -721,7 +745,8 @@ export const july = [
         "title": "Marku 10",
         "start": 710
       }
-    ]
+    ],
+    "audioFile": "july-28.webm"
   },
   {
     "day": 29,
@@ -744,7 +769,8 @@ export const july = [
         "title": "Marku 11",
         "start": 807
       }
-    ]
+    ],
+    "audioFile": "july-29.webm"
   },
   {
     "day": 30,
@@ -767,7 +793,8 @@ export const july = [
         "title": "Marku 12",
         "start": 799
       }
-    ]
+    ],
+    "audioFile": "july-30.webm"
   },
   {
     "day": 31,
@@ -790,6 +817,7 @@ export const july = [
         "title": "Marku 13",
         "start": 671
       }
-    ]
+    ],
+    "audioFile": "july-31.webm"
   }
 ]

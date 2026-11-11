@@ -25,7 +25,8 @@ export const october = [
         "title": "Psalmi 84",
         "start": 871
       }
-    ]
+    ],
+    "audioFile": "october-1.webm"
   },
   {
     "day": 2,
@@ -52,7 +53,8 @@ export const october = [
         "title": "Psalmi 85",
         "start": 758
       }
-    ]
+    ],
+    "audioFile": "october-2.webm"
   },
   {
     "day": 3,
@@ -75,7 +77,8 @@ export const october = [
         "title": "Psalmi 86",
         "start": 853
       }
-    ]
+    ],
+    "audioFile": "october-3.webm"
   },
   {
     "day": 4,
@@ -102,7 +105,8 @@ export const october = [
         "title": "Psalmi 88",
         "start": 1055
       }
-    ]
+    ],
+    "audioFile": "october-4.webm"
   },
   {
     "day": 5,
@@ -125,7 +129,8 @@ export const october = [
         "title": "Psalmi 89",
         "start": 1110
       }
-    ]
+    ],
+    "audioFile": "october-5.webm"
   },
   {
     "day": 6,
@@ -148,7 +153,8 @@ export const october = [
         "title": "Psalmi 90",
         "start": 728
       }
-    ]
+    ],
+    "audioFile": "october-6.webm"
   },
   {
     "day": 7,
@@ -171,7 +177,8 @@ export const october = [
         "title": "Psalmi 91",
         "start": 977
       }
-    ]
+    ],
+    "audioFile": "october-7.webm"
   },
   {
     "day": 8,
@@ -198,7 +205,8 @@ export const october = [
         "title": "Psalmi 93",
         "start": 965
       }
-    ]
+    ],
+    "audioFile": "october-8.webm"
   },
   {
     "day": 9,
@@ -244,7 +252,8 @@ export const october = [
         "title": "Psalmi 94",
         "start": 671
       }
-    ]
+    ],
+    "audioFile": "october-9.webm"
   },
   {
     "day": 10,
@@ -298,7 +307,8 @@ export const october = [
         "title": "Psalmi 96",
         "start": 817
       }
-    ]
+    ],
+    "audioFile": "october-10.webm"
   },
   {
     "day": 11,
@@ -325,7 +335,8 @@ export const october = [
         "title": "Psalmi 98",
         "start": 909
       }
-    ]
+    ],
+    "audioFile": "october-11.webm"
   },
   {
     "day": 12,
@@ -356,7 +367,8 @@ export const october = [
         "title": "Psalmi 101",
         "start": 877
       }
-    ]
+    ],
+    "audioFile": "october-12.webm"
   },
   {
     "day": 13,
@@ -379,7 +391,8 @@ export const october = [
         "title": "Psalmi 102",
         "start": 766
       }
-    ]
+    ],
+    "audioFile": "october-13.webm"
   },
   {
     "day": 14,
@@ -402,7 +415,8 @@ export const october = [
         "title": "Psalmi 103",
         "start": 612
       }
-    ]
+    ],
+    "audioFile": "october-14.webm"
   },
   {
     "day": 15,
@@ -425,7 +439,8 @@ export const october = [
         "title": "Psalmi 104",
         "start": 869
       }
-    ]
+    ],
+    "audioFile": "october-15.webm"
   },
   {
     "day": 16,
@@ -448,7 +463,8 @@ export const october = [
         "title": "Psalmi 105",
         "start": 620
       }
-    ]
+    ],
+    "audioFile": "october-16.webm"
   },
   {
     "day": 17,
@@ -471,7 +487,8 @@ export const october = [
         "title": "Psalmi 106",
         "start": 1033
       }
-    ]
+    ],
+    "audioFile": "october-17.webm"
   },
   {
     "day": 18,
@@ -494,7 +511,8 @@ export const october = [
         "title": "Psalmi 107",
         "start": 772
       }
-    ]
+    ],
+    "audioFile": "october-18.webm"
   },
   {
     "day": 19,
@@ -521,7 +539,8 @@ export const october = [
         "title": "Psalmi 109",
         "start": 1114
       }
-    ]
+    ],
+    "audioFile": "october-19.webm"
   },
   {
     "day": 20,
@@ -548,7 +567,8 @@ export const october = [
         "title": "Psalmi 111",
         "start": 762
       }
-    ]
+    ],
+    "audioFile": "october-20.webm"
   },
   {
     "day": 21,
@@ -575,7 +595,8 @@ export const october = [
         "title": "Psalmi 113",
         "start": 797
       }
-    ]
+    ],
+    "audioFile": "october-21.webm"
   },
   {
     "day": 22,
@@ -602,7 +623,8 @@ export const october = [
         "title": "Psalmi 115",
         "start": 759
       }
-    ]
+    ],
+    "audioFile": "october-22.webm"
   },
   {
     "day": 23,
@@ -625,7 +647,8 @@ export const october = [
         "title": "Psalmi 116",
         "start": 834
       }
-    ]
+    ],
+    "audioFile": "october-23.webm"
   },
   {
     "day": 24,
@@ -652,7 +675,8 @@ export const october = [
         "title": "Psalmi 118",
         "start": 755
       }
-    ]
+    ],
+    "audioFile": "october-24.webm"
   },
   {
     "day": 25,
@@ -675,7 +699,8 @@ export const october = [
         "title": "Psalmi 119:1~24",
         "start": 737
       }
-    ]
+    ],
+    "audioFile": "october-25.webm"
   },
   {
     "day": 26,
@@ -698,7 +723,8 @@ export const october = [
         "title": "Psalmi 119:25~48",
         "start": 833
       }
-    ]
+    ],
+    "audioFile": "october-26.webm"
   },
   {
     "day": 27,
@@ -721,7 +747,8 @@ export const october = [
         "title": "Psalmi 119:49~72",
         "start": 833
       }
-    ]
+    ],
+    "audioFile": "october-27.webm"
   },
   {
     "day": 28,
@@ -744,7 +771,8 @@ export const october = [
         "title": "Psalmi 119:73~96",
         "start": 717
       }
-    ]
+    ],
+    "audioFile": "october-28.webm"
   },
   {
     "day": 29,
@@ -767,7 +795,8 @@ export const october = [
         "title": "Psalmi 119:97~120",
         "start": 726
       }
-    ]
+    ],
+    "audioFile": "october-29.webm"
   },
   {
     "day": 30,
@@ -798,7 +827,8 @@ export const october = [
         "title": "Psalmi 119:121~144",
         "start": 836
       }
-    ]
+    ],
+    "audioFile": "october-30.webm"
   },
   {
     "day": 31,
@@ -825,6 +855,7 @@ export const october = [
         "title": "Psalmi 119:145~176",
         "start": 595
       }
-    ]
+    ],
+    "audioFile": "october-31.webm"
   }
 ]

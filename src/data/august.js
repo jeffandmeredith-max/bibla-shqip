@@ -21,7 +21,8 @@ export const august = [
         "title": "Marku 14",
         "start": 671
       }
-    ]
+    ],
+    "audioFile": "august-1.webm"
   },
   {
     "day": 2,
@@ -44,7 +45,8 @@ export const august = [
         "title": "Marku 15",
         "start": 947
       }
-    ]
+    ],
+    "audioFile": "august-2.webm"
   },
   {
     "day": 3,
@@ -71,7 +73,8 @@ export const august = [
         "title": "Marku 16",
         "start": 1059
       }
-    ]
+    ],
+    "audioFile": "august-3.webm"
   },
   {
     "day": 4,
@@ -98,7 +101,8 @@ export const august = [
         "title": "Psalmi 2",
         "start": 1059
       }
-    ]
+    ],
+    "audioFile": "august-4.webm"
   },
   {
     "day": 5,
@@ -125,7 +129,8 @@ export const august = [
         "title": "Psalmi 4",
         "start": 973
       }
-    ]
+    ],
+    "audioFile": "august-5.webm"
   },
   {
     "day": 6,
@@ -152,7 +157,8 @@ export const august = [
         "title": "Psalmi 6",
         "start": 1047
       }
-    ]
+    ],
+    "audioFile": "august-6.webm"
   },
   {
     "day": 7,
@@ -179,7 +185,8 @@ export const august = [
         "title": "Psalmi 8",
         "start": 771
       }
-    ]
+    ],
+    "audioFile": "august-7.webm"
   },
   {
     "day": 8,
@@ -206,7 +213,8 @@ export const august = [
         "title": "Psalmi 9",
         "start": 868
       }
-    ]
+    ],
+    "audioFile": "august-8.webm"
   },
   {
     "day": 9,
@@ -229,7 +237,8 @@ export const august = [
         "title": "Psalmi 10",
         "start": 774
       }
-    ]
+    ],
+    "audioFile": "august-9.webm"
   },
   {
     "day": 10,
@@ -260,7 +269,8 @@ export const august = [
         "title": "Psalmi 12",
         "start": 978
       }
-    ]
+    ],
+    "audioFile": "august-10.webm"
   },
   {
     "day": 11,
@@ -287,7 +297,8 @@ export const august = [
         "title": "Psalmi 14",
         "start": 766
       }
-    ]
+    ],
+    "audioFile": "august-11.webm"
   },
   {
     "day": 12,
@@ -314,7 +325,8 @@ export const august = [
         "title": "Psalmi 16",
         "start": 815
       }
-    ]
+    ],
+    "audioFile": "august-12.webm"
   },
   {
     "day": 13,
@@ -337,7 +349,8 @@ export const august = [
         "title": "Psalmi 17",
         "start": 596
       }
-    ]
+    ],
+    "audioFile": "august-13.webm"
   },
   {
     "day": 14,
@@ -360,7 +373,8 @@ export const august = [
         "title": "Psalmi 18",
         "start": 639
       }
-    ]
+    ],
+    "audioFile": "august-14.webm"
   },
   {
     "day": 15,
@@ -387,7 +401,8 @@ export const august = [
         "title": "Psalmi 19",
         "start": 684
       }
-    ]
+    ],
+    "audioFile": "august-15.webm"
   },
   {
     "day": 16,
@@ -418,7 +433,8 @@ export const august = [
         "title": "Psalmi 21",
         "start": 946
       }
-    ]
+    ],
+    "audioFile": "august-16.webm"
   },
   {
     "day": 17,
@@ -441,7 +457,8 @@ export const august = [
         "title": "Psalmi 22",
         "start": 744
       }
-    ]
+    ],
+    "audioFile": "august-17.webm"
   },
   {
     "day": 18,
@@ -468,7 +485,8 @@ export const august = [
         "title": "Psalmi 24",
         "start": 698
       }
-    ]
+    ],
+    "audioFile": "august-18.webm"
   },
   {
     "day": 19,
@@ -491,7 +509,8 @@ export const august = [
         "title": "Psalmi 25",
         "start": 647
       }
-    ]
+    ],
+    "audioFile": "august-19.webm"
   },
   {
     "day": 20,
@@ -518,7 +537,8 @@ export const august = [
         "title": "Psalmi 27",
         "start": 860
       }
-    ]
+    ],
+    "audioFile": "august-20.webm"
   },
   {
     "day": 21,
@@ -545,7 +565,8 @@ export const august = [
         "title": "Psalmi 29",
         "start": 1040
       }
-    ]
+    ],
+    "audioFile": "august-21.webm"
   },
   {
     "day": 22,
@@ -568,7 +589,8 @@ export const august = [
         "title": "Psalmi 30",
         "start": 1257
       }
-    ]
+    ],
+    "audioFile": "august-22.webm"
   },
   {
     "day": 23,
@@ -591,7 +613,8 @@ export const august = [
         "title": "Psalmi 31",
         "start": 789
       }
-    ]
+    ],
+    "audioFile": "august-23.webm"
   },
   {
     "day": 24,
@@ -614,7 +637,8 @@ export const august = [
         "title": "Psalmi 32",
         "start": 681
       }
-    ]
+    ],
+    "audioFile": "august-24.webm"
   },
   {
     "day": 25,
@@ -637,7 +661,8 @@ export const august = [
         "title": "Psalmi 33",
         "start": 1052
       }
-    ]
+    ],
+    "audioFile": "august-25.webm"
   },
   {
     "day": 26,
@@ -660,7 +685,8 @@ export const august = [
         "title": "Psalmi 34",
         "start": 712
       }
-    ]
+    ],
+    "audioFile": "august-26.webm"
   },
   {
     "day": 27,
@@ -683,7 +709,8 @@ export const august = [
         "title": "Psalmi 35",
         "start": 663
       }
-    ]
+    ],
+    "audioFile": "august-27.webm"
   },
   {
     "day": 28,
@@ -706,7 +733,8 @@ export const august = [
         "title": "Psalmi 36",
         "start": 605
       }
-    ]
+    ],
+    "audioFile": "august-28.webm"
   },
   {
     "day": 29,
@@ -733,7 +761,8 @@ export const august = [
         "title": "Psalmi 37",
         "start": 813
       }
-    ]
+    ],
+    "audioFile": "august-29.webm"
   },
   {
     "day": 30,
@@ -756,7 +785,8 @@ export const august = [
         "title": "Psalmi 38",
         "start": 494
       }
-    ]
+    ],
+    "audioFile": "august-30.webm"
   },
   {
     "day": 31,
@@ -779,6 +809,7 @@ export const august = [
         "title": "Psalmi 39",
         "start": 533
       }
-    ]
+    ],
+    "audioFile": "august-31.webm"
   }
 ]

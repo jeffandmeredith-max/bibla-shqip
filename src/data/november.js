@@ -29,7 +29,8 @@ export const november = [
         "title": "Psalmi 122",
         "start": 668
       }
-    ]
+    ],
+    "audioFile": "november-1.webm"
   },
   {
     "day": 2,
@@ -60,7 +61,8 @@ export const november = [
         "title": "Psalmi 125",
         "start": 711
       }
-    ]
+    ],
+    "audioFile": "november-2.webm"
   },
   {
     "day": 3,
@@ -91,7 +93,8 @@ export const november = [
         "title": "Psalmi 128",
         "start": 577
       }
-    ]
+    ],
+    "audioFile": "november-3.webm"
   },
   {
     "day": 4,
@@ -122,7 +125,8 @@ export const november = [
         "title": "Psalmi 131",
         "start": 759
       }
-    ]
+    ],
+    "audioFile": "november-4.webm"
   },
   {
     "day": 5,
@@ -153,7 +157,8 @@ export const november = [
         "title": "Psalmi 134",
         "start": 759
       }
-    ]
+    ],
+    "audioFile": "november-5.webm"
   },
   {
     "day": 6,
@@ -180,7 +185,8 @@ export const november = [
         "title": "Psalmi 136",
         "start": 750
       }
-    ]
+    ],
+    "audioFile": "november-6.webm"
   },
   {
     "day": 7,
@@ -207,7 +213,8 @@ export const november = [
         "title": "Psalmi 138",
         "start": 599
       }
-    ]
+    ],
+    "audioFile": "november-7.webm"
   },
   {
     "day": 8,
@@ -230,7 +237,8 @@ export const november = [
         "title": "Psalmi 139",
         "start": 461
       }
-    ]
+    ],
+    "audioFile": "november-8.webm"
   },
   {
     "day": 9,
@@ -257,7 +265,8 @@ export const november = [
         "title": "Psalmi 141",
         "start": 605
       }
-    ]
+    ],
+    "audioFile": "november-9.webm"
   },
   {
     "day": 10,
@@ -280,7 +289,8 @@ export const november = [
         "title": "Psalmi 142",
         "start": 858
       }
-    ]
+    ],
+    "audioFile": "november-10.webm"
   },
   {
     "day": 11,
@@ -303,6 +313,7 @@ export const november = [
         "title": "Psalmi 143",
         "start": 554
       }
-    ]
+    ],
+    "audioFile": "november-11.webm"
   }
 ]
