@@ -64,6 +64,7 @@ function writeMonthData(filePath, exportName, entries) {
 
 const ytdlp = getYtDlpPath()
 let anyDownloaded = false
+let failedCount = 0
 
 mkdirSync(AUDIO_DIR, { recursive: true })
 
@@ -135,6 +136,7 @@ for (let i = 0; i < MONTH_KEYS.length; i++) {
       } else if (!existsSync(audioPath)) {
         if (!downloaded) {
           console.warn(`  ✗ All download strategies failed for ${entry.videoId} — skipping`)
+          failedCount++
         } else {
           console.warn(`  ✗ Download reported success but file not found for ${entry.videoId} — skipping`)
         }
@@ -158,4 +160,13 @@ if (!anyDownloaded) {
   console.log('✅ All entries already have audio — nothing to do.')
 } else {
   console.log('\n✅ Done. New audio files ready to commit.')
+}
+
+if (failedCount > 0) {
+  console.log(`::warning::${failedCount} audio download(s) failed. Check the COOKIES secret.`)
+  if (!anyDownloaded) {
+    // Don't exit non-zero here: the workflow must still commit the day's
+    // readings. A final workflow step fails the run if this marker exists.
+    writeFileSync(process.env.AUDIO_FAIL_MARKER || join(ROOT, '.audio-failed'), String(failedCount))
+  }
 }
