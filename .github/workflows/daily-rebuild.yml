@@ -28,19 +28,21 @@ jobs:
     permissions:
       contents: write
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           ref: master
 
-      - uses: actions/setup-node@v4
+      - uses: actions/setup-node@v5
         with:
           node-version: '22'
 
       - name: Install yt-dlp, ffmpeg, and Deno
+        timeout-minutes: 15
         run: |
           pip3 install -U yt-dlp
-          sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg
+          sudo apt-get -o Acquire::Retries=3 update -qq
+          sudo apt-get -o Acquire::Retries=3 install -y -qq ffmpeg
           curl -fsSL https://deno.land/install.sh | sh
           echo "$HOME/.deno/bin" >> $GITHUB_PATH
 
@@ -68,6 +70,7 @@ jobs:
         run: node scripts/download-audio.mjs
         env:
           COOKIES_FILE: /tmp/cookies.txt
+          AUDIO_FAIL_MARKER: /tmp/audio-failed
 
       - name: Commit and push any changes
         run: |
@@ -103,3 +106,11 @@ jobs:
       - name: Check data integrity
         if: always()
         run: node scripts/check-integrity.mjs
+
+      - name: Fail if every audio download failed
+        if: always()
+        run: |
+          if [ -f /tmp/audio-failed ]; then
+            echo "::error::All $(cat /tmp/audio-failed) audio downloads failed. YouTube cookies have likely expired. Refresh the COOKIES secret."
+            exit 1
+          fi
