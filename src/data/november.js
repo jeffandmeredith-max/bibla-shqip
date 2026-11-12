@@ -315,5 +315,28 @@ export const november = [
       }
     ],
     "audioFile": "november-11.webm"
+  },
+  {
+    "day": 12,
+    "date": "12 Nëntor",
+    "videoId": "tYb87fSK788",
+    "readings": [
+      {
+        "title": "2 I Mbretërve 25",
+        "start": 0
+      },
+      {
+        "title": "Hebrenjve 7",
+        "start": 311
+      },
+      {
+        "title": "Amosi 1",
+        "start": 545
+      },
+      {
+        "title": "Psalmi 144",
+        "start": 698
+      }
+    ]
   }
 ]
