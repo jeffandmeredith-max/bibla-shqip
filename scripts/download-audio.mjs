@@ -12,7 +12,7 @@
  */
 
 import { execSync, spawnSync } from 'child_process'
-import { writeFileSync, readFileSync, existsSync, renameSync, mkdirSync } from 'fs'
+import { writeFileSync, readFileSync, existsSync, renameSync, mkdirSync, readdirSync, statSync, unlinkSync } from 'fs'
 import { join, dirname } from 'path'
 import { fileURLToPath } from 'url'
 
@@ -60,6 +60,29 @@ function writeMonthData(filePath, exportName, entries) {
     `export const ${exportName} = ${JSON.stringify(entries, null, 2)}`,
   ].join('\n') + '\n'
   writeFileSync(filePath, content, 'utf8')
+}
+
+// jsDelivr (which serves the app's audio) refuses files over 20 MB, so any
+// file above this limit is re-encoded to a lower bitrate. Speech stays clear.
+const MAX_AUDIO_BYTES = 19 * 1024 * 1024
+
+function shrinkIfTooBig(filePath) {
+  const before = statSync(filePath).size
+  if (before <= MAX_AUDIO_BYTES) return false
+  const tmp = filePath + '.tmp.webm'
+  // Try 64 kbps stereo first; fall back to 40 kbps mono for very long readings
+  for (const args of [['-b:a', '64k'], ['-b:a', '40k', '-ac', '1']]) {
+    const r = spawnSync('ffmpeg', ['-v', 'error', '-y', '-i', filePath, '-vn',
+      '-c:a', 'libopus', ...args, '-f', 'webm', tmp], { encoding: 'utf8' })
+    if (r.status === 0 && existsSync(tmp) && statSync(tmp).size <= MAX_AUDIO_BYTES) {
+      renameSync(tmp, filePath)
+      console.log(`  🗜 Compressed ${filePath.split(/[\\/]/).pop()}: ${(before / 1048576).toFixed(1)} MB → ${(statSync(filePath).size / 1048576).toFixed(1)} MB`)
+      return true
+    }
+  }
+  if (existsSync(tmp)) unlinkSync(tmp)
+  console.log(`::warning::Could not shrink ${filePath} below 19 MB — it won't play in the app`)
+  return false
 }
 
 const ytdlp = getYtDlpPath()
@@ -155,6 +178,13 @@ for (let i = 0; i < MONTH_KEYS.length; i++) {
     console.log(`✓ Saved ${monthKey}.js`)
   }
 }
+
+// Shrink any audio file (new or existing) that is too big for the CDN
+let shrunk = 0
+for (const f of readdirSync(AUDIO_DIR)) {
+  if (f.endsWith('.webm') && shrinkIfTooBig(join(AUDIO_DIR, f))) shrunk++
+}
+if (shrunk) console.log(`✓ Compressed ${shrunk} oversized audio file(s)`)
 
 if (!anyDownloaded) {
   console.log('✅ All entries already have audio — nothing to do.')
