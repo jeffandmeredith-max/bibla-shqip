@@ -337,6 +337,7 @@ export const november = [
         "title": "Psalmi 144",
         "start": 698
       }
-    ]
+    ],
+    "audioFile": "november-12.webm"
   }
 ]
