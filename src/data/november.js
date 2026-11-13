@@ -366,5 +366,32 @@ export const november = [
         "start": 1065
       }
     ]
+  },
+  {
+    "day": 13,
+    "date": "13 Nëntor",
+    "videoId": "m-VJf_qsowI",
+    "readings": [
+      {
+        "title": "1 I Kronikave 1",
+        "start": 0
+      },
+      {
+        "title": "1 I Kronikave 2",
+        "start": 326
+      },
+      {
+        "title": "Hebrenjve 8",
+        "start": 673
+      },
+      {
+        "title": "Amosi 2",
+        "start": 804
+      },
+      {
+        "title": "Psalmi 145",
+        "start": 946
+      }
+    ]
   }
 ]
