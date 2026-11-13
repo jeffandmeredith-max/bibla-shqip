@@ -339,5 +339,32 @@ export const november = [
       }
     ],
     "audioFile": "november-12.webm"
+  },
+  {
+    "day": 13,
+    "date": "13 Nëntor",
+    "videoId": "JQ86HlEwmXk",
+    "readings": [
+      {
+        "title": "1 I Kronikave 1",
+        "start": 0
+      },
+      {
+        "title": "1 I Kronikave 2",
+        "start": 326
+      },
+      {
+        "title": "Hebrenjve 8",
+        "start": 673
+      },
+      {
+        "title": "Amosi 2",
+        "start": 923
+      },
+      {
+        "title": "Psalmi 145",
+        "start": 1065
+      }
+    ]
   }
 ]
