@@ -392,7 +392,8 @@ export const november = [
         "title": "Psalmi 145",
         "start": 946
       }
-    ]
+    ],
+    "audioFile": "november-13.webm"
   },
   {
     "day": 14,
@@ -423,6 +424,7 @@ export const november = [
         "title": "Psalmi 147",
         "start": 965
       }
-    ]
+    ],
+    "audioFile": "november-14.webm"
   }
 ]
