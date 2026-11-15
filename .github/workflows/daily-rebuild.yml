@@ -1,4 +1,6 @@
 name: Daily Update
+# Audio is downloaded by Jeff's home computer (Task Scheduler: 'Bible App audio sync'),
+# because YouTube blocks downloads from GitHub's servers.
 
 on:
   schedule:
@@ -66,12 +68,6 @@ jobs:
         env:
           COOKIES_FILE: /tmp/cookies.txt
 
-      - name: Download audio for any new days
-        run: node scripts/download-audio.mjs
-        env:
-          COOKIES_FILE: /tmp/cookies.txt
-          AUDIO_FAIL_MARKER: /tmp/audio-failed
-
       - name: Commit and push any changes
         run: |
           git config user.email "daily-update@github-actions"
@@ -90,27 +86,6 @@ jobs:
             echo "✅ Changes pushed."
           fi
 
-      - name: Purge jsdelivr CDN cache for new audio files
-        if: success()
-        run: |
-          # Find audio files added in this commit
-          NEW_AUDIO=$(git diff --name-only HEAD~1 HEAD -- public/audio/ 2>/dev/null || true)
-          if [ -n "$NEW_AUDIO" ]; then
-            for f in $NEW_AUDIO; do
-              URL="https://purge.jsdelivr.net/gh/jeffandmeredith-max/bibla-shqip@master/$f"
-              echo "Purging CDN cache: $f"
-              curl -s "$URL" || true
-            done
-          fi
-
       - name: Check data integrity
         if: always()
         run: node scripts/check-integrity.mjs
-
-      - name: Fail if every audio download failed
-        if: always()
-        run: |
-          if [ -f /tmp/audio-failed ]; then
-            echo "::error::All $(cat /tmp/audio-failed) audio downloads failed. YouTube cookies have likely expired. Refresh the COOKIES secret."
-            exit 1
-          fi
