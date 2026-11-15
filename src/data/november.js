@@ -399,5 +399,40 @@ export const november = [
       }
     ],
     "audioFile": "november-14.webm"
+  },
+  {
+    "day": 15,
+    "date": "15 Nëntor",
+    "videoId": "7Y8i5U4-zGw",
+    "readings": [
+      {
+        "title": "1 I Kronikave 5",
+        "start": 0
+      },
+      {
+        "title": "1 I Kronikave 6",
+        "start": 280
+      },
+      {
+        "title": "Hebrenjve 10",
+        "start": 797
+      },
+      {
+        "title": "Amosi 4",
+        "start": 1075
+      },
+      {
+        "title": "Psalmi 148",
+        "start": 1212
+      },
+      {
+        "title": "Psalmi 149",
+        "start": 1281
+      },
+      {
+        "title": "Psalmi 150",
+        "start": 1336
+      }
+    ]
   }
 ]
