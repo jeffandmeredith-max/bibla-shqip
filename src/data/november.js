@@ -435,5 +435,32 @@ export const november = [
       }
     ],
     "audioFile": "november-15.webm"
+  },
+  {
+    "day": 16,
+    "date": "16 Nëntor",
+    "videoId": "LDSBjUdTzX4",
+    "readings": [
+      {
+        "title": "1 I Kronikave 7",
+        "start": 0
+      },
+      {
+        "title": "1 I Kronikave 8",
+        "start": 364
+      },
+      {
+        "title": "Hebrenjve 11",
+        "start": 573
+      },
+      {
+        "title": "Amosi 5",
+        "start": 916
+      },
+      {
+        "title": "Luka 1:1~1:38",
+        "start": 1133
+      }
+    ]
   }
 ]
