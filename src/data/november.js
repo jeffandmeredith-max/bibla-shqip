@@ -462,5 +462,32 @@ export const november = [
         "start": 1133
       }
     ]
+  },
+  {
+    "day": 17,
+    "date": "17 Nëntor",
+    "videoId": "ny8QPgy4Tc0",
+    "readings": [
+      {
+        "title": "1 I Kronikave 9",
+        "start": 0
+      },
+      {
+        "title": "1 I Kronikave 10",
+        "start": 348
+      },
+      {
+        "title": "Hebrenjve 12",
+        "start": 477
+      },
+      {
+        "title": "Amosi 6",
+        "start": 720
+      },
+      {
+        "title": "Luka 1:39~1:80",
+        "start": 847
+      }
+    ]
   }
 ]
