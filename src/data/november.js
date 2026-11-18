@@ -461,7 +461,8 @@ export const november = [
         "title": "Luka 1:1~1:38",
         "start": 1133
       }
-    ]
+    ],
+    "audioFile": "november-16.webm"
   },
   {
     "day": 17,
@@ -488,7 +489,8 @@ export const november = [
         "title": "Luka 1:39~1:80",
         "start": 847
       }
-    ]
+    ],
+    "audioFile": "november-17.webm"
   },
   {
     "day": 18,
@@ -515,6 +517,7 @@ export const november = [
         "title": "Luka 2",
         "start": 1062
       }
-    ]
+    ],
+    "audioFile": "november-18.webm"
   }
 ]
