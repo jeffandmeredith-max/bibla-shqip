@@ -547,5 +547,28 @@ export const november = [
       }
     ],
     "audioFile": "november-19.webm"
+  },
+  {
+    "day": 20,
+    "date": "20 Nëntor",
+    "videoId": "LDuqomkPA_E",
+    "readings": [
+      {
+        "title": "1 I Kronikave 15",
+        "start": 0
+      },
+      {
+        "title": "Jakobit 2",
+        "start": 260
+      },
+      {
+        "title": "Amosi 9",
+        "start": 441
+      },
+      {
+        "title": "Luka 4",
+        "start": 600
+      }
+    ]
   }
 ]
