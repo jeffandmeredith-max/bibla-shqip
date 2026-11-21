@@ -571,5 +571,28 @@ export const november = [
       }
     ],
     "audioFile": "november-20.webm"
+  },
+  {
+    "day": 21,
+    "date": "21 Nëntor",
+    "videoId": "YLgLFx2phuQ",
+    "readings": [
+      {
+        "title": "1 I Kronikave 16",
+        "start": 0
+      },
+      {
+        "title": "Jakobit 3",
+        "start": 319
+      },
+      {
+        "title": "Abdia 1",
+        "start": 466
+      },
+      {
+        "title": "Luka 5",
+        "start": 675
+      }
+    ]
   }
 ]
