@@ -619,5 +619,28 @@ export const november = [
       }
     ],
     "audioFile": "november-22.webm"
+  },
+  {
+    "day": 23,
+    "date": "23 Nëntor",
+    "videoId": "U4INNpGJk9Y",
+    "readings": [
+      {
+        "title": "1 I Kronikave 18",
+        "start": 0
+      },
+      {
+        "title": "Jakobit 5",
+        "start": 154
+      },
+      {
+        "title": "Jona 2",
+        "start": 304
+      },
+      {
+        "title": "Luka 7",
+        "start": 390
+      }
+    ]
   }
 ]
