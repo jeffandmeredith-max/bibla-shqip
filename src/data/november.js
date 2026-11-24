@@ -669,6 +669,7 @@ export const november = [
         "title": "Luka 8",
         "start": 601
       }
-    ]
+    ],
+    "audioFile": "november-24.webm"
   }
 ]
