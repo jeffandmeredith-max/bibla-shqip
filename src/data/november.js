@@ -671,5 +671,28 @@ export const november = [
       }
     ],
     "audioFile": "november-24.webm"
+  },
+  {
+    "day": 25,
+    "date": "25 Nëntor",
+    "videoId": "k1ie_Ddoc1Y",
+    "readings": [
+      {
+        "title": "1 I Kronikave 21",
+        "start": 0
+      },
+      {
+        "title": "1 E Pjetrit 2",
+        "start": 312
+      },
+      {
+        "title": "Jona 4",
+        "start": 504
+      },
+      {
+        "title": "Luka 9",
+        "start": 612
+      }
+    ]
   }
 ]
