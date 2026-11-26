@@ -695,5 +695,28 @@ export const november = [
       }
     ],
     "audioFile": "november-25.webm"
+  },
+  {
+    "day": 26,
+    "date": "26 Nëntor",
+    "videoId": "KUM7dXIiDPo",
+    "readings": [
+      {
+        "title": "1 I Kronikave 22",
+        "start": 0
+      },
+      {
+        "title": "1 E Pjetrit 3",
+        "start": 218
+      },
+      {
+        "title": "Mikea 1",
+        "start": 401
+      },
+      {
+        "title": "Luka 10",
+        "start": 561
+      }
+    ]
   }
 ]
