@@ -718,5 +718,28 @@ export const november = [
         "start": 561
       }
     ]
+  },
+  {
+    "day": 27,
+    "date": "27 Nëntor",
+    "videoId": "FAdv99SCLWo",
+    "readings": [
+      {
+        "title": "1 I Kronikave 23",
+        "start": 0
+      },
+      {
+        "title": "1 E Pjetrit 4",
+        "start": 248
+      },
+      {
+        "title": "Mikea 2",
+        "start": 403
+      },
+      {
+        "title": "Luka 11",
+        "start": 545
+      }
+    ]
   }
 ]
