@@ -717,7 +717,8 @@ export const november = [
         "title": "Luka 10",
         "start": 561
       }
-    ]
+    ],
+    "audioFile": "november-26.webm"
   },
   {
     "day": 27,
@@ -740,6 +741,7 @@ export const november = [
         "title": "Luka 11",
         "start": 545
       }
-    ]
+    ],
+    "audioFile": "november-27.webm"
   }
 ]
